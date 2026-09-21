@@ -111,7 +111,7 @@ function incompleteCases(limit = cases.length) {
   const missing = [];
   for (let i = 0; i < limit; i++) {
     const response = session.responses[i], item = cases[i];
-    if (!response || response.caseId !== item.id || !C.validChoices(response.choices || {},group.kind)
+    if (!response || response.caseId !== item.id || !C.validChoices(response.choices || {},group.kind,group.allowTie)
       || !Array.isArray(response.candidates) || response.candidates.length !== item.candidates.length
       || response.candidates.some((id,j) => id !== item.candidates[j])) missing.push(i);
   }
@@ -166,12 +166,12 @@ function renderQuestions() {
   const saved = (savedExample() ? session.responses[index]?.choices : answerDrafts.get(cases[index].id)) || session.responses[index]?.choices || {};
   $('answer-instruction').innerHTML = overall
     ? 'Choose A or B if one video is clearly better overall. <strong>If neither video is clearly better, select “About the same.”</strong>'
-    : 'Choose one video for each question.';
+    : group.allowTie ? 'Choose A or B for each question. <strong>If neither video is clearly better for that question, select “About the same.”</strong>' : 'Choose one video for each question.';
   const questionOrder = overall ? C.questions(group.kind) : ['interaction', 'quality', 'camera'];
   for (const id of questionOrder) {
     const field = document.createElement('fieldset'), legend = document.createElement('legend'), copy = document.createElement('p'), row = document.createElement('div');
-    legend.textContent = C.QUESTIONS[id][0]; copy.textContent = C.QUESTIONS[id][1]; copy.className = 'question-copy'; row.className = 'choices' + (pair ? ' pair' : '');
-    for (const value of (overall ? ['a','b','tie'] : pair ? ['a','b'] : ['a','b','c','d'])) {
+    legend.textContent = C.QUESTIONS[id][0]; copy.textContent = C.QUESTIONS[id][1]; copy.className = 'question-copy'; row.className = 'choices' + (pair ? ' pair' : '') + (group.allowTie && !overall ? ' has-tie' : '');
+    for (const value of (overall || group.allowTie ? ['a','b','tie'] : pair ? ['a','b'] : ['a','b','c','d'])) {
       const label = document.createElement('label'), input = document.createElement('input'), text = document.createElement('span');
       label.className = 'choice' + (value === 'tie' ? ' tie' : ''); input.type = 'radio'; input.name = id; input.value = value; input.disabled = true; input.required = true;
       input.checked = saved[id] === value;
@@ -264,6 +264,7 @@ async function start() {
     } else session = {studyId:C.STUDY_ID,sessionId:'preview',groupId:previewId,ordinal:0,responses:[],complete:false};
     cases = C.trials(manifest,session); group = {...manifest.groups.find(g => g.id === session.groupId)};
     if (session.kind) group.kind = session.kind;
+    if (typeof session.allowTie === 'boolean') group.allowTie = session.allowTie;
     $('progress').max = cases.length;
     $('preview-case').replaceChildren();
     for (let i=0;i<cases.length;i++) { const option = document.createElement('option'); option.value = i; option.textContent = `Example ${i+1}`; $('preview-case').append(option); }
@@ -277,7 +278,7 @@ async function submit(event) {
   event.preventDefault(); if (saving) return;
   if (!pendingAnswer && !ready) return;
   if (savedExample()) { await openCase(index+1); return; }
-  if (!pendingAnswer && !C.validChoices(choices(),group.kind)) {
+  if (!pendingAnswer && !C.validChoices(choices(),group.kind,group.allowTie)) {
     validationShown = true;
     updateValidation(true);
     return;
@@ -328,7 +329,7 @@ document.addEventListener('visibilitychange',() => {
 requestAnimationFrame(tick);
 (async () => {
   try {
-    const responses = await Promise.all([fetch(resourceURL('study.json?v=20260921-r3')),fetch(resourceURL('study-config.json'))]);
+    const responses = await Promise.all([fetch(resourceURL('study.json?v=20260921-r4')),fetch(resourceURL('study-config.json'))]);
     if (responses.some(r => !r.ok)) throw new Error('The study could not load. Please reload this page.');
     const [inventory,config] = await Promise.all(responses.map(r => r.json()));
     manifest = C.validateManifest(inventory);

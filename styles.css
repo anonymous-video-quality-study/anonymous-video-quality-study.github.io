@@ -76,6 +76,9 @@ legend { width: 100%; padding: 0; font-size: 17px; line-height: 1.35; font-weigh
 .choice input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 3px; }
 .choice input:disabled + span { opacity: .5; cursor: default; }
 .choice.tie { grid-column: 1/-1; }
+.choices.pair.has-tie { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.choices.has-tie .choice.tie { grid-column: auto; }
+.choices.has-tie .choice span { height: 100%; display: flex; align-items: center; justify-content: center; }
 .unanswered legend { color: #8f342c; }
 .unanswered .choice span { border-color: #b65c50; }
 .answer-error { margin: 0 0 12px; color: #8f342c; font-size: 14px; line-height: 1.5; }

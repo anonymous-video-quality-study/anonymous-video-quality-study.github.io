@@ -667,7 +667,6 @@
     {
       "id": "g3",
       "kind": "pairwise",
-      "allowTie": true,
       "cases": [
         {
           "frames": 48,
@@ -4027,6 +4026,68 @@
       "width": 832,
       "height": 480
     },
+    "9dd958d2f2fc8c1e49c54cfa": {
+      "src": "shared/d8091a5b72ac6b283d0685aa.mp4",
+      "mime": "video/mp4",
+      "sha256": "d8091a5b72ac6b283d0685aa0b46346cb8f24885aed40f860d64f2713bd47262",
+      "encodedFps": 8.0,
+      "encodedFrames": 48,
+      "width": 832,
+      "height": 480
+    },
+    "a4f524ef22c3f16b74445da1": {
+      "src": "shared/e742a3f2bda27a70bbc9d472.mp4",
+      "mime": "video/mp4",
+      "sha256": "e742a3f2bda27a70bbc9d472d1aa1ec58c7b42e8bfc9238959d054034f9b8629",
+      "encodedFps": 8.0,
+      "encodedFrames": 48,
+      "width": 832,
+      "height": 480
+    },
+    "2bf4a63fc890751e34908220": {
+      "src": "media/0522e8488654804bc5215684.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "887845b1c1328d8e8be62011": {
+      "src": "media/2e5f1d15f0ff4a5d1f540ad3.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c4356438dfe57078dc56dc3b": {
+      "src": "media/fe1ef5417c0e76f726334257.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "91ec60a0735e5697ffb5c09a": {
+      "src": "media/adad4c243da574a0ed9d3c75.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "48d3cb17946653e553480bc2": {
+      "src": "media/df0aae08c76c5135b0d44891.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c49ae246ccf3476783e2ce55": {
+      "src": "shared/d9fa46959fece1515398e546.mp4",
+      "mime": "video/mp4",
+      "sha256": "d9fa46959fece1515398e5460f5f5d772e1b4258a530184eb07e00eca989a5c7",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
     "c21f97e3b723466f25c1e36a": {
       "src": "shared/c797f37b924ae456b8581bb9.mp4",
       "mime": "video/mp4",
@@ -4388,5 +4449,5 @@
       "height": 480
     }
   },
-  "revision": "r4"
+  "revision": "r3"
 }

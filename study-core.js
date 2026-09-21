@@ -32,7 +32,7 @@
     return assigned.map(c => { const offset = assignment.ordinal % c.candidates.length; return {...c, candidates:c.candidates.slice(offset).concat(c.candidates.slice(0, offset))}; });
   }
   function questions(kind) { return kind === 'overall' ? ['overall'] : ['camera', 'quality', 'interaction']; }
-  function validChoices(choices, kind) { const keys = questions(kind), allowed = kind === 'overall' ? ['a','b','tie'] : kind === 'pairwise' ? ['a','b'] : ['a','b','c','d']; return keys.length === Object.keys(choices).length && keys.every(k => allowed.includes(choices[k])); }
+  function validChoices(choices, kind, allowTie = false) { const keys = questions(kind), allowed = kind === 'overall' || (kind === 'pairwise' && allowTie) ? ['a','b','tie'] : kind === 'pairwise' ? ['a','b'] : ['a','b','c','d']; return keys.length === Object.keys(choices).length && keys.every(k => allowed.includes(choices[k])); }
   const api = {STUDY_ID, QUESTIONS, validateManifest, trials, questions, validChoices};
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.StudyCore = api;
 })(typeof window === 'undefined' ? globalThis : window);
