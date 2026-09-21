@@ -15,6 +15,11 @@ are kept as browser drafts across navigation and reloads. Saved answers can be
 reviewed without being changed. Every example must be completed and saved in
 order before the final submission can succeed.
 
+The study is centered within a maximum width of 1280 pixels. Desktop video
+size is also limited by viewport height so both rows and playback controls
+fit on short screens. Video aspect ratios, text and button sizes are preserved;
+questions move below the videos at widths of 960 pixels or less.
+
 All media are hosted in this repository. `study-config.json` contains the public
 media decryption key, not a backend credential. Keep participant responses,
 backend credentials, and method mappings outside this repository.
