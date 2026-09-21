@@ -47,8 +47,8 @@ progress::-moz-progress-bar { background: var(--accent); }
 .screening { --video-gap: 12px; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); grid-template-areas: "references candidates candidates" "controls controls controls" "status status status"; gap: 14px var(--video-gap); min-width: 0; align-items: start; }
 .references { grid-area: references; display: grid; grid-template-columns: minmax(0,1fr); gap: var(--video-gap); min-width: 0; }
 .candidates { grid-area: candidates; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--video-gap); align-items: start; }
-#study[data-kind="overall"] .screening { grid-template-columns: minmax(0,1fr); grid-template-areas: "references" "candidates" "controls" "status"; }
-#study[data-kind="overall"] .references { grid-template-columns: repeat(2,minmax(0,1fr)); }
+#study[data-pair="true"] .screening { grid-template-columns: minmax(0,1fr); grid-template-areas: "references" "candidates" "controls" "status"; }
+#study[data-pair="true"] .references { grid-template-columns: repeat(2,minmax(0,1fr)); }
 figure { margin: 0; min-width: 0; }
 figcaption { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; margin: 0; padding: 8px 10px; background: #eae8e0; border-radius: 4px 4px 0 0; color: #30353e; font-size: 20px; font-weight: 700; line-height: 1.2; text-align: center; }
 .caption-title { display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
@@ -91,7 +91,7 @@ legend { width: 100%; padding: 0; font-size: 17px; line-height: 1.35; font-weigh
      labels, reference note and full-size playback controls. Only the media
      column grows/shrinks; the answer panel keeps its normal type and buttons. */
   .workspace { --screening-width: calc((100dvh - 360px) * 2.6 + 24px); max-width: calc(max(400px, var(--screening-width)) + 260px); margin-inline: auto; }
-  #study[data-kind="overall"] .workspace { --screening-width: calc((100dvh - 380px) * 1.733333 + 12px); }
+  #study[data-pair="true"] .workspace { --screening-width: calc((100dvh - 380px) * 1.733333 + 12px); }
 }
 @media (min-width: 961px) and (max-height: 700px) {
   header { padding-block: 10px; }
@@ -99,7 +99,7 @@ legend { width: 100%; padding: 0; font-size: 17px; line-height: 1.35; font-weigh
   .study-heading { margin-bottom: 12px; }
   .screening { --video-gap: 8px; row-gap: 8px; }
   .workspace { --screening-width: calc((100dvh - 320px) * 2.6 + 16px); }
-  #study[data-kind="overall"] .workspace { --screening-width: calc((100dvh - 320px) * 1.733333 + 8px); }
+  #study[data-pair="true"] .workspace { --screening-width: calc((100dvh - 320px) * 1.733333 + 8px); }
 }
 @media (max-width: 1180px) {
   .workspace { grid-template-columns: minmax(0,1fr) 232px; gap: 16px; }

@@ -9,6 +9,9 @@ static publishing.
 
 Local previews default to group 1. The parameters `?preview=g1`, `?preview=g2`,
 and `?preview=g3` allow review of all three groups without submitting answers.
+Groups 1 and 2 contain 25 examples each; group 3 contains 20 examples.
+All groups ask the same three questions, with A/B choices for group 3.
+Existing participants retain the examples and questions from their assigned revision.
 
 Participants can use Jump to browse their assigned examples. Unsaved choices
 are kept as browser drafts across navigation and reloads. Saved answers can be

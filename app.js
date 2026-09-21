@@ -48,7 +48,7 @@ function updateNavigation() {
     const state = !previewId && i < confirmedCount ? ' · Saved' : answerDrafts.has(cases[i].id) ? ' · Draft' : '';
     option.textContent = `Example ${i+1}${state}`;
   }
-  $('progress-text').textContent = previewId ? `${index+1} of 25` : `${confirmedCount} of 25 saved`;
+  $('progress-text').textContent = previewId ? `${index+1} of ${cases.length}` : `${confirmedCount} of ${cases.length} saved`;
   $('progress').value = previewId ? index : confirmedCount;
 }
 async function api(path, payload) {
@@ -153,7 +153,7 @@ function updateAnswers() {
   $('seek').disabled = !ready;
   updateValidation();
   if (!saving && !pendingAnswer) {
-    $('next').textContent = savedExample() ? 'Next example →' : index === 24 ? 'Submit & finish →' : 'Save & next →';
+    $('next').textContent = savedExample() ? 'Next example →' : index === cases.length-1 ? 'Submit & finish →' : 'Save & next →';
     $('save-status').textContent = !ready ? 'Loading videos…' : savedExample()
       ? 'These answers are already saved. You can review this example or jump to another.'
       : 'Choose your answers, then continue. Unsaved choices stay in this browser as drafts.';
@@ -162,16 +162,16 @@ function updateAnswers() {
 }
 function renderQuestions() {
   $('questions').replaceChildren();
-  const pair = group.kind === 'overall';
+  const pair = group.kind !== 'criteria', overall = group.kind === 'overall';
   const saved = (savedExample() ? session.responses[index]?.choices : answerDrafts.get(cases[index].id)) || session.responses[index]?.choices || {};
-  $('answer-instruction').innerHTML = pair
+  $('answer-instruction').innerHTML = overall
     ? 'Choose A or B if one video is clearly better overall. <strong>If neither video is clearly better, select “About the same.”</strong>'
     : 'Choose one video for each question.';
-  const questionOrder = pair ? C.questions(group.kind) : ['interaction', 'quality', 'camera'];
+  const questionOrder = overall ? C.questions(group.kind) : ['interaction', 'quality', 'camera'];
   for (const id of questionOrder) {
     const field = document.createElement('fieldset'), legend = document.createElement('legend'), copy = document.createElement('p'), row = document.createElement('div');
     legend.textContent = C.QUESTIONS[id][0]; copy.textContent = C.QUESTIONS[id][1]; copy.className = 'question-copy'; row.className = 'choices' + (pair ? ' pair' : '');
-    for (const value of (pair ? ['a','b','tie'] : ['a','b','c','d'])) {
+    for (const value of (overall ? ['a','b','tie'] : pair ? ['a','b'] : ['a','b','c','d'])) {
       const label = document.createElement('label'), input = document.createElement('input'), text = document.createElement('span');
       label.className = 'choice' + (value === 'tie' ? ' tie' : ''); input.type = 'radio'; input.name = id; input.value = value; input.disabled = true; input.required = true;
       input.checked = saved[id] === value;
@@ -220,15 +220,15 @@ async function openCase(nextIndex) {
   videos.forEach(v => { v.removeAttribute('src'); v.load(); }); urls.forEach(url => URL.revokeObjectURL(url)); urls = []; videos = [];
   index = nextIndex; ready = false; watched = 0; pendingAnswer = null; validationShown = false; openedAt = performance.now();
   if (index >= cases.length) return done();
-  show('study'); $('study').dataset.kind = group.kind; const item = cases[index]; duration = item.frames / item.fps;
-  $('case-title').textContent = `Example ${index+1}`; $('progress-text').textContent = `${index+1} of 25`; $('progress').value = index;
-  $('preview-case').value = index; $('next').textContent = index === 24 ? 'Submit & finish →' : 'Save & next →';
+  show('study'); $('study').dataset.kind = group.kind; $('study').dataset.pair = String(group.kind !== 'criteria'); const item = cases[index]; duration = item.frames / item.fps;
+  $('case-title').textContent = `Example ${index+1}`; $('progress-text').textContent = `${index+1} of ${cases.length}`; $('progress').value = index;
+  $('preview-case').value = index; $('next').textContent = index === cases.length-1 ? 'Submit & finish →' : 'Save & next →';
   ['play','replay','seek'].forEach(id => { $(id).disabled = true; }); $('retry').hidden = true; $('media-status').textContent = 'Loading videos…';
   $('references').replaceChildren(); $('candidates').replaceChildren(); $('references').classList.toggle('single',!item.camera);
   const loads = [];
   const add = (container,id,label,letter,note) => { const view = figure(label,letter,note); $(container).append(view.fig); videos.push(view.video); loads.push(loadVideo(view.video,id,controller.signal)); };
   add('references',item.input,'Input video');
-  if (item.camera) add('references',item.camera,group.kind === 'overall' ? 'Warp' : 'Camera motion',null,'Viewpoint guide only; ignore holes and visual artifacts.');
+  if (item.camera) add('references',item.camera,group.kind !== 'criteria' ? 'Warp' : 'Camera motion',null,'Viewpoint guide only; ignore holes and visual artifacts.');
   item.candidates.forEach((id,i) => add('candidates',id,`Video ${'ABCD'[i]}`,'ABCD'[i]));
   renderQuestions(); updateAnswers(); clock(0);
   try {
@@ -262,7 +262,11 @@ async function start() {
       confirmedCount = session.responses.length;
       persist();
     } else session = {studyId:C.STUDY_ID,sessionId:'preview',groupId:previewId,ordinal:0,responses:[],complete:false};
-    cases = C.trials(manifest,session); group = manifest.groups.find(g => g.id === session.groupId);
+    cases = C.trials(manifest,session); group = {...manifest.groups.find(g => g.id === session.groupId)};
+    if (session.kind) group.kind = session.kind;
+    $('progress').max = cases.length;
+    $('preview-case').replaceChildren();
+    for (let i=0;i<cases.length;i++) { const option = document.createElement('option'); option.value = i; option.textContent = `Example ${i+1}`; $('preview-case').append(option); }
     restoreDrafts();
     await openCase(session.responses.length);
   } catch (err) {
@@ -299,8 +303,8 @@ async function submit(event) {
   }
 }
 function done() {
-  show('done'); $('progress').value = 25;
-  $('done-message').textContent = previewId ? 'Preview complete. No answers were submitted.' : 'All 25 comparisons have been submitted. Thank you for taking part.';
+  show('done'); $('progress').value = cases.length;
+  $('done-message').textContent = previewId ? 'Preview complete. No answers were submitted.' : `All ${cases.length} comparisons have been submitted. Thank you for taking part.`;
   $('completion-code').textContent = session.receiptId ? `Completion receipt: ${session.receiptId}` : '';
 }
 $('start').addEventListener('click',start); $('resume').addEventListener('click',start);
@@ -324,14 +328,15 @@ document.addEventListener('visibilitychange',() => {
 requestAnimationFrame(tick);
 (async () => {
   try {
-    const responses = await Promise.all([fetch(resourceURL('study.json?v=20260921-r2')),fetch(resourceURL('study-config.json'))]);
+    const responses = await Promise.all([fetch(resourceURL('study.json?v=20260921-r3')),fetch(resourceURL('study-config.json'))]);
     if (responses.some(r => !r.ok)) throw new Error('The study could not load. Please reload this page.');
     const [inventory,config] = await Promise.all(responses.map(r => r.json()));
     manifest = C.validateManifest(inventory);
     const encoded = config.mediaKey.replaceAll('-','+').replaceAll('_','/');
     key = await crypto.subtle.importKey('raw',Uint8Array.from(atob(encoded),char => char.charCodeAt(0)),{name:'AES-GCM'},false,['decrypt']);
     if (previewId && !manifest.groups.some(g => g.id === previewId)) throw new Error('This preview link is invalid.');
-    for (let i=0;i<25;i++) { const option = document.createElement('option'); option.value = i; option.textContent = `Example ${i+1}`; $('preview-case').append(option); }
+    const counts = [...new Set(manifest.groups.map(g=>g.cases.length))].sort((a,b)=>a-b);
+    document.querySelector('.facts').textContent = `${previewId ? manifest.groups.find(g=>g.id===previewId).cases.length : counts.join('–')} examples · 10–15 minutes`;
     if (!previewId) $('resume').hidden = !readSaved();
     $('welcome-status').textContent = '';
     $('start').disabled = false;
