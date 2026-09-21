@@ -2,6 +2,7 @@
 const $ = id => document.getElementById(id);
 const C = StudyCore;
 const STORAGE = C.STUDY_ID;
+const DRAFT_STORAGE = STORAGE + ':drafts';
 const SERVICE = 'https://settled-gathered-exercises-maximize.trycloudflare.com';
 // Local reviews always use preview mode; all study resources stay on this site.
 const localReview = ['', 'localhost', '127.0.0.1', '::1'].includes(location.hostname);
@@ -14,12 +15,42 @@ let duration = 0, openedAt = 0, previousTime = 0, previousTick = 0, saving = fal
 let pendingAnswer = null;
 let resumeOnVisible = false;
 let validationShown = false;
+let confirmedCount = 0;
 const answerDrafts = new Map();
 
-function show(id) { for (const name of ['welcome','study','done']) $(name).hidden = name !== id; }
+function show(id) { for (const name of ['welcome','study','done']) $(name).hidden = name !== id; $('preview-banner').hidden = id !== 'study'; }
 function error(message) { $('global-error').textContent = message || ''; $('global-error').hidden = !message; }
 function persist() { if (!previewId) localStorage.setItem(STORAGE, JSON.stringify(session)); }
 function readSaved() { try { const s = JSON.parse(localStorage.getItem(STORAGE)); return s?.studyId === C.STUDY_ID ? s : null; } catch { return null; } }
+function savedExample() { return !previewId && index < confirmedCount; }
+function persistDrafts() {
+  if (!previewId) localStorage.setItem(DRAFT_STORAGE,JSON.stringify({sessionId:session.sessionId,choices:[...answerDrafts]}));
+}
+function rememberChoices() {
+  if (!ready || saving || pendingAnswer || !cases?.[index] || savedExample()) return;
+  const draft = choices();
+  if (Object.keys(draft).length) answerDrafts.set(cases[index].id,draft);
+  persistDrafts();
+}
+function restoreDrafts() {
+  if (previewId) return;
+  try {
+    const saved = JSON.parse(localStorage.getItem(DRAFT_STORAGE));
+    if (saved?.sessionId !== session.sessionId || !Array.isArray(saved.choices)) return;
+    const ids = new Set(cases.slice(confirmedCount).map(c => c.id));
+    for (const [id,draft] of saved.choices) if (ids.has(id)) answerDrafts.set(id,draft);
+  } catch { /* Server-confirmed answers remain available if local drafts are unreadable. */ }
+}
+function updateNavigation() {
+  $('preview-case').disabled = saving || !!pendingAnswer || !cases;
+  if (!cases) return;
+  for (const [i,option] of [...$('preview-case').options].entries()) {
+    const state = !previewId && i < confirmedCount ? ' · Saved' : answerDrafts.has(cases[i].id) ? ' · Draft' : '';
+    option.textContent = `Example ${i+1}${state}`;
+  }
+  $('progress-text').textContent = previewId ? `${index+1} of 25` : `${confirmedCount} of 25 saved`;
+  $('progress').value = previewId ? index : confirmedCount;
+}
 async function api(path, payload) {
   const response = await fetch(SERVICE + path, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({studyId:C.STUDY_ID, revision:manifest.revision || 'r1', ...payload}), signal:AbortSignal.timeout(20000)});
   const data = await response.json();
@@ -92,7 +123,7 @@ async function returnToIncomplete(missing) {
   validationShown = true;
   updateValidation(true);
   $('answer-error').hidden = false;
-  $('answer-error').textContent = `${missing.length} earlier ${missing.length === 1 ? 'example still needs' : 'examples still need'} answers. Please complete Example ${index+1} before continuing.`;
+  $('answer-error').textContent = `Your choices are kept as a draft. ${missing.length} earlier ${missing.length === 1 ? 'example still needs' : 'examples still need'} answers. Please complete Example ${index+1} before continuing.`;
 }
 function updateValidation(focus = false) {
   const missing = [];
@@ -117,16 +148,22 @@ function updateValidation(focus = false) {
   }
 }
 function updateAnswers() {
-  document.querySelectorAll('#questions input').forEach(el => { el.disabled = !ready || saving || !!pendingAnswer; });
+  document.querySelectorAll('#questions input').forEach(el => { el.disabled = !ready || saving || !!pendingAnswer || savedExample(); });
   $('next').disabled = saving || (!pendingAnswer && !ready);
   $('seek').disabled = !ready;
   updateValidation();
-  if (!saving && !pendingAnswer) $('save-status').textContent = ready ? 'Choose your answers, then continue.' : 'Loading videos…';
+  if (!saving && !pendingAnswer) {
+    $('next').textContent = savedExample() ? 'Next example →' : index === 24 ? 'Submit & finish →' : 'Save & next →';
+    $('save-status').textContent = !ready ? 'Loading videos…' : savedExample()
+      ? 'These answers are already saved. You can review this example or jump to another.'
+      : 'Choose your answers, then continue. Unsaved choices stay in this browser as drafts.';
+  }
+  updateNavigation();
 }
 function renderQuestions() {
   $('questions').replaceChildren();
   const pair = group.kind === 'overall';
-  const saved = answerDrafts.get(cases[index].id) || session.responses[index]?.choices || {};
+  const saved = (savedExample() ? session.responses[index]?.choices : answerDrafts.get(cases[index].id)) || session.responses[index]?.choices || {};
   $('answer-instruction').textContent = pair ? 'Choose A, B, or about the same.' : 'Choose one video for each question.';
   const questionOrder = pair ? C.questions(group.kind) : ['interaction', 'quality', 'camera'];
   for (const id of questionOrder) {
@@ -137,7 +174,10 @@ function renderQuestions() {
       label.className = 'choice' + (value === 'tie' ? ' tie' : ''); input.type = 'radio'; input.name = id; input.value = value; input.disabled = true; input.required = true;
       input.checked = saved[id] === value;
       text.textContent = value === 'tie' ? 'About the same' : value.toUpperCase();
-      input.addEventListener('change', updateAnswers); label.append(input,text); row.append(label);
+      input.addEventListener('change', () => {
+        try { rememberChoices(); } catch { error('Your draft could not be saved in this browser. Keep this page open and retry.'); }
+        updateAnswers();
+      }); label.append(input,text); row.append(label);
     }
     field.append(legend,copy,row); $('questions').append(field);
   }
@@ -169,10 +209,7 @@ async function loadVideo(video, id, signal) {
   });
 }
 async function openCase(nextIndex) {
-  if (ready && !saving && !pendingAnswer && cases[index]) {
-    const draft = choices();
-    if (Object.keys(draft).length) answerDrafts.set(cases[index].id,draft);
-  }
+  rememberChoices();
   if (nextIndex >= cases.length) {
     const missing = incompleteCases();
     if (missing.length) return returnToIncomplete(missing);
@@ -209,6 +246,7 @@ async function openCase(nextIndex) {
 async function start() {
   error(''); $('start').disabled = true; $('resume').disabled = true;
   answerDrafts.clear();
+  confirmedCount = 0;
   try {
     if (!previewId) {
       session = readSaved() || {studyId:C.STUDY_ID,sessionId:crypto.randomUUID(),responses:[]}; persist();
@@ -219,9 +257,11 @@ async function start() {
       if (local.length > saved.responses.length) session.responses = local;
       // Retry an answer that was saved locally before an interrupted upload.
       if (session.responses.length > saved.responses.length) session = await api('/study/save',{sessionId:session.sessionId,responses:session.responses});
+      confirmedCount = session.responses.length;
       persist();
     } else session = {studyId:C.STUDY_ID,sessionId:'preview',groupId:previewId,ordinal:0,responses:[],complete:false};
     cases = C.trials(manifest,session); group = manifest.groups.find(g => g.id === session.groupId);
+    restoreDrafts();
     await openCase(session.responses.length);
   } catch (err) {
     show('welcome'); $('welcome-status').textContent = 'Could not start or resume. Your saved progress is safe; please retry.'; error(err.message);
@@ -230,6 +270,7 @@ async function start() {
 async function submit(event) {
   event.preventDefault(); if (saving) return;
   if (!pendingAnswer && !ready) return;
+  if (savedExample()) { await openCase(index+1); return; }
   if (!pendingAnswer && !C.validChoices(choices(),group.kind)) {
     validationShown = true;
     updateValidation(true);
@@ -245,7 +286,11 @@ async function submit(event) {
   }
   try {
     persist(); updateAnswers(); $('save-status').textContent = previewId ? 'Preview only…' : 'Saving your answers…';
-    if (!previewId) { session = await api('/study/save',{sessionId:session.sessionId,responses:session.responses}); persist(); }
+    if (!previewId) {
+      session = await api('/study/save',{sessionId:session.sessionId,responses:session.responses});
+      confirmedCount = session.responses.length; persist();
+      answerDrafts.delete(cases[index].id); persistDrafts();
+    }
     pendingAnswer = null; saving = false; await openCase(index+1); window.scrollTo({top:0,behavior:'instant'});
   } catch (err) {
     saving = false; updateAnswers(); $('next').textContent = 'Retry saving →'; $('save-status').textContent = 'Not yet submitted. Your answers are kept in this browser. Retry to continue.'; error(err.message);
@@ -262,7 +307,11 @@ $('replay').addEventListener('click',() => { resumeOnVisible = false; pause(); s
 $('seek').addEventListener('input',() => { resumeOnVisible = false; pause(); seek(Number($('seek').value)/1000*duration); });
 $('retry').addEventListener('click',() => { void openCase(index); });
 $('answers').addEventListener('submit',submit);
-$('preview-case').addEventListener('change',() => { if (previewId && cases) void openCase(Number($('preview-case').value)); });
+$('preview-case').addEventListener('change',async () => {
+  if (!cases || saving || pendingAnswer) { $('preview-case').value = index; return; }
+  try { await openCase(Number($('preview-case').value)); }
+  catch { $('preview-case').value = index; error('Your draft could not be saved in this browser. Keep this page open and retry.'); }
+});
 // Background tabs cannot accrue viewing credit; resume only if playback was not manually paused.
 document.addEventListener('visibilitychange',() => {
   if (document.hidden) {
@@ -280,10 +329,8 @@ requestAnimationFrame(tick);
     const encoded = config.mediaKey.replaceAll('-','+').replaceAll('_','/');
     key = await crypto.subtle.importKey('raw',Uint8Array.from(atob(encoded),char => char.charCodeAt(0)),{name:'AES-GCM'},false,['decrypt']);
     if (previewId && !manifest.groups.some(g => g.id === previewId)) throw new Error('This preview link is invalid.');
-    if (previewId) {
-      $('preview-banner').hidden = false;
-      for (let i=0;i<25;i++) { const option = document.createElement('option'); option.value = i; option.textContent = `Example ${i+1}`; $('preview-case').append(option); }
-    } else { $('resume').hidden = !readSaved(); }
+    for (let i=0;i<25;i++) { const option = document.createElement('option'); option.value = i; option.textContent = `Example ${i+1}`; $('preview-case').append(option); }
+    if (!previewId) $('resume').hidden = !readSaved();
     $('welcome-status').textContent = '';
     $('start').disabled = false;
   } catch (err) { error(err.message); $('welcome-status').textContent = 'Please reload the page to try again.'; }

@@ -10,6 +10,11 @@ static publishing.
 Local previews default to group 1. The parameters `?preview=g1`, `?preview=g2`,
 and `?preview=g3` allow review of all three groups without submitting answers.
 
+Participants can use Jump to browse their assigned examples. Unsaved choices
+are kept as browser drafts across navigation and reloads. Saved answers can be
+reviewed without being changed. Every example must be completed and saved in
+order before the final submission can succeed.
+
 All media are hosted in this repository. `study-config.json` contains the public
 media decryption key, not a backend credential. Keep participant responses,
 backend credentials, and method mappings outside this repository.
