@@ -319,16 +319,16 @@
           ]
         },
         {
-          "id": "e5f6823cff17c4f2",
+          "id": "6315d2fcecf67896",
           "frames": 49,
           "fps": 8,
-          "input": "6594aa8b9440ec87f118623b",
-          "camera": "3e6dbb93cdc7c5e73b6c6d0d",
+          "input": "c21f97e3b723466f25c1e36a",
+          "camera": "f1639f9bdefee0b47d9a59f3",
           "candidates": [
-            "d0a78b65399dfe39a92530ad",
-            "c1398b90e633aa97254de98f",
-            "ec34e0973e9063f8bfdc4808",
-            "b17315823cd349deacd44074"
+            "45c0ecaec518a753a30d6da2",
+            "829e59202556619d2104585c",
+            "a50080a1077f8a27995d7a89",
+            "67eb1735ea037b38816f81b3"
           ]
         }
       ]
@@ -4071,6 +4071,61 @@
       "encodedFrames": 49,
       "width": 832,
       "height": 480
+    },
+    "c21f97e3b723466f25c1e36a": {
+      "src": "shared/c797f37b924ae456b8581bb9.mp4",
+      "mime": "video/mp4",
+      "sha256": "c797f37b924ae456b8581bb9401b7bdf5e40e3f1ea677d3dd1dcd76983fd16c6",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "f1639f9bdefee0b47d9a59f3": {
+      "src": "shared/dbdb2c5da923d7df81a82627.mp4",
+      "mime": "video/mp4",
+      "sha256": "dbdb2c5da923d7df81a826272c9d16166ccdf7f1037f048df4c708d56c148779",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "45c0ecaec518a753a30d6da2": {
+      "src": "shared/78e3f0fe5940da3d225ecdb9.mp4",
+      "mime": "video/mp4",
+      "sha256": "78e3f0fe5940da3d225ecdb9b2cc244aad8a13a3984b55651762377b33c25754",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "67eb1735ea037b38816f81b3": {
+      "src": "shared/0c48f7078b821eb2bc6b0a2a.mp4",
+      "mime": "video/mp4",
+      "sha256": "0c48f7078b821eb2bc6b0a2a19c93c72dc3a131d7861a7cc5783b30547cc6540",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "a50080a1077f8a27995d7a89": {
+      "src": "shared/482643a3ad64f0f00fe1ccc1.mp4",
+      "mime": "video/mp4",
+      "sha256": "482643a3ad64f0f00fe1ccc1a5305a731106ff1e75f626b63be3c40a17d7c36c",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "829e59202556619d2104585c": {
+      "src": "shared/470c364e18e1a9089ff1bdae.mp4",
+      "mime": "video/mp4",
+      "sha256": "470c364e18e1a9089ff1bdae260ad7c4e9267b874535d685e5262a4fd9a737dc",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
     }
-  }
+  },
+  "revision": "r2"
 }

@@ -21,7 +21,7 @@ function error(message) { $('global-error').textContent = message || ''; $('glob
 function persist() { if (!previewId) localStorage.setItem(STORAGE, JSON.stringify(session)); }
 function readSaved() { try { const s = JSON.parse(localStorage.getItem(STORAGE)); return s?.studyId === C.STUDY_ID ? s : null; } catch { return null; } }
 async function api(path, payload) {
-  const response = await fetch(SERVICE + path, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({studyId:C.STUDY_ID, ...payload}), signal:AbortSignal.timeout(20000)});
+  const response = await fetch(SERVICE + path, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({studyId:C.STUDY_ID, revision:manifest.revision || 'r1', ...payload}), signal:AbortSignal.timeout(20000)});
   const data = await response.json();
   if (!response.ok) throw new Error(data.error || 'Saving is temporarily unavailable. Please retry.');
   return data;
@@ -273,7 +273,7 @@ document.addEventListener('visibilitychange',() => {
 requestAnimationFrame(tick);
 (async () => {
   try {
-    const responses = await Promise.all([fetch(resourceURL('study.json?v=20260921-anonymous-ui')),fetch(resourceURL('study-config.json'))]);
+    const responses = await Promise.all([fetch(resourceURL('study.json?v=20260921-r2')),fetch(resourceURL('study-config.json'))]);
     if (responses.some(r => !r.ok)) throw new Error('The study could not load. Please reload this page.');
     const [inventory,config] = await Promise.all(responses.map(r => r.json()));
     manifest = C.validateManifest(inventory);

@@ -26,7 +26,9 @@
   function trials(manifest, assignment) {
     const group = manifest.groups.find(g => g.id === assignment.groupId);
     if (!group || !Number.isSafeInteger(assignment.ordinal) || assignment.ordinal < 0) throw new Error('Invalid assignment.');
-    return group.cases.map(c => { const offset = assignment.ordinal % c.candidates.length; return {...c, candidates:c.candidates.slice(offset).concat(c.candidates.slice(0, offset))}; });
+    const assigned = assignment.cases || group.cases;
+    validateManifest({...manifest, groups:manifest.groups.map(g => g.id === group.id ? {...g,cases:assigned} : g)});
+    return assigned.map(c => { const offset = assignment.ordinal % c.candidates.length; return {...c, candidates:c.candidates.slice(offset).concat(c.candidates.slice(0, offset))}; });
   }
   function questions(kind) { return kind === 'overall' ? ['overall'] : ['camera', 'quality', 'interaction']; }
   function validChoices(choices, kind) { const keys = questions(kind), allowed = kind === 'overall' ? ['a','b','tie'] : ['a','b','c','d']; return keys.length === Object.keys(choices).length && keys.every(k => allowed.includes(choices[k])); }
