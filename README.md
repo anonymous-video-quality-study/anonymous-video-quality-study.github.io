@@ -28,6 +28,9 @@ All media are hosted in this repository. `study-config.json` contains the public
 media decryption key, not a backend credential. Keep participant responses,
 backend credentials, and method mappings outside this repository.
 
-Plain video assets use progressive playback with synchronized buffering; no media
-re-encoding is applied. Transient service requests retry once with the same
-session and answers; saved drafts remain available after a connection failure.
+Videos are fully buffered before synchronized playback, and the next comparison
+is prefetched while the current one plays. Only the current and next comparisons
+are retained in memory. Retry preserves completed downloads, and slow downloads
+remain active while bytes continue arriving. Media are unchanged. Transient
+service requests retry once with the same session and answers; saved drafts
+remain available after a connection failure.

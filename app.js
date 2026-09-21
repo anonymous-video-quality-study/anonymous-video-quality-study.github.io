@@ -18,6 +18,50 @@ let buffering = false, playRequest = 0;
 let validationShown = false;
 let confirmedCount = 0;
 const answerDrafts = new Map();
+// Keep only the current and next comparison, including completed downloads when
+// retrying one failed file so the other files do not need to be downloaded again.
+const mediaCache = new Map();
+function mediaIds(item) { return item ? [item.input,item.camera,...item.candidates].filter(Boolean) : []; }
+function retainMedia(current, next) {
+  const keep = new Set([...mediaIds(current),...mediaIds(next)]);
+  for (const [id,entry] of mediaCache) if (!keep.has(id)) {
+    entry.controller.abort(); mediaCache.delete(id);
+  }
+}
+function loadAsset(id) {
+  if (mediaCache.has(id)) return mediaCache.get(id).promise;
+  const asset = manifest.assets[id], entry = {controller:new AbortController(),complete:false};
+  mediaCache.set(id,entry);
+  entry.promise = (async () => {
+    let timeout;
+    // Allow slow downloads to finish while bytes continue arriving.
+    const resetTimeout = () => { clearTimeout(timeout); timeout = setTimeout(() => entry.controller.abort(new DOMException('No download progress','TimeoutError')),45000); };
+    try {
+      resetTimeout();
+      const response = await fetch(resourceURL(asset.src),{signal:entry.controller.signal});
+      if (!response.ok) throw new Error('A video could not download. Please retry loading.');
+      const reader = response.body.getReader(), chunks = [];
+      while (true) {
+        const {done,value} = await reader.read();
+        if (done) break;
+        chunks.push(value); resetTimeout();
+      }
+      clearTimeout(timeout);
+      let blob = new Blob(chunks,{type:asset.mime});
+      if (asset.encrypted) {
+        const bytes = await blob.arrayBuffer();
+        const plain = await crypto.subtle.decrypt({name:'AES-GCM',iv:bytes.slice(0,12),additionalData:new TextEncoder().encode('interaction-study-20260917-v1')},key,bytes.slice(12));
+        blob = new Blob([plain],{type:asset.mime});
+      }
+      entry.complete = true; return blob;
+    } catch (err) {
+      if (mediaCache.get(id) === entry) mediaCache.delete(id);
+      if (err.name === 'TimeoutError') throw new Error('The video download stopped responding. Please retry loading; completed downloads are kept.');
+      throw err;
+    } finally { clearTimeout(timeout); }
+  })();
+  return entry.promise;
+}
 
 function show(id) { for (const name of ['welcome','study','done']) $(name).hidden = name !== id; $('preview-banner').hidden = id !== 'study'; }
 function error(message) { $('global-error').textContent = message || ''; $('global-error').hidden = !message; }
@@ -239,18 +283,9 @@ function figure(label, letter, note) {
 }
 async function loadVideo(video, id, signal) {
   const asset = manifest.assets[id];
-  let url = resourceURL(asset.src);
-  // Plain MP4/WebM can start from a byte range; encrypted legacy media needs
-  // the complete authenticated payload before it can be decoded safely.
-  if (asset.encrypted) {
-    const response = await fetch(url, {signal:AbortSignal.any([signal,AbortSignal.timeout(60000)])});
-    if (!response.ok) throw new Error('A video could not load. Please retry.');
-    let bytes = await response.arrayBuffer();
-    bytes = await crypto.subtle.decrypt({name:'AES-GCM',iv:bytes.slice(0,12),additionalData:new TextEncoder().encode('interaction-study-20260917-v1')},key,bytes.slice(12));
-    if (signal.aborted) throw new DOMException('Comparison changed', 'AbortError');
-    url = URL.createObjectURL(new Blob([bytes],{type:asset.mime})); urls.push(url);
-  }
+  const blob = await loadAsset(id);
   if (signal.aborted) throw new DOMException('Comparison changed', 'AbortError');
+  const url = URL.createObjectURL(blob); urls.push(url);
   video.addEventListener('waiting',() => { if (ready && playing && !buffering) void play(); },{signal});
   video.addEventListener('error',() => { if (ready) playbackFailure(); },{signal});
   await new Promise((resolve,reject) => {
@@ -271,6 +306,7 @@ async function openCase(nextIndex) {
   pause(); resumeOnVisible = false; const token = ++generation; controller?.abort(); controller = new AbortController();
   videos.forEach(v => { v.removeAttribute('src'); v.load(); }); urls.forEach(url => URL.revokeObjectURL(url)); urls = []; videos = [];
   index = nextIndex; ready = false; watched = 0; pendingAnswer = null; validationShown = false; openedAt = performance.now();
+  retainMedia(cases[index],cases[index+1]);
   if (index >= cases.length) return done();
   show('study'); $('study').dataset.kind = group.kind; $('study').dataset.pair = String(group.kind !== 'criteria'); const item = cases[index]; duration = item.frames / item.fps;
   $('case-title').textContent = `Example ${index+1}`; $('progress-text').textContent = `${index+1} of ${cases.length}`; $('progress').value = index;
@@ -291,6 +327,9 @@ async function openCase(nextIndex) {
     videos[videos.length-1].addEventListener('ended',finish);
     if (document.hidden) resumeOnVisible = true;
     else void play();
+    // Prefetch only after every current video is local, so it does not compete
+    // with current playback for network bandwidth.
+    void Promise.allSettled(mediaIds(cases[index+1]).map(loadAsset));
   } catch (err) {
     if (token !== generation) return;
     pause(); $('media-status').textContent = err.name === 'AbortError' ? 'Loading timed out. Please retry.' : err.message; $('retry').hidden = false;
