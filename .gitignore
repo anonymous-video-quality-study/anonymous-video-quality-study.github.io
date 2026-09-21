@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+.env
+.env.*
+node_modules/
+responses/
+answers/
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.zip

@@ -1,0 +1,4076 @@
+{
+  "schemaVersion": 2,
+  "studyId": "interaction-study-20260920-v2",
+  "groups": [
+    {
+      "id": "g1",
+      "kind": "criteria",
+      "cases": [
+        {
+          "id": "82dcece14bad4820",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "445511681b8ce5e1101d8432",
+          "camera": "c0ef4c95fbfb1ce43e03ee74",
+          "candidates": [
+            "b8211885787415de6e3d6460",
+            "7183e31e642d0cf69198e92e",
+            "b8ca732172ecb39c913bef9d",
+            "a5b3968d40af8e768f8c3215"
+          ]
+        },
+        {
+          "id": "bccc6615c8c95a21",
+          "frames": 42,
+          "fps": 8.0,
+          "input": "48f403a4444cfdd2b24aa3cc",
+          "camera": "4db2f5a13b2e296cdf9a6119",
+          "candidates": [
+            "18227d470900638d69de4de4",
+            "0fd1c03fe63a35f0bef88443",
+            "5773af31bea4013dcb0d917c",
+            "f4cfc22d34eeff33075a1a1c"
+          ]
+        },
+        {
+          "id": "0dc490c6d9ca3d76",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "253a73b4597c52029042a835",
+          "camera": "d25910fc636b6cde6adc0e3a",
+          "candidates": [
+            "c4f74b613d80ca1016ad9e28",
+            "3690deeef5b488885ab7303e",
+            "00b9b377a6a35343a9dc1c3a",
+            "b754fe73126398774bdeebef"
+          ]
+        },
+        {
+          "id": "938336de51258aa2",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "5ad8f1533db91a98dc95aabb",
+          "camera": "cb18bb80b3df31f77e797197",
+          "candidates": [
+            "d24bcadc9225a944b486c886",
+            "1a2bc5a7045e74f1887e6b60",
+            "192772ad1ff9736b7a396f58",
+            "160276a2a5fb3bd669d953aa"
+          ]
+        },
+        {
+          "id": "cef926e9d4da0f40",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "3fbd0a1277d6b47ff1de01dd",
+          "camera": "2f33246e9bde567045ee0f7d",
+          "candidates": [
+            "b784af11fd5a47f5b580f04c",
+            "e0648cdcc5e87e01064f01cb",
+            "935df8dfcf300a1d61ee3c4b",
+            "5ad01069080e4036f62d1150"
+          ]
+        },
+        {
+          "id": "57639d5885c32f5f",
+          "frames": 49,
+          "fps": 8,
+          "input": "9fb54e52f51c16846c22d8d9",
+          "camera": "a236f510344c6f4275837d97",
+          "candidates": [
+            "3ca0f15a5484107dca652a9d",
+            "f3dda7784d27256c5a0f8444",
+            "13cf34c32b1c19f9eae36a0b",
+            "93e7da61a9777c1805e29477"
+          ]
+        },
+        {
+          "id": "7fbc157c69253cb1",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "bb52c49c4160e3ba568acf15",
+          "camera": "16765a57fe032bf11cf2ef99",
+          "candidates": [
+            "4cc2c2dcf8ebb849ed5ebe98",
+            "329a631f4afbc97eef1b5ed6",
+            "1c1e3088dac6808cc12bd74c",
+            "cc74ce374210f8c909298534"
+          ]
+        },
+        {
+          "id": "a9de61b9b7bfef54",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "3b9b14b4949a62b793ba0738",
+          "camera": "8a42d04e8489dcd3acf2ae8a",
+          "candidates": [
+            "229965865d009589645d35f8",
+            "20968bed924e5da6689f1471",
+            "ad3ccf520028f8337d5ef475",
+            "ba07dbba0466da03cbce2156"
+          ]
+        },
+        {
+          "id": "d91eb5ef932ec835",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "c5c5f5bcaaab3f866e4dd8c0",
+          "camera": "9f00f6322fdc61bed71167c0",
+          "candidates": [
+            "739499b91d7f97b0d933e6f2",
+            "2e4ba967ee58fd655190547d",
+            "6139c8a31d60f59d8633269b",
+            "e3f60a1d575641b3458952b8"
+          ]
+        },
+        {
+          "id": "6b97cc58ba6ddc87",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "72f5438f618b1d4c04cae1ee",
+          "camera": "78687eeb75ebed9f6bb09c7a",
+          "candidates": [
+            "6db8e64e2e6a4ff255ec5a30",
+            "606d5910a489121d41025b5d",
+            "6caa619a1effe21a313d0c88",
+            "23242d71de5915d0790a8283"
+          ]
+        },
+        {
+          "id": "88f2ca9a04a12460",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "ed63b8b4dea99528b5f6ebfd",
+          "camera": "38eb5ddab14d41736818e1c3",
+          "candidates": [
+            "dd069382f8eda804cb473051",
+            "a19b3a02f66afb45377569bf",
+            "649e2f8231a5b2ac386c68f3",
+            "c2d889652d451a607399d056"
+          ]
+        },
+        {
+          "id": "286919debcb8a492",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "f38072269afdaeca8a39f599",
+          "camera": "dfd82be320800ef73bb7926e",
+          "candidates": [
+            "c1ef18a34eae7ed5e8cd1a4c",
+            "6425dccf472cf8c8bbe52c9d",
+            "c011698ef339de1e334b22c2",
+            "a8e8fa2a5d0797f82be83af3"
+          ]
+        },
+        {
+          "id": "ed08a1f788ca7a09",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "06f34e571e3f8eafcbf83b70",
+          "camera": "badda0ba7fa7e0f0f1894618",
+          "candidates": [
+            "c37a3984dedb382e8e9fa7c7",
+            "b5b16f9df8c9d62a93f809a2",
+            "62038b288fa1965d2773642b",
+            "e03e9aceb3e5e4729a187fd0"
+          ]
+        },
+        {
+          "id": "81f21f29dd296e50",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "ac596eb9f149c1618cd2f38f",
+          "camera": "5fc756bb3895becc993123cb",
+          "candidates": [
+            "c2abe2fc45ede665b819a6ab",
+            "8f1a376da2739f1d01d026d0",
+            "12ebe1c34f68c68dba1cab2a",
+            "1d6219ab583fc877deecfb3c"
+          ]
+        },
+        {
+          "id": "8a2b8617156eeb61",
+          "frames": 48,
+          "fps": 8.0,
+          "input": "3ffdaacaecffca9acc482e53",
+          "camera": "5b3b8a7bf837291ac32b1ea9",
+          "candidates": [
+            "cde0615f108601b3841ecfee",
+            "e688775b6dd26e168d876c72",
+            "5d697b628a0fe7209e7fdfee",
+            "6c7a98e045d5f8ac872d9262"
+          ]
+        },
+        {
+          "id": "eb61aeefb557731b",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "95be14ed07bf7ef51116b842",
+          "camera": "e5506f86c1cc026cc8f8392a",
+          "candidates": [
+            "f92117e1f8ae43a743c4187f",
+            "32c953bd7266d382f3ab929a",
+            "e80119c7d76b1fe5b613b3e2",
+            "f67517928e36160cd28a2e82"
+          ]
+        },
+        {
+          "id": "96157c196d30246d",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "7ff56fae94e968e26a683cf7",
+          "camera": "eb79452e5336f5a02141191c",
+          "candidates": [
+            "40b3eff851b56ad71895a68d",
+            "0e1e661947caefae14707f3f",
+            "f67cd8043920ec5c3f33f076",
+            "d5532bd3e7be61373c274aa0"
+          ]
+        },
+        {
+          "id": "7aac6d33b10cc1f6",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "626af89da929eb3ab8f6b6e1",
+          "camera": "7e9fe28a2802dd7075205a7a",
+          "candidates": [
+            "24b563eaad7cf3f02044565f",
+            "7e22ac88753cd9c93f17bff2",
+            "416ab7d1be37bf15e9c7861b",
+            "546c418623c5fc2a9f18544c"
+          ]
+        },
+        {
+          "id": "af56cf116e775d3e",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "d0d0acde9fedc93368021bc4",
+          "camera": "3466050f792134c598c7afac",
+          "candidates": [
+            "b07a11c6404b4e1c1b8be2c1",
+            "dca82a0312e44397c8b478fb",
+            "35e90fe02eea5b9a240853e8",
+            "adb8c596ea3a0de08e603863"
+          ]
+        },
+        {
+          "id": "38b44683c1d225ba",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "c71f0f3875d10443b7dc2e64",
+          "camera": "1ea117b9461e0187faf76f2d",
+          "candidates": [
+            "1c76d393147c7aa25d922f2b",
+            "ce2423646847a97d38ea4073",
+            "d680e657c928f41184bde7ca",
+            "0c73227c55e849dbc312d182"
+          ]
+        },
+        {
+          "id": "9b72742fdaeaeeed",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "622038d16cd72cac91e7726a",
+          "camera": "c67f92ef4c1e3b720f40cb3d",
+          "candidates": [
+            "d0151e83c584bbcaa557869e",
+            "6ccc7c9ec9a379032cfdee34",
+            "81d679b97152ee9fdeeac13e",
+            "2a4d294a86d1394d358357e8"
+          ]
+        },
+        {
+          "id": "2093de79fc3890aa",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "f2a43c089ddb4bf69d6a4f8e",
+          "camera": "927589a40d5a7b70c5b2b4ec",
+          "candidates": [
+            "90af11376c9e5d12e18e1fb2",
+            "36608dd7070988fc21e2cfd2",
+            "e52f083a7351d3b381c7f6d1",
+            "374bc934bafa70178c7de26a"
+          ]
+        },
+        {
+          "id": "e8f6857941ed2e90",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "5474de96fad65e588098071e",
+          "camera": "b71e1e4e0e1f1813510b0f58",
+          "candidates": [
+            "bd233f2a5c77ea9c15b68325",
+            "7c80b683e464842dff4f7b0a",
+            "0a579174b042b92e20d2166f",
+            "2f740a2147bcb5285c5fbbda"
+          ]
+        },
+        {
+          "id": "6ad490bb4ed8cd01",
+          "frames": 49,
+          "fps": 8,
+          "input": "aef0cca657df21eaa3733b92",
+          "camera": "742e449083381e45e2cebf43",
+          "candidates": [
+            "caa8e1e328a3c69c9c1cea38",
+            "3a676cb0c1e5afe8972baf09",
+            "eddb9c9e5c8d32084d222961",
+            "3786e1fe7a6267f42b891eb0"
+          ]
+        },
+        {
+          "id": "e5f6823cff17c4f2",
+          "frames": 49,
+          "fps": 8,
+          "input": "6594aa8b9440ec87f118623b",
+          "camera": "3e6dbb93cdc7c5e73b6c6d0d",
+          "candidates": [
+            "d0a78b65399dfe39a92530ad",
+            "c1398b90e633aa97254de98f",
+            "ec34e0973e9063f8bfdc4808",
+            "b17315823cd349deacd44074"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g2",
+      "kind": "criteria",
+      "cases": [
+        {
+          "id": "f92267b100250a8e",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "276ceb9e6e23d5876bf7b00d",
+          "camera": "a04b9ce79a004dde5a6f87eb",
+          "candidates": [
+            "75e76d11dd2ecbff85c76c13",
+            "ca42dcdb6da90e39fda13334",
+            "be288a3421b763b12e572d3d",
+            "02a15ac6ad7f82243ef77fb3"
+          ]
+        },
+        {
+          "id": "bc2b5a2de25e7d11",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "91f02cadf50331811404cf41",
+          "camera": "221d2365f4daf11c4d27e3bf",
+          "candidates": [
+            "48cf72786bff47e1bc53bb5a",
+            "48ad5293f7f31daf8dc0e829",
+            "3951efb023175a606aa94bf6",
+            "a227dc8c6e990e4d2db8f737"
+          ]
+        },
+        {
+          "id": "298def09fe6be634",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "d66584dff3886db7824dd4f2",
+          "camera": "bf26bef6245e5439a14e5e20",
+          "candidates": [
+            "c0353bd0e59bc108c8d755e9",
+            "0a494a6138e050fecf983c6e",
+            "3534a319bd1e14bc4943c7d0",
+            "a1cdf2ce67732e27232b4b62"
+          ]
+        },
+        {
+          "id": "703d7c7161addef0",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "882e2c9212f24fb196773bd3",
+          "camera": "5553ab5d4d6ffc739985e311",
+          "candidates": [
+            "7b51c32717e0881a464d2cc7",
+            "6c275fc9b11c61d0ea413404",
+            "676ec64db21f7f174e931fba",
+            "6c100c32ba18b80155066133"
+          ]
+        },
+        {
+          "id": "9d933a96a5a9b24b",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "c0423dafee29fa22f1e6b001",
+          "camera": "40c61d9a93f3dc4e1c6bbdb6",
+          "candidates": [
+            "544fe22ebb1be8ef5310f384",
+            "3afc54a80a5709d6429c913c",
+            "817522b0653c359d90d0ad17",
+            "3e9bb9267e1072c33c0a4abc"
+          ]
+        },
+        {
+          "id": "29771bbfd7d1d78c",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "9279b422e00588e9a4b29350",
+          "camera": "1c68b2e8eb8d4e0ccbcd2985",
+          "candidates": [
+            "2979cf45760fa42108d9ce85",
+            "41feb9c43d5783907bb2b394",
+            "23363f9694e3b241f40f2801",
+            "26437b8f51770b80e544f616"
+          ]
+        },
+        {
+          "id": "5aa0f22bd6a97311",
+          "frames": 41,
+          "fps": 8.0,
+          "input": "93891e7a29e15fbb6f3c72d0",
+          "camera": "b29461288dc352339e054345",
+          "candidates": [
+            "65262d69e828b5648ef8eb34",
+            "364c74d869f90e8582fd3999",
+            "67115146986c9ee0a80bfc14",
+            "0f548a502e0b46ba78fc50ae"
+          ]
+        },
+        {
+          "id": "27cf6dc7749436ee",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "f173620dbbae5d11a1f151b4",
+          "camera": "9e34fda4ab2dbcbe5b656d0a",
+          "candidates": [
+            "414b8ec7debf7b48d06c68e6",
+            "7dfac2711e6aed5ca277f908",
+            "ebc37f13b369020f2a0b950e",
+            "31e9a9ff74b9cd7b6b3f9b0b"
+          ]
+        },
+        {
+          "id": "3bbcc20294872279",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "0beeccc46183178e85858f05",
+          "camera": "8095433980ee16f91da44b8d",
+          "candidates": [
+            "f895b2a6dad807a112af8d9a",
+            "b4d6d7cfd682490bfb320e40",
+            "b025d76be736bf86a2418223",
+            "5f59f6f46216aaa853bf59be"
+          ]
+        },
+        {
+          "id": "4c342b943a4c9cab",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "ed2e1106bca5422b69c740e5",
+          "camera": "f9721bdc8d052da77ddd918b",
+          "candidates": [
+            "e0c11ca58874838d8e56a333",
+            "1e4a4e350aea6993bfa3b735",
+            "1b033ab8c05d828dc50fe088",
+            "4bd5cef88a1f0de535cfdef5"
+          ]
+        },
+        {
+          "id": "95f349c2f17d0700",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "efa238de392dcd04ae361fac",
+          "camera": "1f5d819e78ade81025ca6a3d",
+          "candidates": [
+            "f2f1086e19744a009caafe78",
+            "decfba1fd5d1435b39cfb435",
+            "94825d5f4af5967193f5fe23",
+            "30717f4b0b647b2a88794b26"
+          ]
+        },
+        {
+          "id": "6326f0445c783799",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "cb3acfcfaf9f3ed4e3aad930",
+          "camera": "314f05865cbb9d51c152800c",
+          "candidates": [
+            "8b6c628196e0d7420102a696",
+            "c1a3a1c9fc14f4740655cddd",
+            "d8e80c663f227f58d8f5eddb",
+            "e51b6645c0b2fd53f19985e0"
+          ]
+        },
+        {
+          "id": "def4b4cc5c9f1d63",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "45f7107a89fce2bbf5963dae",
+          "camera": "8db9f422f93a79a925706ace",
+          "candidates": [
+            "dad6130e9cde3416358e3c0c",
+            "48b3f70636ca1923e7592183",
+            "dda6bd0a62e2e69b904ecf81",
+            "c2a64590de9c97e9c3ad1ff9"
+          ]
+        },
+        {
+          "id": "49b7ea32c2e20fdd",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "332ef05dae6e39a103562f09",
+          "camera": "d103a9f8f42068dae495ef1f",
+          "candidates": [
+            "61ef98c0fa220f0739194bfb",
+            "cab3ca8ca4f6836fecda8c9e",
+            "365549cd3c6da14fc786b9a4",
+            "d0f8ad208a60b61618dbbea4"
+          ]
+        },
+        {
+          "id": "b4ad1aaf5b26f0ec",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "923e78ddfd39813b34ce6bed",
+          "camera": "04ffb3414aa28e459fb8f49d",
+          "candidates": [
+            "14ddbf3b56456fdf95bb5a68",
+            "07b00ca190394db4b83ba6d0",
+            "d4c12c94297710a5d186388c",
+            "492689922e389c99a4265668"
+          ]
+        },
+        {
+          "id": "421f0d67f2af0e6b",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "9290d09c0ea7e913ae279674",
+          "camera": "95b86442bb448162bcbafc22",
+          "candidates": [
+            "f3a7a88d104157593947ce0f",
+            "b20a63db5466a0cde1865635",
+            "b194d090a75378a3e8b7078f",
+            "26f2d72afda2f7f1ba0329fb"
+          ]
+        },
+        {
+          "id": "84fc395d249d31c6",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "f3f3e055007505501877d006",
+          "camera": "639a8d4209d159d79b404b2a",
+          "candidates": [
+            "9c97ef473fcf5465a2b0efba",
+            "ed022640d3593ba6d76c4da7",
+            "c2889c0183b6812c9608edd5",
+            "c7ac896480883aed88dd73a0"
+          ]
+        },
+        {
+          "id": "7622ce03d5e095ca",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "511db5e697da2b0da9a8dc3c",
+          "camera": "f52c453e9dd8ad836e35e58e",
+          "candidates": [
+            "fe13f49166af78eb7d132479",
+            "59b05dce2b9992adf35be6f9",
+            "f265b8c7a28e212714d295a2",
+            "517469efcab9b62b07aef40b"
+          ]
+        },
+        {
+          "id": "18f9da4821cf6290",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "146518123642e14a699e2321",
+          "camera": "29241a9420f0a5c5cb540d02",
+          "candidates": [
+            "929c6213b1045984a78dd50a",
+            "4c2476ef63ec97c27d6310aa",
+            "c636ce6ce91ed13b7c9ae577",
+            "97c7951e1b01be17d50b6942"
+          ]
+        },
+        {
+          "id": "3de6f7aa285d0be6",
+          "frames": 49,
+          "fps": 8,
+          "input": "4c8d9273e9e108a3a0a62888",
+          "camera": "b27d15cd6a94a337ceaab201",
+          "candidates": [
+            "3badf4afe24d61eb84667f24",
+            "3b80308ce0dfecc16ff7cce1",
+            "a43215ae3148bf244c09de69",
+            "b11990a42e9b373587fb7618"
+          ]
+        },
+        {
+          "id": "3eb30b9b583e568f",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "966f5ba12f8ad12a0c00c2c9",
+          "camera": "858a3137ceb6e0c4a3284122",
+          "candidates": [
+            "6f67653862dd4af6bf53b040",
+            "d4702504a8c1d4ab95ac85c4",
+            "c0efb3671f1caba619ac2106",
+            "443884564d0038daf6fdff0c"
+          ]
+        },
+        {
+          "id": "872b4f09f1938aee",
+          "frames": 49,
+          "fps": 12,
+          "input": "99261fbb666dbf8adfe16a46",
+          "camera": "11d27fb4232908ad329adbef",
+          "candidates": [
+            "ffc4d6d4c47e5194a13f4ecf",
+            "1bec154933b6cc7f55087778",
+            "ec5e03e260a95fbd0827089d",
+            "332cd153f40edcba411ccd23"
+          ]
+        },
+        {
+          "id": "18d3ab287aaad7f6",
+          "frames": 49,
+          "fps": 8,
+          "input": "c3c2817ad32a89358d956f08",
+          "camera": "9c9b24a9e34d37321d22793b",
+          "candidates": [
+            "f26db6f2d182cab2d552f7f8",
+            "ff0c363658f017cee374a691",
+            "a271ea028f785fc501f7a698",
+            "a3efb3e5ff9de0b1048b1c8d"
+          ]
+        },
+        {
+          "id": "51bc309fa9df7e63",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "414f51c3e97bafe08f8f3308",
+          "camera": "c45926c0b04c5cad89cecae6",
+          "candidates": [
+            "41fde3fb1b285c078db781e4",
+            "0f0a6bdf175cec2b2e94b817",
+            "3be8a7a589679f1bf0957017",
+            "e32d7d0c683ff5352d6320b1"
+          ]
+        },
+        {
+          "id": "280c0fcfba61f6a5",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "8b1073b9fb15fef99bc3f5ed",
+          "camera": "4e0b871f5afa084973574dc0",
+          "candidates": [
+            "4e772872891801a5313571a6",
+            "032ad14318ee60ef5296c3e9",
+            "3f9497e1d0443eb86d81b5bf",
+            "dab71aa0413ba132631c3893"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g3",
+      "kind": "overall",
+      "cases": [
+        {
+          "id": "d1f095678544e01a",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "07f14593e49c25549216fbdb",
+          "camera": "d033fef0f93d1e50243a4414",
+          "candidates": [
+            "3b70aa36903e3bf2fa144a9a",
+            "ea3140623990c6121622cf18"
+          ]
+        },
+        {
+          "id": "4550f844133bb604",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "0c72c94e05edccd5bc1f5d11",
+          "camera": "18f347f795283d2f4ed6528a",
+          "candidates": [
+            "936e8728ca5a8ab3a1633a98",
+            "0cb903af8b6c85670fa59fcc"
+          ]
+        },
+        {
+          "id": "60d4c998901de132",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "0da06a79698d731a5ff15f04",
+          "camera": "379b361e713bcd53363c5214",
+          "candidates": [
+            "82a4d350a8202e10a7902d69",
+            "b9a2c7f5bd1b1ae33e03b34f"
+          ]
+        },
+        {
+          "id": "ae9d1f04d24739cb",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "6bd50641a86845a947e7257f",
+          "camera": "58f0b802ecb8c3b5ab940e18",
+          "candidates": [
+            "e22d897ba96a1b0869221be0",
+            "7858d3b44f5660e07b5fbb21"
+          ]
+        },
+        {
+          "id": "223dd550792fecbf",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "d2548d56f8e0e1422f4e6f34",
+          "camera": "20318fa1e500aac000aaa8fa",
+          "candidates": [
+            "d9bd71eadebecf7ad1dc9ffd",
+            "58c4d2a9ab640a3318e63c67"
+          ]
+        },
+        {
+          "id": "e370b1f84477df70",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "a4c08ec075f4658bbba36db9",
+          "camera": "e8c3bc79e11b47f6af8bfb58",
+          "candidates": [
+            "d57c88b1bdcd89e89a1ba785",
+            "673146da03eae60591e37c66"
+          ]
+        },
+        {
+          "id": "b028292e9c6c3f2f",
+          "frames": 41,
+          "fps": 8.0,
+          "input": "a65e4a3f5abccb1833577088",
+          "camera": "7cd3a0da02c02fe26ab56718",
+          "candidates": [
+            "fc9e39592323ca4016d9a13e",
+            "5653f3a6fa4e9127ed422d66"
+          ]
+        },
+        {
+          "id": "c80cf73e971d7703",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "8965bd743b116a28c081d0b2",
+          "camera": "55393242a1420391267ef6c5",
+          "candidates": [
+            "70fa8bfb48b95cbc2717ab42",
+            "9cc90ee1bca4719799a1ba11"
+          ]
+        },
+        {
+          "id": "a81e403032ec586c",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "999a4ec33aa56d4b182cb3e9",
+          "camera": "6981c79266711d275303f5e8",
+          "candidates": [
+            "a5b91d3bd7e9ec94708837d9",
+            "759614da121b8769fad0a09f"
+          ]
+        },
+        {
+          "id": "b907ccac7e78f193",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "8cb9075be1b1afefe9cf576f",
+          "camera": "61fbedb73fe1614df521c848",
+          "candidates": [
+            "3bed65177c2e9ed4d19e85fc",
+            "015a3604ceb9892f733ca7d7"
+          ]
+        },
+        {
+          "id": "112d770487fa3ecd",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "6c7feb25295668e4c03cd094",
+          "camera": "12e4bfc3a962b111caa7dd19",
+          "candidates": [
+            "d55b2ca889c8d0aea4dc034b",
+            "4978e7ad7b8d39c7f96b4320"
+          ]
+        },
+        {
+          "id": "edde7b721851da3c",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "957b0a4beb0b63a533aea84c",
+          "camera": "f756c3d34a8c0a76e3d66df8",
+          "candidates": [
+            "73560156b0b88d65ecdb2d63",
+            "b7d2abceace445ed295e1d6b"
+          ]
+        },
+        {
+          "id": "4469c288b4664167",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "aca1966db3c5aa7cba639463",
+          "camera": "476125b10317d68d2b555bf2",
+          "candidates": [
+            "740a1efb51c7fd86f3090c77",
+            "358db4f114f3b439e58c24cf"
+          ]
+        },
+        {
+          "id": "78b30999e7305c5d",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "56e7dbd64d93be37752af269",
+          "camera": "51acd4c9988a82760b9002c4",
+          "candidates": [
+            "f3aa97e4cfbd8d2434321c8c",
+            "0936ad35a497c7627287cee2"
+          ]
+        },
+        {
+          "id": "b6e3027eccfd6152",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "d83423c7e8059a15daca41bd",
+          "camera": "69e50f2186c3b925f122b6f6",
+          "candidates": [
+            "7f6cf864d15bd92401bf22b7",
+            "5bcf78b61d5ae6e6944796fb"
+          ]
+        },
+        {
+          "id": "6ed754abeb20ce2b",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "9b17f2798d3c82c57199672c",
+          "camera": "0457ef3ab233284c96705e59",
+          "candidates": [
+            "7fda6ffd3140a056a9673ae0",
+            "292bb2355b555262337387b1"
+          ]
+        },
+        {
+          "id": "e431f53f1b4c6347",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "70de1ee41d5ab115248e39d1",
+          "camera": "55c95313299d79dc33a143d9",
+          "candidates": [
+            "a49252b49bcd93410f700ca1",
+            "21a54a7224a4b3742e831f98"
+          ]
+        },
+        {
+          "id": "4fad372f191a6d40",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "5dbc92ca9f6620480043edde",
+          "camera": "5412e874a04f38b3ae6a016d",
+          "candidates": [
+            "0c2611d9b39275f6abfae3df",
+            "cf324b58840c0b0b804fd0de"
+          ]
+        },
+        {
+          "id": "dad38da018f41795",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "5d12cf7fcda609f439448b0d",
+          "camera": "b8560a34a7ab00af12651c2c",
+          "candidates": [
+            "ca60fe970f0b71e815d37df2",
+            "99bd2f2eb7d6a5b8a0f879ba"
+          ]
+        },
+        {
+          "id": "fd25e21199bb67c7",
+          "frames": 49,
+          "fps": 8,
+          "input": "801f67f781690d62d9af2ff6",
+          "camera": "b27d15cd6a94a337ceaab201",
+          "candidates": [
+            "09684c21cd8f86364d1ec5eb",
+            "c57a57a42ebb88d96b3b3be2"
+          ]
+        },
+        {
+          "id": "0923c7be108d74a5",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "820dfe3e90f0e4041da4b2bb",
+          "camera": "5915f26d8069d7b5be51be58",
+          "candidates": [
+            "ddb03a92d11a81bc1937837b",
+            "299ca2ed920be4ef3a54458a"
+          ]
+        },
+        {
+          "id": "1dea1d8c533a50e0",
+          "frames": 49,
+          "fps": 12,
+          "input": "99261fbb666dbf8adfe16a46",
+          "camera": "11d27fb4232908ad329adbef",
+          "candidates": [
+            "72ed59b5e760f7207c1253a0",
+            "038ec7fcbd1ffe6880711271"
+          ]
+        },
+        {
+          "id": "878d0de00a760479",
+          "frames": 49,
+          "fps": 8,
+          "input": "b9374da7c707ac97deb722d0",
+          "camera": "9c9b24a9e34d37321d22793b",
+          "candidates": [
+            "ff0c363658f017cee374a691",
+            "612c512eb3ee3b69b846de99"
+          ]
+        },
+        {
+          "id": "e706c04db229d2a4",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "05ea42c0f0f6b4290687d198",
+          "camera": "0b13900dcdff6bcca2a2e578",
+          "candidates": [
+            "c13a9556ea98a8dab4f2ccb9",
+            "416032e3151da410998ed4f2"
+          ]
+        },
+        {
+          "id": "108b8992d51a4914",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "070e35d4d63997d4f99a1654",
+          "camera": "09270bde9b853f1d9e15e605",
+          "candidates": [
+            "044c57907ed4f9d21596907c",
+            "65b9507b6ac5ead2054a4a56"
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": {
+    "445511681b8ce5e1101d8432": {
+      "src": "media/d63d80260a9c527b67bca37e.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "b8ca732172ecb39c913bef9d": {
+      "src": "media/091be1ebcfa43ab838c72068.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "a5b3968d40af8e768f8c3215": {
+      "src": "media/eff484dfea0157b4e5ba03c6.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "7183e31e642d0cf69198e92e": {
+      "src": "media/d5756b1b48e9cc7fc50c98c0.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "b8211885787415de6e3d6460": {
+      "src": "media/95b9e53195d7c5fa10766240.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c0ef4c95fbfb1ce43e03ee74": {
+      "src": "shared/816b19224b9989bb5510c1c1.mp4",
+      "mime": "video/mp4",
+      "sha256": "816b19224b9989bb5510c1c16c5b5412adf51b005c44f0c74aa1ed0a063d9232",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "48f403a4444cfdd2b24aa3cc": {
+      "src": "media/41d64d1b273636a9037c60c0.bin",
+      "mime": "video/webm",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 42
+    },
+    "f4cfc22d34eeff33075a1a1c": {
+      "src": "media/4831104788685e21b8e310c9.bin",
+      "mime": "video/webm",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 42
+    },
+    "5773af31bea4013dcb0d917c": {
+      "src": "media/ff0b1cd0a69bd3e7ec0324aa.bin",
+      "mime": "video/webm",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 42
+    },
+    "18227d470900638d69de4de4": {
+      "src": "media/91f6c034c8685b8cdd3c0204.bin",
+      "mime": "video/webm",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 42
+    },
+    "0fd1c03fe63a35f0bef88443": {
+      "src": "media/7af6e7a5a1bc2d37d35e5491.bin",
+      "mime": "video/webm",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 42
+    },
+    "4db2f5a13b2e296cdf9a6119": {
+      "src": "shared/4e4a9b5cb0f658d5330170be.mp4",
+      "mime": "video/mp4",
+      "sha256": "4e4a9b5cb0f658d5330170bec4539b50f10cfa5562570b2bb01a5d881adbbbff",
+      "encodedFps": 8.0,
+      "encodedFrames": 42,
+      "width": 832,
+      "height": 480
+    },
+    "253a73b4597c52029042a835": {
+      "src": "media/8b45ca0f7708b248e3ab211c.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "b754fe73126398774bdeebef": {
+      "src": "media/2d886a1e565bd21eff93926c.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "3690deeef5b488885ab7303e": {
+      "src": "media/f070792a20e70ca32573f9c3.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "00b9b377a6a35343a9dc1c3a": {
+      "src": "media/75c3f513d7f1112869acc26a.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c4f74b613d80ca1016ad9e28": {
+      "src": "media/613b320ab51294f394fb50a9.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "d25910fc636b6cde6adc0e3a": {
+      "src": "shared/ce992c617f4d11e6fbfe8ed8.mp4",
+      "mime": "video/mp4",
+      "sha256": "ce992c617f4d11e6fbfe8ed81bc6dbe8fbc4642fec5bfd2f7cae053a7c7867ec",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "5ad8f1533db91a98dc95aabb": {
+      "src": "media/8a1d821e508d085b000843f3.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "160276a2a5fb3bd669d953aa": {
+      "src": "media/32f33238db72094fc0fb2184.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "d24bcadc9225a944b486c886": {
+      "src": "media/2c280d8ed63480d1faeaa2a8.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "1a2bc5a7045e74f1887e6b60": {
+      "src": "media/f9d2926aa3651bd1f94426ce.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "192772ad1ff9736b7a396f58": {
+      "src": "media/94c56c8b61c0fa85ec7eb5b8.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "cb18bb80b3df31f77e797197": {
+      "src": "shared/6d705eaee2ba89c8d536fd93.mp4",
+      "mime": "video/mp4",
+      "sha256": "6d705eaee2ba89c8d536fd933d722076ee3082389a8a13a4e122e78220e98968",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "3fbd0a1277d6b47ff1de01dd": {
+      "src": "media/1c013a9519e37818750f6ea5.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "b784af11fd5a47f5b580f04c": {
+      "src": "media/4835d912d93f47d8b6247fc0.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "935df8dfcf300a1d61ee3c4b": {
+      "src": "media/758183fe4d7f9aa290fbd9b2.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "e0648cdcc5e87e01064f01cb": {
+      "src": "media/c6e0553d00e0b8323ade9c8c.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "5ad01069080e4036f62d1150": {
+      "src": "media/f713f648758c99a272f76d43.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "2f33246e9bde567045ee0f7d": {
+      "src": "shared/6c93a9eaca0ec24968116c55.mp4",
+      "mime": "video/mp4",
+      "sha256": "6c93a9eaca0ec24968116c551ae28967dc74a2418c4612320f4b3551e97962ce",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "9fb54e52f51c16846c22d8d9": {
+      "src": "shared/1a958a6d1d19dcf14d5383d2.mp4",
+      "mime": "video/mp4",
+      "sha256": "1a958a6d1d19dcf14d5383d2ca8c52620dd321fb89778bb992047bd7e2d0c0d9",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "13cf34c32b1c19f9eae36a0b": {
+      "src": "shared/731af5fd88e65a428b289ae2.mp4",
+      "mime": "video/mp4",
+      "sha256": "731af5fd88e65a428b289ae2ce4c9aeda78f5b5d3cb4f31f21d137d99103e71d",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "3ca0f15a5484107dca652a9d": {
+      "src": "shared/f3cef653b6547016be0e8fb5.mp4",
+      "mime": "video/mp4",
+      "sha256": "f3cef653b6547016be0e8fb5e42801f64e5ca4b075fce4c86603d93f1687b4aa",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "f3dda7784d27256c5a0f8444": {
+      "src": "shared/a5b904609ac3cfeffdd4fefd.mp4",
+      "mime": "video/mp4",
+      "sha256": "a5b904609ac3cfeffdd4fefd45ed8c84a61f5d10b35a04fab93f199505ebd6bf",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "93e7da61a9777c1805e29477": {
+      "src": "shared/f98025c4b3b9be852efad97f.mp4",
+      "mime": "video/mp4",
+      "sha256": "f98025c4b3b9be852efad97f9e0da9180046b2290147027dbb2981e7ea20e9b7",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "a236f510344c6f4275837d97": {
+      "src": "shared/719f4792e90bf48641f33cb8.mp4",
+      "mime": "video/mp4",
+      "sha256": "719f4792e90bf48641f33cb8a429958e119f3e11737b22c5333479bb6312e544",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "bb52c49c4160e3ba568acf15": {
+      "src": "media/07083e572c753d351a5856c6.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "1c1e3088dac6808cc12bd74c": {
+      "src": "media/40d1ac4c0debb87a029f2cc9.bin",
+      "mime": "video/webm",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "4cc2c2dcf8ebb849ed5ebe98": {
+      "src": "media/2b53861654735672965b93dc.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "329a631f4afbc97eef1b5ed6": {
+      "src": "media/9318da9501abdc2141494e59.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "cc74ce374210f8c909298534": {
+      "src": "media/2b368eb306a4f37d6efda5fb.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "16765a57fe032bf11cf2ef99": {
+      "src": "shared/b125f29652084d49f9f97383.mp4",
+      "mime": "video/mp4",
+      "sha256": "b125f29652084d49f9f97383066b822c71b610da46d10d49b18ae1ff4c5d18bf",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "3b9b14b4949a62b793ba0738": {
+      "src": "media/7faf547da65d6e417a4b33a2.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "ba07dbba0466da03cbce2156": {
+      "src": "media/930e8db92733e72a8e382045.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "20968bed924e5da6689f1471": {
+      "src": "media/ba06788de11d26ec06935a3a.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "229965865d009589645d35f8": {
+      "src": "media/04c5b038cbcaabfdd8f9929c.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "ad3ccf520028f8337d5ef475": {
+      "src": "media/cd7761d2c9a886f035a2f5c7.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "8a42d04e8489dcd3acf2ae8a": {
+      "src": "shared/b018e6c323f9984834c47035.mp4",
+      "mime": "video/mp4",
+      "sha256": "b018e6c323f9984834c47035b34e7cd148c4295715ce169d2c0dcbb369464345",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "c5c5f5bcaaab3f866e4dd8c0": {
+      "src": "media/29e7737f7be61c07225225a0.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "739499b91d7f97b0d933e6f2": {
+      "src": "media/f81c19d9f3ac6b820431c976.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "6139c8a31d60f59d8633269b": {
+      "src": "media/2925ca48a4877dc32c6d53a7.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "e3f60a1d575641b3458952b8": {
+      "src": "media/8be3a2e5048b22f12ace4a56.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "2e4ba967ee58fd655190547d": {
+      "src": "media/9a5b004acd4506ced6ecc2ab.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "9f00f6322fdc61bed71167c0": {
+      "src": "shared/270e55d8eabdcd5ab423ee8d.mp4",
+      "mime": "video/mp4",
+      "sha256": "270e55d8eabdcd5ab423ee8d68a121e1e59376b15a5a9c98b2b6044da47ffbcd",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "72f5438f618b1d4c04cae1ee": {
+      "src": "media/2f40261d229ad355ff8889db.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "606d5910a489121d41025b5d": {
+      "src": "media/83c51411ee62f5325952db49.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "6db8e64e2e6a4ff255ec5a30": {
+      "src": "media/9168587f38694ed5c4e8560f.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "6caa619a1effe21a313d0c88": {
+      "src": "media/bd78ba0d1f27aa3ea96f003c.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "23242d71de5915d0790a8283": {
+      "src": "media/af3cd0049b641f02c84e86f5.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "78687eeb75ebed9f6bb09c7a": {
+      "src": "shared/0d1babc4249b341432611f2c.mp4",
+      "mime": "video/mp4",
+      "sha256": "0d1babc4249b341432611f2cba81ebfc98e06ff691892e7eee0ee14273888a49",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "ed63b8b4dea99528b5f6ebfd": {
+      "src": "media/0c3784d3462815f36f117233.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "649e2f8231a5b2ac386c68f3": {
+      "src": "media/b715085e42dfd1c9ca6d9d1f.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c2d889652d451a607399d056": {
+      "src": "media/826acb07246e4e5f832aa06d.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "a19b3a02f66afb45377569bf": {
+      "src": "media/4374da87843ffedbc30d0b8d.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "dd069382f8eda804cb473051": {
+      "src": "media/13e3abeaf636b9089709231a.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "38eb5ddab14d41736818e1c3": {
+      "src": "shared/56ad0ca4cfa0c82ba50e698d.mp4",
+      "mime": "video/mp4",
+      "sha256": "56ad0ca4cfa0c82ba50e698d952574887a371f889535a6439a63b1d00308d61a",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "f38072269afdaeca8a39f599": {
+      "src": "media/a21b643f2bdbb5edbd4e6790.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "a8e8fa2a5d0797f82be83af3": {
+      "src": "media/7df11ca1226af0a4bc955363.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c1ef18a34eae7ed5e8cd1a4c": {
+      "src": "media/a5e1b4ee6418e330e6bcd649.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "6425dccf472cf8c8bbe52c9d": {
+      "src": "media/ed370b702db3760269a682ca.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c011698ef339de1e334b22c2": {
+      "src": "media/cb10b991d4fc8233467e2f28.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "dfd82be320800ef73bb7926e": {
+      "src": "shared/f0759d065fb8a30d6202205b.mp4",
+      "mime": "video/mp4",
+      "sha256": "f0759d065fb8a30d6202205b0679d4db4807a84042b009c358bac1ffdfce840f",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "06f34e571e3f8eafcbf83b70": {
+      "src": "media/7fd9613063c2db60da61808f.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "62038b288fa1965d2773642b": {
+      "src": "media/94f52dec13d51bf011143026.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c37a3984dedb382e8e9fa7c7": {
+      "src": "media/2ac25b640e7779f3dcd59072.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "b5b16f9df8c9d62a93f809a2": {
+      "src": "media/c537692a5c9f9cc4a1fd47ef.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "e03e9aceb3e5e4729a187fd0": {
+      "src": "media/8f69a9ad97627eac7ffe567f.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "badda0ba7fa7e0f0f1894618": {
+      "src": "shared/b5b17ea1ebcdc6377ec0e4b1.mp4",
+      "mime": "video/mp4",
+      "sha256": "b5b17ea1ebcdc6377ec0e4b134f11e438386753229f40cdb1b523286695b13ba",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "ac596eb9f149c1618cd2f38f": {
+      "src": "media/aa581105671f5ea87c961a7f.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "12ebe1c34f68c68dba1cab2a": {
+      "src": "media/f816a94c60d4400fa2b9a361.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "1d6219ab583fc877deecfb3c": {
+      "src": "media/a19c735b0b571ef62d76a13d.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "8f1a376da2739f1d01d026d0": {
+      "src": "media/02af1de3f1f100131b4a2c5e.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c2abe2fc45ede665b819a6ab": {
+      "src": "media/4ef5de4bd715b47531dd6bc8.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "5fc756bb3895becc993123cb": {
+      "src": "shared/2b0c9cb4b4d7503a8805dec8.mp4",
+      "mime": "video/mp4",
+      "sha256": "2b0c9cb4b4d7503a8805dec86c41c2cc50a8ff2dc54d67a8cb08035cad8714a8",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "3ffdaacaecffca9acc482e53": {
+      "src": "shared/9e6b79d36bfb7d2696fa2148.mp4",
+      "mime": "video/mp4",
+      "sha256": "9e6b79d36bfb7d2696fa21487a33da6bd17db80affaea5d1cb67323db48c2db7",
+      "encodedFps": 8.0,
+      "encodedFrames": 48,
+      "width": 832,
+      "height": 480
+    },
+    "cde0615f108601b3841ecfee": {
+      "src": "shared/3574da59df067c42f98590a7.mp4",
+      "mime": "video/mp4",
+      "sha256": "3574da59df067c42f98590a7b5e5723e0ac72a1a9e61c1196712df1cd6458e96",
+      "encodedFps": 8.0,
+      "encodedFrames": 48,
+      "width": 832,
+      "height": 480
+    },
+    "5d697b628a0fe7209e7fdfee": {
+      "src": "shared/3f20f865101fdb5c5c407598.mp4",
+      "mime": "video/mp4",
+      "sha256": "3f20f865101fdb5c5c407598e01578766451330b0844916d3531aca71acab93a",
+      "encodedFps": 8.0,
+      "encodedFrames": 48,
+      "width": 832,
+      "height": 480
+    },
+    "e688775b6dd26e168d876c72": {
+      "src": "shared/f84126f81df9ca5c7352f36c.mp4",
+      "mime": "video/mp4",
+      "sha256": "f84126f81df9ca5c7352f36cc995307371a51bb3730f99d12daab5bba5d157a8",
+      "encodedFps": 8.0,
+      "encodedFrames": 48,
+      "width": 832,
+      "height": 480
+    },
+    "6c7a98e045d5f8ac872d9262": {
+      "src": "shared/70ee25f19846687da7db64cc.mp4",
+      "mime": "video/mp4",
+      "sha256": "70ee25f19846687da7db64cce35831ea63ed71b2f5ea206f218f4bc218267f94",
+      "encodedFps": 8.0,
+      "encodedFrames": 48,
+      "width": 832,
+      "height": 480
+    },
+    "5b3b8a7bf837291ac32b1ea9": {
+      "src": "shared/fafd7b48fa8ba4cf1e8fdf32.mp4",
+      "mime": "video/mp4",
+      "sha256": "fafd7b48fa8ba4cf1e8fdf32175d55012fb4e87e6b7a7573cd562e9a802923d0",
+      "encodedFps": 8.0,
+      "encodedFrames": 48,
+      "width": 832,
+      "height": 480
+    },
+    "95be14ed07bf7ef51116b842": {
+      "src": "media/593736e1fd809bc06576d5be.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "32c953bd7266d382f3ab929a": {
+      "src": "media/532484584078f352cfdafbc0.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "f92117e1f8ae43a743c4187f": {
+      "src": "media/3f7d6a05f0171aae14e00c53.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "e80119c7d76b1fe5b613b3e2": {
+      "src": "media/336f5f0ff6bce4132a3da748.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "f67517928e36160cd28a2e82": {
+      "src": "media/21aa3fd9e2d9f231c7f53f65.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "e5506f86c1cc026cc8f8392a": {
+      "src": "shared/67147d4f191d2619e05c93b7.mp4",
+      "mime": "video/mp4",
+      "sha256": "67147d4f191d2619e05c93b7002e819ec87a432463f9bfa219117f78b054bc80",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "7ff56fae94e968e26a683cf7": {
+      "src": "media/6143d721743c3c3c3e29c4e2.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "0e1e661947caefae14707f3f": {
+      "src": "media/5eb543d027810e8be8f7db62.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "d5532bd3e7be61373c274aa0": {
+      "src": "media/5b1b37f2297f9bac1ca1f44d.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "40b3eff851b56ad71895a68d": {
+      "src": "media/3711321fe1f46e38dbbf229d.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "f67cd8043920ec5c3f33f076": {
+      "src": "media/c76dead50cbb4f3ea2ddf815.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "eb79452e5336f5a02141191c": {
+      "src": "shared/b6c88e6f296224d0326da7eb.mp4",
+      "mime": "video/mp4",
+      "sha256": "b6c88e6f296224d0326da7eb3329acc522b73154fd35bae8f976242b00daa2dc",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "626af89da929eb3ab8f6b6e1": {
+      "src": "media/e9c75ff1377c62b346d80419.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "7e22ac88753cd9c93f17bff2": {
+      "src": "media/f51f17eb8f90d2baab3d261a.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "546c418623c5fc2a9f18544c": {
+      "src": "media/739f359fc56dab9f9b93f907.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "416ab7d1be37bf15e9c7861b": {
+      "src": "media/271abfddbfb18405f4bfbe13.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "24b563eaad7cf3f02044565f": {
+      "src": "media/13693e9046a9dd3fd7b6dc06.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "7e9fe28a2802dd7075205a7a": {
+      "src": "shared/a79c05bc6cc08a0843110c86.mp4",
+      "mime": "video/mp4",
+      "sha256": "a79c05bc6cc08a0843110c86c56622279ee23d649715d5ee047b6f422c1c53e6",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "d0d0acde9fedc93368021bc4": {
+      "src": "media/a3f843370d962a72df5c919d.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "b07a11c6404b4e1c1b8be2c1": {
+      "src": "media/332da05f088ac632dc35b95a.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "35e90fe02eea5b9a240853e8": {
+      "src": "media/8cc42751cc24a58836c0b341.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "dca82a0312e44397c8b478fb": {
+      "src": "media/b283891e15fc54a207ca0ad3.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "adb8c596ea3a0de08e603863": {
+      "src": "media/635749e2500da2c6c524f4f6.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "3466050f792134c598c7afac": {
+      "src": "shared/7455784c44217df8134b76b9.mp4",
+      "mime": "video/mp4",
+      "sha256": "7455784c44217df8134b76b92352008aebe1c0b21343032acea417b1a54d5c61",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "c71f0f3875d10443b7dc2e64": {
+      "src": "media/6fa1370ab079f08fa7e03f70.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "d680e657c928f41184bde7ca": {
+      "src": "media/2f36ad5d15560d504a9559a2.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "0c73227c55e849dbc312d182": {
+      "src": "media/b645364c7de45ed080d62871.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "ce2423646847a97d38ea4073": {
+      "src": "media/4821a367b9950ef8f1ce1e5c.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "1c76d393147c7aa25d922f2b": {
+      "src": "media/4f0296181e6f704c5d6b3f2a.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "1ea117b9461e0187faf76f2d": {
+      "src": "shared/66c9ea5028a9f605f24ecf46.mp4",
+      "mime": "video/mp4",
+      "sha256": "66c9ea5028a9f605f24ecf46d62f3efd2fbce01e7325c300b8f32965bcac2269",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "622038d16cd72cac91e7726a": {
+      "src": "media/7b4cbf426207e49f6f006a6f.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "6ccc7c9ec9a379032cfdee34": {
+      "src": "media/dff8910d449e03509ba4133c.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "81d679b97152ee9fdeeac13e": {
+      "src": "media/6b3e3850de663f43910723a9.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "d0151e83c584bbcaa557869e": {
+      "src": "media/dda44fa8b6da68bef7e3d158.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "2a4d294a86d1394d358357e8": {
+      "src": "media/9d8673afa2348d8b1f498fd0.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c67f92ef4c1e3b720f40cb3d": {
+      "src": "shared/15fe5927e961c5b3dd251d70.mp4",
+      "mime": "video/mp4",
+      "sha256": "15fe5927e961c5b3dd251d7034632d28f86a08e95a7c3e7031b9f50e8e9ad2d5",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "f2a43c089ddb4bf69d6a4f8e": {
+      "src": "media/4b127803c21730e7ef2fcb4b.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "90af11376c9e5d12e18e1fb2": {
+      "src": "media/3124841fc42176234437790f.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "36608dd7070988fc21e2cfd2": {
+      "src": "media/02f82de3cb04225354862031.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "374bc934bafa70178c7de26a": {
+      "src": "media/98ce427f5504dbe97227967a.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "e52f083a7351d3b381c7f6d1": {
+      "src": "media/398ab96e70345dd0ee0993b0.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "927589a40d5a7b70c5b2b4ec": {
+      "src": "shared/84cd28855c4774d562209e79.mp4",
+      "mime": "video/mp4",
+      "sha256": "84cd28855c4774d562209e7966ff5852b6591afa9536ab1f6ae3614872be22d2",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "5474de96fad65e588098071e": {
+      "src": "media/9dafd1e1e73c903b75e14c4f.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "0a579174b042b92e20d2166f": {
+      "src": "media/646c2ad23056b7ce53d9b614.bin",
+      "mime": "video/webm",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "bd233f2a5c77ea9c15b68325": {
+      "src": "media/fe524165193af190b23f8acd.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "2f740a2147bcb5285c5fbbda": {
+      "src": "media/5b0e5ce3cfb788552fcbae6b.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "7c80b683e464842dff4f7b0a": {
+      "src": "media/edaa64d0501fe9ba982b250d.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "b71e1e4e0e1f1813510b0f58": {
+      "src": "shared/20f46ce2c2662c66c7ab5aa9.mp4",
+      "mime": "video/mp4",
+      "sha256": "20f46ce2c2662c66c7ab5aa961b46ad53e62fe6c3b18897576c303747e3184f7",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "aef0cca657df21eaa3733b92": {
+      "src": "shared/9acc02430157dfe31013dd92.mp4",
+      "mime": "video/mp4",
+      "sha256": "9acc02430157dfe31013dd9203ece662bfddb7c83823b7fe2898244438543991",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "3786e1fe7a6267f42b891eb0": {
+      "src": "shared/334c5ed7ee7f46fef11e38a4.mp4",
+      "mime": "video/mp4",
+      "sha256": "334c5ed7ee7f46fef11e38a4f73d3af409e1b6a61175e53abf1024a3a1696546",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "eddb9c9e5c8d32084d222961": {
+      "src": "shared/1e21d0a4466589eacd9f164e.mp4",
+      "mime": "video/mp4",
+      "sha256": "1e21d0a4466589eacd9f164eadecda2f91f05265bd4077a321041ec30ae557f8",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "caa8e1e328a3c69c9c1cea38": {
+      "src": "shared/966a333c618b4ccaa2aaa4e9.mp4",
+      "mime": "video/mp4",
+      "sha256": "966a333c618b4ccaa2aaa4e98e5f9fc19f2179d121a2d3b222336109fece4e37",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "3a676cb0c1e5afe8972baf09": {
+      "src": "shared/b115c2388364a87e43ffa53a.mp4",
+      "mime": "video/mp4",
+      "sha256": "b115c2388364a87e43ffa53a0d5ef494c78d42b5fc41b9be4e729ed52c1f0626",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "742e449083381e45e2cebf43": {
+      "src": "shared/d95b9221ad9af4da5cebdb63.mp4",
+      "mime": "video/mp4",
+      "sha256": "d95b9221ad9af4da5cebdb633a8ae82085cbef8271988abf38579b405f1a4ad6",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "6594aa8b9440ec87f118623b": {
+      "src": "shared/b8b2977f61041951a6f28396.mp4",
+      "mime": "video/mp4",
+      "sha256": "b8b2977f61041951a6f2839617b825f890417ae4064e2b1dbddb344fadcf63cb",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "ec34e0973e9063f8bfdc4808": {
+      "src": "shared/62eb338a762d20c7e6481f3c.mp4",
+      "mime": "video/mp4",
+      "sha256": "62eb338a762d20c7e6481f3cf3e1a9fce10f3c5014d1c835e7657324ca03acc2",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "d0a78b65399dfe39a92530ad": {
+      "src": "shared/83278363646181c9f4cbbc2f.mp4",
+      "mime": "video/mp4",
+      "sha256": "83278363646181c9f4cbbc2fe029673a4e7e2cf662f852f3151a8894afd866e9",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "c1398b90e633aa97254de98f": {
+      "src": "shared/cae7d74403f59e3b7e07b4ae.mp4",
+      "mime": "video/mp4",
+      "sha256": "cae7d74403f59e3b7e07b4aee73c5103d2b17d652fdb76fd050d081fe59faaa6",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "b17315823cd349deacd44074": {
+      "src": "shared/a7cb5e7f821b7bd13dd3fa59.mp4",
+      "mime": "video/mp4",
+      "sha256": "a7cb5e7f821b7bd13dd3fa59247d923097b29098e640bba9c6e38cec7576b65a",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "3e6dbb93cdc7c5e73b6c6d0d": {
+      "src": "shared/185edd8a5d9acba8634a0a72.mp4",
+      "mime": "video/mp4",
+      "sha256": "185edd8a5d9acba8634a0a724e9ab4a4cc6153710034f72d7f19929e1617eed9",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "276ceb9e6e23d5876bf7b00d": {
+      "src": "media/b6827ce97e8c9fefbcc41f97.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "ca42dcdb6da90e39fda13334": {
+      "src": "media/0e9cd3523955d4b3111b228c.bin",
+      "mime": "video/webm",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "be288a3421b763b12e572d3d": {
+      "src": "media/ab41a3b6a7d6f261e61ebd34.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "75e76d11dd2ecbff85c76c13": {
+      "src": "media/a1dfc86f8ff5e5116b150a2a.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "02a15ac6ad7f82243ef77fb3": {
+      "src": "media/9a10291a957ef9b73a1f2589.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "a04b9ce79a004dde5a6f87eb": {
+      "src": "shared/7d4a2c0c1e31214f5d3421a0.mp4",
+      "mime": "video/mp4",
+      "sha256": "7d4a2c0c1e31214f5d3421a005f1eec52e57fcbb47f5b25d7ffc5f03c5c2e058",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "91f02cadf50331811404cf41": {
+      "src": "media/d74ed3fe209d0202b831c099.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "48ad5293f7f31daf8dc0e829": {
+      "src": "media/2cc4c289d6efc725fdfa92f6.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "3951efb023175a606aa94bf6": {
+      "src": "media/01a9ece639339cf05116baea.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "48cf72786bff47e1bc53bb5a": {
+      "src": "media/754dadf0972cb441b5498c36.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "a227dc8c6e990e4d2db8f737": {
+      "src": "media/6a37f61c3538a22335cc2da2.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "221d2365f4daf11c4d27e3bf": {
+      "src": "shared/5d07742e23893f5fc738ec31.mp4",
+      "mime": "video/mp4",
+      "sha256": "5d07742e23893f5fc738ec3170dfc88e373b6530c2e28b6a0a42c42d9bafd249",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "d66584dff3886db7824dd4f2": {
+      "src": "media/e80df89e74dfae0093c72117.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "0a494a6138e050fecf983c6e": {
+      "src": "media/2b5ed873bc6a5e13291ede95.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c0353bd0e59bc108c8d755e9": {
+      "src": "media/7e5a71d22ba094f0a2e5a678.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "3534a319bd1e14bc4943c7d0": {
+      "src": "media/0ee2462994546bedcee70bf0.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "a1cdf2ce67732e27232b4b62": {
+      "src": "media/439dfaab9d9b9fff871bbb27.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "bf26bef6245e5439a14e5e20": {
+      "src": "shared/4a8d2d5281ddeff731011b8f.mp4",
+      "mime": "video/mp4",
+      "sha256": "4a8d2d5281ddeff731011b8f899530c3098e7c854ced9ea382b3a42018b3d3d8",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "882e2c9212f24fb196773bd3": {
+      "src": "media/4274c68581608cb7ded84954.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "676ec64db21f7f174e931fba": {
+      "src": "media/a4ee0a36889a4b576a75f052.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "7b51c32717e0881a464d2cc7": {
+      "src": "media/d30d913336083ef3e611d725.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "6c275fc9b11c61d0ea413404": {
+      "src": "media/799f20b1d67fe7e040e314bc.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "6c100c32ba18b80155066133": {
+      "src": "media/a46ca932bc23bf6ee37f5af8.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "5553ab5d4d6ffc739985e311": {
+      "src": "shared/4ea550829e6dd09e659dfb4f.mp4",
+      "mime": "video/mp4",
+      "sha256": "4ea550829e6dd09e659dfb4f2c1f54deb8e891719800e943db809ff46e4a4d6d",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "c0423dafee29fa22f1e6b001": {
+      "src": "media/68b1256e8b2db8e629f50b8c.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "544fe22ebb1be8ef5310f384": {
+      "src": "media/9aef6016717279f682cb9a8e.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "3afc54a80a5709d6429c913c": {
+      "src": "media/d789e53afe796bba5ace7621.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "3e9bb9267e1072c33c0a4abc": {
+      "src": "media/0dd716a4770a40d2efbf84aa.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "817522b0653c359d90d0ad17": {
+      "src": "media/7085ccb4a6a2469622667935.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "40c61d9a93f3dc4e1c6bbdb6": {
+      "src": "shared/47a58c83fe82e258b0e5abba.mp4",
+      "mime": "video/mp4",
+      "sha256": "47a58c83fe82e258b0e5abbac93d4a38769c1be017f49f407c49638306176def",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "9279b422e00588e9a4b29350": {
+      "src": "media/da85dde437c2e625e86e517b.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "26437b8f51770b80e544f616": {
+      "src": "media/3254af2c8fa9b2d47624e2d0.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "41feb9c43d5783907bb2b394": {
+      "src": "media/5448932e29bd3111b861f89d.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "23363f9694e3b241f40f2801": {
+      "src": "media/88a7c08ac3aef5d934ba1172.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "2979cf45760fa42108d9ce85": {
+      "src": "media/5724eeac588794a1eabcf7b8.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "1c68b2e8eb8d4e0ccbcd2985": {
+      "src": "shared/a6ac56f5ff678cc41e442825.mp4",
+      "mime": "video/mp4",
+      "sha256": "a6ac56f5ff678cc41e4428255adff042340c40ccd0c9ab1c86ff691bbb3f1f21",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "93891e7a29e15fbb6f3c72d0": {
+      "src": "media/c2af6b1bf8c90ac014b2d15b.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 41
+    },
+    "65262d69e828b5648ef8eb34": {
+      "src": "media/861e1a990ee84bdd935d6115.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 41
+    },
+    "0f548a502e0b46ba78fc50ae": {
+      "src": "media/448b48b8b3e1fba5ef4704d5.bin",
+      "mime": "video/webm",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 41
+    },
+    "67115146986c9ee0a80bfc14": {
+      "src": "media/0b45232327ab3e02d84c8e18.bin",
+      "mime": "video/webm",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 41
+    },
+    "364c74d869f90e8582fd3999": {
+      "src": "media/0c5a83d55045ce17bc186de3.bin",
+      "mime": "video/webm",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 41
+    },
+    "b29461288dc352339e054345": {
+      "src": "shared/c2cd9ea8686205251693ec3d.mp4",
+      "mime": "video/mp4",
+      "sha256": "c2cd9ea8686205251693ec3df287266d283c1b163395c5be1301a2c3f667a759",
+      "encodedFps": 8.0,
+      "encodedFrames": 41,
+      "width": 832,
+      "height": 480
+    },
+    "f173620dbbae5d11a1f151b4": {
+      "src": "media/c752bc6d08ab391109561a9b.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "7dfac2711e6aed5ca277f908": {
+      "src": "media/0f4772868982e50b2cf822b3.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "31e9a9ff74b9cd7b6b3f9b0b": {
+      "src": "media/28dc80d17da5db7f31049c98.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "414b8ec7debf7b48d06c68e6": {
+      "src": "media/28bf2f9da829885b5a8d08c5.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "ebc37f13b369020f2a0b950e": {
+      "src": "media/8cbb2548379b7928acc0d967.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "9e34fda4ab2dbcbe5b656d0a": {
+      "src": "shared/3ea168d9acc5369d2204005b.mp4",
+      "mime": "video/mp4",
+      "sha256": "3ea168d9acc5369d2204005bc9eecb09048713645204581477d5d614f3e4dcc5",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "0beeccc46183178e85858f05": {
+      "src": "media/0d400d0d3bf5681a2da4f52b.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "b4d6d7cfd682490bfb320e40": {
+      "src": "media/4b7d55254b9b7ba9399c02f9.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "f895b2a6dad807a112af8d9a": {
+      "src": "media/afea534580ce895d88ca5336.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "5f59f6f46216aaa853bf59be": {
+      "src": "media/79497a4fd6cc141334325e00.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "b025d76be736bf86a2418223": {
+      "src": "media/90e4eac5440534901e268674.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "8095433980ee16f91da44b8d": {
+      "src": "shared/71ba35345d9e3757f3bb4d4d.mp4",
+      "mime": "video/mp4",
+      "sha256": "71ba35345d9e3757f3bb4d4d8bf3115c4a72c822320ffdb64b5d56f1c6082fde",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "ed2e1106bca5422b69c740e5": {
+      "src": "media/05ac2996373fda6d560c4290.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "e0c11ca58874838d8e56a333": {
+      "src": "media/903777613ae041e3f9d6b462.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "1e4a4e350aea6993bfa3b735": {
+      "src": "media/2574fed8be1623952ec4afe0.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "1b033ab8c05d828dc50fe088": {
+      "src": "media/2f587ac3739a0dd55ed69c3f.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "4bd5cef88a1f0de535cfdef5": {
+      "src": "media/00863d665192c94b74e541e0.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "f9721bdc8d052da77ddd918b": {
+      "src": "shared/e88c9634782f261ccd1d786b.mp4",
+      "mime": "video/mp4",
+      "sha256": "e88c9634782f261ccd1d786b5e3839cd7ea3e7b2166a4ed3005d8daa8bd43b8a",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "efa238de392dcd04ae361fac": {
+      "src": "media/f7b89df9d517cf333ab7e39a.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "decfba1fd5d1435b39cfb435": {
+      "src": "media/f5f68d57e32ac60a8ec30c3c.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "30717f4b0b647b2a88794b26": {
+      "src": "media/a493eac103b2f9751f52b628.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "94825d5f4af5967193f5fe23": {
+      "src": "media/5f5344b0d49a9057a3502b5c.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "f2f1086e19744a009caafe78": {
+      "src": "media/111d16a7b575638340b72411.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "1f5d819e78ade81025ca6a3d": {
+      "src": "shared/8dfdc892d8b724fa6c5f8b3f.mp4",
+      "mime": "video/mp4",
+      "sha256": "8dfdc892d8b724fa6c5f8b3fce1fe9cac87928e6e785f9f13f984654e77b3d4b",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "cb3acfcfaf9f3ed4e3aad930": {
+      "src": "media/d0fcbe362f6cd5e3620a3740.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "d8e80c663f227f58d8f5eddb": {
+      "src": "media/78c934a6e1155f952d1444c4.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "8b6c628196e0d7420102a696": {
+      "src": "media/c228e94bd69a11a055559d00.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "e51b6645c0b2fd53f19985e0": {
+      "src": "media/1df138655c6427be3ad25cd2.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c1a3a1c9fc14f4740655cddd": {
+      "src": "media/3aac9ba3d278a55da8ad1f09.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "314f05865cbb9d51c152800c": {
+      "src": "shared/8f38dee1aff1aad015efc50e.mp4",
+      "mime": "video/mp4",
+      "sha256": "8f38dee1aff1aad015efc50ecfc67f7154e91d057a7d18b4e88f62585257fdfc",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "45f7107a89fce2bbf5963dae": {
+      "src": "media/6702daa4784ca217591fc773.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "dad6130e9cde3416358e3c0c": {
+      "src": "media/99b2237f3c7f084e11c73f6f.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "48b3f70636ca1923e7592183": {
+      "src": "media/33f28f1a2596a5251ba1908f.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c2a64590de9c97e9c3ad1ff9": {
+      "src": "media/3d4af46f2e3a35f7d8b0918c.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "dda6bd0a62e2e69b904ecf81": {
+      "src": "media/c4b1deff1bdf815d945da14c.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "8db9f422f93a79a925706ace": {
+      "src": "shared/4e3d45ef5e5af0e5873fabe2.mp4",
+      "mime": "video/mp4",
+      "sha256": "4e3d45ef5e5af0e5873fabe281df9751d1d01a7a1b204f4ddffe5e7ed2713574",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "332ef05dae6e39a103562f09": {
+      "src": "media/869671e3a29e3070d9c4e453.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "365549cd3c6da14fc786b9a4": {
+      "src": "media/8f0b6d98a604fd1e62660b71.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "d0f8ad208a60b61618dbbea4": {
+      "src": "media/002f2ff5a5d149c8678907f9.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "cab3ca8ca4f6836fecda8c9e": {
+      "src": "media/ef395c86a26305a4748ce792.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "61ef98c0fa220f0739194bfb": {
+      "src": "media/b0f06e5a143a12f878844a3a.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "d103a9f8f42068dae495ef1f": {
+      "src": "shared/a38039bb0e0f8cdcaf667b98.mp4",
+      "mime": "video/mp4",
+      "sha256": "a38039bb0e0f8cdcaf667b98cef86c234d404b47d4fd08f8ac067ede82577102",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "923e78ddfd39813b34ce6bed": {
+      "src": "media/4a7b0926c7d405fd00fea2ac.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "492689922e389c99a4265668": {
+      "src": "media/edb530b2ac67c3b9008cad02.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "14ddbf3b56456fdf95bb5a68": {
+      "src": "media/de1f8ee95f7baee54a9d7fd2.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "d4c12c94297710a5d186388c": {
+      "src": "media/812e3e866d270e27756a11bc.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "07b00ca190394db4b83ba6d0": {
+      "src": "media/882559014f81c4c000ed07c1.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "04ffb3414aa28e459fb8f49d": {
+      "src": "shared/98d2b9806548b3db496869b7.mp4",
+      "mime": "video/mp4",
+      "sha256": "98d2b9806548b3db496869b78b98e8e14534da7748c7ffac6db33c0f72fa982a",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "9290d09c0ea7e913ae279674": {
+      "src": "media/36e903e26aab4dade75f3b47.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "26f2d72afda2f7f1ba0329fb": {
+      "src": "media/1a907cbe1e36a41df4c18632.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "b194d090a75378a3e8b7078f": {
+      "src": "media/6b462b24b6e1f38d3d6739ea.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "f3a7a88d104157593947ce0f": {
+      "src": "media/fdad5ef89586d4ac399617a3.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "b20a63db5466a0cde1865635": {
+      "src": "media/bf5f694c2b55b08d1fd030ab.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "95b86442bb448162bcbafc22": {
+      "src": "shared/4b9c234844905bf818841314.mp4",
+      "mime": "video/mp4",
+      "sha256": "4b9c234844905bf818841314226c9181bb8c6fffe47de86815fc284dbde908c8",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "f3f3e055007505501877d006": {
+      "src": "media/40bfc999a1766054b87670e2.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c7ac896480883aed88dd73a0": {
+      "src": "media/f422fab9edb91e3ad3563bd0.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "ed022640d3593ba6d76c4da7": {
+      "src": "media/c595aa96bf247b4fcd047020.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c2889c0183b6812c9608edd5": {
+      "src": "media/681adf9d8f363b551670565e.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "9c97ef473fcf5465a2b0efba": {
+      "src": "media/4cef909858934d2bd791500c.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "639a8d4209d159d79b404b2a": {
+      "src": "shared/72655ccde31fdc4d175bb3d7.mp4",
+      "mime": "video/mp4",
+      "sha256": "72655ccde31fdc4d175bb3d7243c7b54879e6c68f54510e8676396f74237bb5e",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "511db5e697da2b0da9a8dc3c": {
+      "src": "media/68d004ee2a559d823aeb5456.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "fe13f49166af78eb7d132479": {
+      "src": "media/759e30e7a2583cdea4d2088e.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "59b05dce2b9992adf35be6f9": {
+      "src": "media/7a1d93b2397b0b364a82fc3e.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "517469efcab9b62b07aef40b": {
+      "src": "media/2025b26499c04bd9f82801de.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "f265b8c7a28e212714d295a2": {
+      "src": "media/1ab13777be39507c90189999.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "f52c453e9dd8ad836e35e58e": {
+      "src": "shared/2d32c050e1040afe13639bd3.mp4",
+      "mime": "video/mp4",
+      "sha256": "2d32c050e1040afe13639bd3b66bd0091f432239a225b27e1003523cffd89ef2",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "146518123642e14a699e2321": {
+      "src": "media/2dbaf968b5854fb71acbda85.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "929c6213b1045984a78dd50a": {
+      "src": "media/dfda909fa815a9c97666ea7c.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c636ce6ce91ed13b7c9ae577": {
+      "src": "media/6187d16ef3b62505a53096b8.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "4c2476ef63ec97c27d6310aa": {
+      "src": "media/e9e543a5693f5a47683d31e1.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "97c7951e1b01be17d50b6942": {
+      "src": "media/2028f43cb93c7ea80e0402e4.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "29241a9420f0a5c5cb540d02": {
+      "src": "shared/b3320afc4a6c29f54a0ad1c4.mp4",
+      "mime": "video/mp4",
+      "sha256": "b3320afc4a6c29f54a0ad1c41e470378e8635ca65a7796054c81d920c3f5d132",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "4c8d9273e9e108a3a0a62888": {
+      "src": "shared/39b5cfc52ba446999f41321c.mp4",
+      "mime": "video/mp4",
+      "sha256": "39b5cfc52ba446999f41321c69b22c5354682fec7a9c415a0e302e107bf046f8",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "3badf4afe24d61eb84667f24": {
+      "src": "shared/27964c781dead1cb014f1458.mp4",
+      "mime": "video/mp4",
+      "sha256": "27964c781dead1cb014f14586b935ae6e9d841730c84f26320fdcc0b9cc01756",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "b11990a42e9b373587fb7618": {
+      "src": "shared/b8db0cb2321e13ae3e140c5a.mp4",
+      "mime": "video/mp4",
+      "sha256": "b8db0cb2321e13ae3e140c5a75daa64a965e23479a38f9795d9cbe6b09fab558",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "a43215ae3148bf244c09de69": {
+      "src": "shared/515af772976f068a82f48cb6.mp4",
+      "mime": "video/mp4",
+      "sha256": "515af772976f068a82f48cb6a470a4cd93ff84bc9855ca4f16a466701134df8a",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "3b80308ce0dfecc16ff7cce1": {
+      "src": "shared/91fa4471232e3a0ab13db519.mp4",
+      "mime": "video/mp4",
+      "sha256": "91fa4471232e3a0ab13db5190cf05044236a793eefa5c694e2b5d64e63d29056",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "b27d15cd6a94a337ceaab201": {
+      "src": "shared/27a227398bd571b996610f68.mp4",
+      "mime": "video/mp4",
+      "sha256": "27a227398bd571b996610f680c6cfea5bf6493eb770e08ff3aea8386e3744e22",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "966f5ba12f8ad12a0c00c2c9": {
+      "src": "media/3bab052afa6c590b660f4915.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "d4702504a8c1d4ab95ac85c4": {
+      "src": "media/34e6aa03ee1b214fd18c7925.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c0efb3671f1caba619ac2106": {
+      "src": "media/4da0b787f7ebb428ba48b0b1.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "6f67653862dd4af6bf53b040": {
+      "src": "media/e9ae135dacb2ab4a0018b197.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "443884564d0038daf6fdff0c": {
+      "src": "media/3afa71fdb27ef14452caa1e7.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "858a3137ceb6e0c4a3284122": {
+      "src": "shared/55eefe31a69b6998819b62e2.mp4",
+      "mime": "video/mp4",
+      "sha256": "55eefe31a69b6998819b62e2c5fc8049cf0f196639578d0e400bc07e6b6879b6",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "99261fbb666dbf8adfe16a46": {
+      "src": "shared/f39c83597123f30569422430.mp4",
+      "mime": "video/mp4",
+      "sha256": "f39c83597123f30569422430a43fa441e5868ead2fcf7978deeb7474c0330ac6",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "ffc4d6d4c47e5194a13f4ecf": {
+      "src": "shared/4d054086e127cc3a325ea757.mp4",
+      "mime": "video/mp4",
+      "sha256": "4d054086e127cc3a325ea757065d7fdb66bca67ffe1697cdf5a6a0812d804a02",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "ec5e03e260a95fbd0827089d": {
+      "src": "shared/cc4f9999ddaf76fc40e3f223.mp4",
+      "mime": "video/mp4",
+      "sha256": "cc4f9999ddaf76fc40e3f223dc8aa2d7a9e5f3b875949f255689050f3da82e96",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "332cd153f40edcba411ccd23": {
+      "src": "shared/c589445f5e831a01d9fd3aa9.mp4",
+      "mime": "video/mp4",
+      "sha256": "c589445f5e831a01d9fd3aa985a90a59cb7e064c450b4e0d209ebb85bab86543",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "1bec154933b6cc7f55087778": {
+      "src": "shared/a9f9dee1801be7718c0de520.mp4",
+      "mime": "video/mp4",
+      "sha256": "a9f9dee1801be7718c0de520d5474ee295fb0d6713e308c67a799a770ae97bea",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "11d27fb4232908ad329adbef": {
+      "src": "shared/68391a9f6fbfad8e08bba01a.mp4",
+      "mime": "video/mp4",
+      "sha256": "68391a9f6fbfad8e08bba01acf3cb20909ac8799b6cb4bcc2d4819e56f9e60ec",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "c3c2817ad32a89358d956f08": {
+      "src": "shared/120e98348ba91e088fba5c51.mp4",
+      "mime": "video/mp4",
+      "sha256": "120e98348ba91e088fba5c5189fb887da464a4341ecf2d526de7b1a6988e6794",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "ff0c363658f017cee374a691": {
+      "src": "shared/059387bd45624e391afcf70d.mp4",
+      "mime": "video/mp4",
+      "sha256": "059387bd45624e391afcf70d3049f96a5a98bc7cd47dbe3ffe7462cff62ed1df",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "a271ea028f785fc501f7a698": {
+      "src": "shared/d6fa2e7f660aee9bbe14f203.mp4",
+      "mime": "video/mp4",
+      "sha256": "d6fa2e7f660aee9bbe14f2035411f6c8e5f67a7adca6913b24202dc2997c981e",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "f26db6f2d182cab2d552f7f8": {
+      "src": "shared/e41218ae47d55eebcf8c9130.mp4",
+      "mime": "video/mp4",
+      "sha256": "e41218ae47d55eebcf8c9130a28a0285862942b1c3807345861d22cad18477a7",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "a3efb3e5ff9de0b1048b1c8d": {
+      "src": "shared/0a3aab2d13ecae70f20c32a5.mp4",
+      "mime": "video/mp4",
+      "sha256": "0a3aab2d13ecae70f20c32a56ac74a72bd1e1007483b6cf503a3b82593fab0e7",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "9c9b24a9e34d37321d22793b": {
+      "src": "shared/a7ca4de1afaddf55aa5922ce.mp4",
+      "mime": "video/mp4",
+      "sha256": "a7ca4de1afaddf55aa5922ce18d5a2738633380d4c98331dc22805b98529e32e",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "414f51c3e97bafe08f8f3308": {
+      "src": "media/1fd19ee608ade325881591c2.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "41fde3fb1b285c078db781e4": {
+      "src": "media/1725376279222d504f649538.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "e32d7d0c683ff5352d6320b1": {
+      "src": "media/7e08f103f1d84e6c0d6cb3fc.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "3be8a7a589679f1bf0957017": {
+      "src": "media/5e0ad187b7cf978efc63a766.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "0f0a6bdf175cec2b2e94b817": {
+      "src": "media/84e66e87a5e987d458d14158.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "c45926c0b04c5cad89cecae6": {
+      "src": "shared/294ed5678074330bb7bc25dd.mp4",
+      "mime": "video/mp4",
+      "sha256": "294ed5678074330bb7bc25dd3c7f622c0b1f394e328f3ac9fac0d3e50c079b48",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "8b1073b9fb15fef99bc3f5ed": {
+      "src": "media/e00d26c0d13bba4b2de831a0.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "3f9497e1d0443eb86d81b5bf": {
+      "src": "media/b24cbcef9a7cc26798aa3330.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "4e772872891801a5313571a6": {
+      "src": "media/eb24075d8e1e9c2f2382d280.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "032ad14318ee60ef5296c3e9": {
+      "src": "media/f79a5348b7808f8a2b6896e9.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "dab71aa0413ba132631c3893": {
+      "src": "media/bb19cf719bf44b89818ee58a.bin",
+      "mime": "video/mp4",
+      "encrypted": true,
+      "encodedFps": 8.0,
+      "encodedFrames": 49
+    },
+    "4e0b871f5afa084973574dc0": {
+      "src": "shared/1dac97a0070bcf632cb5e394.mp4",
+      "mime": "video/mp4",
+      "sha256": "1dac97a0070bcf632cb5e3947f97738bf60e496e9c9854ab686083ecfc430930",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "07f14593e49c25549216fbdb": {
+      "src": "shared/4377d90f5a1613b6faa3a606.mp4",
+      "mime": "video/mp4",
+      "sha256": "4377d90f5a1613b6faa3a60652d7b43d6cc91f710a8ef755c9ce7693caa7f987",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "d033fef0f93d1e50243a4414": {
+      "src": "shared/ec8b423835756466c2a63431.mp4",
+      "mime": "video/mp4",
+      "sha256": "ec8b423835756466c2a63431b1a311bbaca39571e0135d47fb1f199c52481c5c",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "ea3140623990c6121622cf18": {
+      "src": "shared/239edbcc96ac5650a49178a8.mp4",
+      "mime": "video/mp4",
+      "sha256": "239edbcc96ac5650a49178a83245a79c0c2a102dcd703a71af684670e0f3e7a7",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "3b70aa36903e3bf2fa144a9a": {
+      "src": "shared/dc95c6c759bf15cbf0e576ba.mp4",
+      "mime": "video/mp4",
+      "sha256": "dc95c6c759bf15cbf0e576ba5552af74b1bb7626be9fe3790ca7715199c25c00",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "0c72c94e05edccd5bc1f5d11": {
+      "src": "shared/d637d0cfba3e4e029f3e49fd.mp4",
+      "mime": "video/mp4",
+      "sha256": "d637d0cfba3e4e029f3e49fd437aef966d7a777ea1788203ff0d38e2127b5e22",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "18f347f795283d2f4ed6528a": {
+      "src": "shared/ae1cab931899a72ce88b0ffd.mp4",
+      "mime": "video/mp4",
+      "sha256": "ae1cab931899a72ce88b0ffd5c7702b32ef23deb3702d3394fbd2d0c02e97a8b",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "936e8728ca5a8ab3a1633a98": {
+      "src": "shared/a73f4550fd084c0cd3730a37.mp4",
+      "mime": "video/mp4",
+      "sha256": "a73f4550fd084c0cd3730a371089b34e5c649b1e0f27a7d3f3eb398eeb4863f2",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "0cb903af8b6c85670fa59fcc": {
+      "src": "shared/8c44d40657dc7dcae8dedc66.mp4",
+      "mime": "video/mp4",
+      "sha256": "8c44d40657dc7dcae8dedc66c4c9f2c69880b6a76ead5dc06adab6772a5b0c2c",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "0da06a79698d731a5ff15f04": {
+      "src": "shared/e5f04406f3ea23652d572d12.mp4",
+      "mime": "video/mp4",
+      "sha256": "e5f04406f3ea23652d572d1232b35c8d36c049a0b279fefb3cc127365ecda463",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "379b361e713bcd53363c5214": {
+      "src": "shared/8b8b0fd6de0972594103bb7f.mp4",
+      "mime": "video/mp4",
+      "sha256": "8b8b0fd6de0972594103bb7fb13e56914b1f71e31250bef1b5110e0266805030",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "b9a2c7f5bd1b1ae33e03b34f": {
+      "src": "shared/8feb0c7379f20c7f29275c57.mp4",
+      "mime": "video/mp4",
+      "sha256": "8feb0c7379f20c7f29275c57f43c0589c2aec33b8149f3ad91a5f663dd453c52",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "82a4d350a8202e10a7902d69": {
+      "src": "shared/e48f3f7ff10cae96893f04a1.mp4",
+      "mime": "video/mp4",
+      "sha256": "e48f3f7ff10cae96893f04a10357432c8b9a32cd85a318199581025a37f18a1f",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "6bd50641a86845a947e7257f": {
+      "src": "shared/c6d2601cc9a26780c38ef1ce.mp4",
+      "mime": "video/mp4",
+      "sha256": "c6d2601cc9a26780c38ef1cecdfbdeddbf3edacdf247da2368a38dd1672bca3a",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "58f0b802ecb8c3b5ab940e18": {
+      "src": "shared/b5cb7f47dc269033d4a67ecb.mp4",
+      "mime": "video/mp4",
+      "sha256": "b5cb7f47dc269033d4a67ecb398ad0bdc5dd133c96a49a70ce2c9cc1d0e6274e",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "7858d3b44f5660e07b5fbb21": {
+      "src": "shared/5ffc4997befd27a467c88792.mp4",
+      "mime": "video/mp4",
+      "sha256": "5ffc4997befd27a467c8879206b023d6ab69cd6a708168ef7dcdec02fcff6850",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "e22d897ba96a1b0869221be0": {
+      "src": "shared/00a77a61650cf3773778d838.mp4",
+      "mime": "video/mp4",
+      "sha256": "00a77a61650cf3773778d838b65842edd23fcc78dd27ba6f7a4c9b81f279f3f6",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "d2548d56f8e0e1422f4e6f34": {
+      "src": "shared/7aa96e7b14ca1e80a07813e5.mp4",
+      "mime": "video/mp4",
+      "sha256": "7aa96e7b14ca1e80a07813e56ff02bb026a513a0972468962b89693e2b92e589",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "20318fa1e500aac000aaa8fa": {
+      "src": "shared/ab69a1b44b90a6542421e2eb.mp4",
+      "mime": "video/mp4",
+      "sha256": "ab69a1b44b90a6542421e2ebe6089fbbd94fb1b565ad2a68041e0204e44c7088",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "d9bd71eadebecf7ad1dc9ffd": {
+      "src": "shared/49bdc8270de364df31f4da47.mp4",
+      "mime": "video/mp4",
+      "sha256": "49bdc8270de364df31f4da47203e0b10087531cb5b6d3614b40b0c6cec7d024c",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "58c4d2a9ab640a3318e63c67": {
+      "src": "shared/fa379906dffe75dc05dd7b34.mp4",
+      "mime": "video/mp4",
+      "sha256": "fa379906dffe75dc05dd7b34eef5aeebf7069f5fac5908419976b6d9fd6c5dbb",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "a4c08ec075f4658bbba36db9": {
+      "src": "shared/c69da5f77d809c5389d07c3f.mp4",
+      "mime": "video/mp4",
+      "sha256": "c69da5f77d809c5389d07c3fc0ba4ebdf9ba925cde30fa7b49d121e18cc3210d",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "e8c3bc79e11b47f6af8bfb58": {
+      "src": "shared/efbbe95a8ab49e208fc89ad3.mp4",
+      "mime": "video/mp4",
+      "sha256": "efbbe95a8ab49e208fc89ad32a402e261901fb682192ce25c5094b4f6156fadf",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "673146da03eae60591e37c66": {
+      "src": "shared/1070b58143ab9e72d3631601.mp4",
+      "mime": "video/mp4",
+      "sha256": "1070b58143ab9e72d3631601bee2c1818a9f4c218cfb483f33b6fcc9d4664bab",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "d57c88b1bdcd89e89a1ba785": {
+      "src": "shared/b76499181b177d81ff9ba939.mp4",
+      "mime": "video/mp4",
+      "sha256": "b76499181b177d81ff9ba93948bb040e2646953eb6bb9ef862e9fbdea41f189a",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "a65e4a3f5abccb1833577088": {
+      "src": "shared/6f7814ae726f2461b4d8cb0c.mp4",
+      "mime": "video/mp4",
+      "sha256": "6f7814ae726f2461b4d8cb0cbe080b5fd9eae5935c5530aa8fdb0ffaf44d5259",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "7cd3a0da02c02fe26ab56718": {
+      "src": "shared/1c4e4281ab8ebaa6ae14387c.mp4",
+      "mime": "video/mp4",
+      "sha256": "1c4e4281ab8ebaa6ae14387c17dcc461be80877e21b92f85d9e4dbb41a4c034f",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "fc9e39592323ca4016d9a13e": {
+      "src": "shared/8aff4acf9ad6651b08e71fa1.mp4",
+      "mime": "video/mp4",
+      "sha256": "8aff4acf9ad6651b08e71fa1b084f9a32d9e39a230cbe71821fa191a06d1fb98",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "5653f3a6fa4e9127ed422d66": {
+      "src": "shared/54942a292969036afb4513ab.mp4",
+      "mime": "video/mp4",
+      "sha256": "54942a292969036afb4513ab82748f67fd1ba3cafcc0c8a7658ca30b11334672",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "8965bd743b116a28c081d0b2": {
+      "src": "shared/fa29c3f2fb8226aa73d50f8d.mp4",
+      "mime": "video/mp4",
+      "sha256": "fa29c3f2fb8226aa73d50f8de11a7141e91f767fad80ea2068d23bc2482c9adb",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "55393242a1420391267ef6c5": {
+      "src": "shared/5e37c892641ac035cd639bff.mp4",
+      "mime": "video/mp4",
+      "sha256": "5e37c892641ac035cd639bff8ce20324a07948bbf8d1556b46b756ed6db2f297",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "70fa8bfb48b95cbc2717ab42": {
+      "src": "shared/677a67cad72ddae280596c3b.mp4",
+      "mime": "video/mp4",
+      "sha256": "677a67cad72ddae280596c3b422e82a03b03e2be29b04102fd5db6b0651d30dd",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "9cc90ee1bca4719799a1ba11": {
+      "src": "shared/570587f9b9d89e043cb0dc13.mp4",
+      "mime": "video/mp4",
+      "sha256": "570587f9b9d89e043cb0dc13543f17ce240cbd32d55f4de53bef84c47000644e",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "999a4ec33aa56d4b182cb3e9": {
+      "src": "shared/153bf0d7c2e064018d6b23db.mp4",
+      "mime": "video/mp4",
+      "sha256": "153bf0d7c2e064018d6b23db8a261aec4c15510122fe0caa3cf633f8bfc794b2",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "6981c79266711d275303f5e8": {
+      "src": "shared/7a82aa8309274580d80adfe6.mp4",
+      "mime": "video/mp4",
+      "sha256": "7a82aa8309274580d80adfe6181795ac25bab921e9c704aaa3d0b9007399b973",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "759614da121b8769fad0a09f": {
+      "src": "shared/590942146e2d2a1b41f0b41e.mp4",
+      "mime": "video/mp4",
+      "sha256": "590942146e2d2a1b41f0b41e2fb53a6585f11d52572f7b68500853ec70af399f",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "a5b91d3bd7e9ec94708837d9": {
+      "src": "shared/5a2de653156e3726c78597d7.mp4",
+      "mime": "video/mp4",
+      "sha256": "5a2de653156e3726c78597d7392734812857df11d0d6e80400ebc2ca0f3b34dc",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "8cb9075be1b1afefe9cf576f": {
+      "src": "shared/f882a34949a1981b59840d76.mp4",
+      "mime": "video/mp4",
+      "sha256": "f882a34949a1981b59840d762d2c62b1f95c2b5158cd535ba624a542189b909b",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "61fbedb73fe1614df521c848": {
+      "src": "shared/80840764a6408adb544b9828.mp4",
+      "mime": "video/mp4",
+      "sha256": "80840764a6408adb544b98281daf7e06178434dd73e8fa3f271912b0075542f0",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "3bed65177c2e9ed4d19e85fc": {
+      "src": "shared/091d62dcbaadc52c4f0484f4.mp4",
+      "mime": "video/mp4",
+      "sha256": "091d62dcbaadc52c4f0484f4a89c75a087d1b670371d8285cc77d09505494f2c",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "015a3604ceb9892f733ca7d7": {
+      "src": "shared/33a06c2dcf11c416b2ad4564.mp4",
+      "mime": "video/mp4",
+      "sha256": "33a06c2dcf11c416b2ad4564b71b334b2a4aecc463940ebbc5978b1b59ba5bbf",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "6c7feb25295668e4c03cd094": {
+      "src": "shared/e04eabeb443fb94dd93c851b.mp4",
+      "mime": "video/mp4",
+      "sha256": "e04eabeb443fb94dd93c851bc735591a75f52a72767cff2c9324bed86a6f6dc0",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "12e4bfc3a962b111caa7dd19": {
+      "src": "shared/ecc44bd9e2d3f93df53f4981.mp4",
+      "mime": "video/mp4",
+      "sha256": "ecc44bd9e2d3f93df53f498163bfb0feae1eaac32315e59ae431e74b3e2eb3c9",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "d55b2ca889c8d0aea4dc034b": {
+      "src": "shared/0360cdda29d6cd37ad50d6be.mp4",
+      "mime": "video/mp4",
+      "sha256": "0360cdda29d6cd37ad50d6beac1118f5b907c15b971b73446ec1675cbb76561b",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "4978e7ad7b8d39c7f96b4320": {
+      "src": "shared/b8291622c463e6768d525e54.mp4",
+      "mime": "video/mp4",
+      "sha256": "b8291622c463e6768d525e5414a54240f227141d407a9a35dfa1c75811a67207",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "957b0a4beb0b63a533aea84c": {
+      "src": "shared/8cb7628c94147ce9095b9036.mp4",
+      "mime": "video/mp4",
+      "sha256": "8cb7628c94147ce9095b9036d8db9940ed8d1da54ba6c5fa2bec1ed3709cc173",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "f756c3d34a8c0a76e3d66df8": {
+      "src": "shared/e66ab93ec01ecdbb6bedee28.mp4",
+      "mime": "video/mp4",
+      "sha256": "e66ab93ec01ecdbb6bedee28c7ee98b5125619e1dc1d9992384778cfd6ee9be2",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "b7d2abceace445ed295e1d6b": {
+      "src": "shared/6751a384f802c9935403862c.mp4",
+      "mime": "video/mp4",
+      "sha256": "6751a384f802c9935403862ca1cb35071987297bbc7a42bfba96d81aeeedb339",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "73560156b0b88d65ecdb2d63": {
+      "src": "shared/5965c4e3400ec75573874feb.mp4",
+      "mime": "video/mp4",
+      "sha256": "5965c4e3400ec75573874febc11d5c86ef7574e8510a6f8ff1231a7f401bcddb",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "aca1966db3c5aa7cba639463": {
+      "src": "shared/8ab6699ee59e1fa44bf45837.mp4",
+      "mime": "video/mp4",
+      "sha256": "8ab6699ee59e1fa44bf4583735d25b7eded3e494e6605dd702058eab58942040",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "476125b10317d68d2b555bf2": {
+      "src": "shared/8b03123184a7010b19e735df.mp4",
+      "mime": "video/mp4",
+      "sha256": "8b03123184a7010b19e735df610866ce7f390d9ba0bab1c836a3daf3c1f50ded",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "740a1efb51c7fd86f3090c77": {
+      "src": "shared/65f4e6b31614040ea8e94513.mp4",
+      "mime": "video/mp4",
+      "sha256": "65f4e6b31614040ea8e945136746dcbffb7e191a7beaf843588cf35d20028419",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "358db4f114f3b439e58c24cf": {
+      "src": "shared/16c4e53cf408ff2e1e3276bd.mp4",
+      "mime": "video/mp4",
+      "sha256": "16c4e53cf408ff2e1e3276bd7d4e3c894a2959af6b0fca825efc71621d1fba93",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "56e7dbd64d93be37752af269": {
+      "src": "shared/a946e323e0b4c870bba199b4.mp4",
+      "mime": "video/mp4",
+      "sha256": "a946e323e0b4c870bba199b425f014bad6f41580144a5f1e40286301b3b13bbe",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "51acd4c9988a82760b9002c4": {
+      "src": "shared/7fec2af1914282d312ca44a5.mp4",
+      "mime": "video/mp4",
+      "sha256": "7fec2af1914282d312ca44a54afc70cf6b22e738c6ec5dcc4e66a63b0c039a0b",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "0936ad35a497c7627287cee2": {
+      "src": "shared/65be9c47e1f708c8863bf76e.mp4",
+      "mime": "video/mp4",
+      "sha256": "65be9c47e1f708c8863bf76e4b26e4f57b57dcb24f0dab570619b87a120daade",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "f3aa97e4cfbd8d2434321c8c": {
+      "src": "shared/d01f6fc7c14e882a015699f5.mp4",
+      "mime": "video/mp4",
+      "sha256": "d01f6fc7c14e882a015699f52dd1175263898b5fcd34c12989490ba29628ee5e",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "d83423c7e8059a15daca41bd": {
+      "src": "shared/8b9f78bc232141d985b45bbc.mp4",
+      "mime": "video/mp4",
+      "sha256": "8b9f78bc232141d985b45bbcf8825a94aee561413e9d2c9f0ee15d73e74045f7",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "69e50f2186c3b925f122b6f6": {
+      "src": "shared/3769830b59bada8ccd0261d4.mp4",
+      "mime": "video/mp4",
+      "sha256": "3769830b59bada8ccd0261d439e10d2e08365a663d65720015eb3d4298bb7a35",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "5bcf78b61d5ae6e6944796fb": {
+      "src": "shared/36a90c63f833592bc6f63599.mp4",
+      "mime": "video/mp4",
+      "sha256": "36a90c63f833592bc6f635995c73dd1de4d1a2861a2dc826c3af25140c5ca594",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "7f6cf864d15bd92401bf22b7": {
+      "src": "shared/d750992ac266a974a85a3c8e.mp4",
+      "mime": "video/mp4",
+      "sha256": "d750992ac266a974a85a3c8e7466f336bf6ba80b7f8aeef1d30c435cf28a0cb9",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "9b17f2798d3c82c57199672c": {
+      "src": "shared/e24b4e4254922a8d7d905e55.mp4",
+      "mime": "video/mp4",
+      "sha256": "e24b4e4254922a8d7d905e5594eb5a1e3fa021b80f592cb9e1d665429de19770",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "0457ef3ab233284c96705e59": {
+      "src": "shared/6a23d09bbef44f59980070a5.mp4",
+      "mime": "video/mp4",
+      "sha256": "6a23d09bbef44f59980070a5d4bd20c852e2fdb0fddcaa33df4660c29411e01f",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "292bb2355b555262337387b1": {
+      "src": "shared/615b2b15e06ee01d378354a8.mp4",
+      "mime": "video/mp4",
+      "sha256": "615b2b15e06ee01d378354a88606e1c1a078f2a34738302ff3ff6ae04d45c6ea",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "7fda6ffd3140a056a9673ae0": {
+      "src": "shared/a8d81f5f2220f3182072aca0.mp4",
+      "mime": "video/mp4",
+      "sha256": "a8d81f5f2220f3182072aca06afb3d8787673c105796f652a923ebc04f4be658",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "70de1ee41d5ab115248e39d1": {
+      "src": "shared/ccda815ec3037741de08619f.mp4",
+      "mime": "video/mp4",
+      "sha256": "ccda815ec3037741de08619ff3965158a9cb05d6e40c9a6061364a4ea99f1bea",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "55c95313299d79dc33a143d9": {
+      "src": "shared/deafda1600c15fe230d8b9b4.mp4",
+      "mime": "video/mp4",
+      "sha256": "deafda1600c15fe230d8b9b4a6544334f57cc3cc86f2e94df07c57d7f7ecd7ca",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "a49252b49bcd93410f700ca1": {
+      "src": "shared/f446c8c8e5a9766b8b795c37.mp4",
+      "mime": "video/mp4",
+      "sha256": "f446c8c8e5a9766b8b795c37e3e82863325bcee7779856c399f6c40982c8f2b9",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "21a54a7224a4b3742e831f98": {
+      "src": "shared/9f96890bff36a208f29b9940.mp4",
+      "mime": "video/mp4",
+      "sha256": "9f96890bff36a208f29b9940607f5e376ac7d83c7c659d88abbd3fccdd800a3b",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "5dbc92ca9f6620480043edde": {
+      "src": "shared/78222c493ae16c81d300d645.mp4",
+      "mime": "video/mp4",
+      "sha256": "78222c493ae16c81d300d645b12bd81990049a5d33582b27f666190d279a22fd",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "5412e874a04f38b3ae6a016d": {
+      "src": "shared/7231c7c4652a663a070ca092.mp4",
+      "mime": "video/mp4",
+      "sha256": "7231c7c4652a663a070ca0927c458fd42191e65524961d1bde09ea96ca86a1b2",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "cf324b58840c0b0b804fd0de": {
+      "src": "shared/97d17216ae13d7468c0c0548.mp4",
+      "mime": "video/mp4",
+      "sha256": "97d17216ae13d7468c0c0548ae4c671614612dd017234b9833f52302e44b33e4",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "0c2611d9b39275f6abfae3df": {
+      "src": "shared/02682e10dcb3df15e9616a9c.mp4",
+      "mime": "video/mp4",
+      "sha256": "02682e10dcb3df15e9616a9c8cc813e39c6da6fbb0afaa19d0fc1ea91a784940",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "5d12cf7fcda609f439448b0d": {
+      "src": "shared/344a07c39a20b07d4cbaadc0.mp4",
+      "mime": "video/mp4",
+      "sha256": "344a07c39a20b07d4cbaadc0d2479d83cb854363f258912a9cb0e93107e833d0",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "b8560a34a7ab00af12651c2c": {
+      "src": "shared/24f7f293990e90417abd5be6.mp4",
+      "mime": "video/mp4",
+      "sha256": "24f7f293990e90417abd5be614723503f4823667026c9105c0ac9a964df28223",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "ca60fe970f0b71e815d37df2": {
+      "src": "shared/00f5cd820442056d30020505.mp4",
+      "mime": "video/mp4",
+      "sha256": "00f5cd820442056d300205050a7169c45ce14a814a407ee16c326528bcca9e07",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "99bd2f2eb7d6a5b8a0f879ba": {
+      "src": "shared/4b0b97810d6fb426101baf1c.mp4",
+      "mime": "video/mp4",
+      "sha256": "4b0b97810d6fb426101baf1c31c6cff64d92b0c2c0c00a37507fad6665ed63ad",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "801f67f781690d62d9af2ff6": {
+      "src": "shared/bdab361dc071b8f1625df3bc.mp4",
+      "mime": "video/mp4",
+      "sha256": "bdab361dc071b8f1625df3bcd585ee3267fb8ea2c62ee7e4fba07617e321c237",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "09684c21cd8f86364d1ec5eb": {
+      "src": "shared/98be6dbb83cb44342e6e73cd.mp4",
+      "mime": "video/mp4",
+      "sha256": "98be6dbb83cb44342e6e73cdd916ab6a2a38d02e4cecd0a09d38cf0b2a1f7c54",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "c57a57a42ebb88d96b3b3be2": {
+      "src": "shared/58d923dafb8df9506bc8adb5.mp4",
+      "mime": "video/mp4",
+      "sha256": "58d923dafb8df9506bc8adb503b0a4d653fd339e5715d6b493a66c80f41396e6",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "820dfe3e90f0e4041da4b2bb": {
+      "src": "shared/2a0071636bfb2a9438e8b3d2.mp4",
+      "mime": "video/mp4",
+      "sha256": "2a0071636bfb2a9438e8b3d2fa1c766c1c979cdc8cd81dfb56fa1b3046a1be12",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "5915f26d8069d7b5be51be58": {
+      "src": "shared/f34afccc8f55dd4ad0ea378f.mp4",
+      "mime": "video/mp4",
+      "sha256": "f34afccc8f55dd4ad0ea378f5f588a04a74917fb61c55db51c9b5749f33d231c",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "299ca2ed920be4ef3a54458a": {
+      "src": "shared/4ad3b710f4c4d06612222436.mp4",
+      "mime": "video/mp4",
+      "sha256": "4ad3b710f4c4d066122224369e67f20e55d479fb1b255fd1f91f8e52a69a5ca8",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "ddb03a92d11a81bc1937837b": {
+      "src": "shared/40d07cec4b57a60404476304.mp4",
+      "mime": "video/mp4",
+      "sha256": "40d07cec4b57a60404476304add22773f5ac5d1be0c9d2ac9227a2b3cacd097b",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "72ed59b5e760f7207c1253a0": {
+      "src": "shared/fa406a0ebb29427835d437ac.mp4",
+      "mime": "video/mp4",
+      "sha256": "fa406a0ebb29427835d437aca305fb5ab691a62525c52e5474fba31e3b18b58e",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "038ec7fcbd1ffe6880711271": {
+      "src": "shared/ea271327cb3cf3f024a5cc5a.mp4",
+      "mime": "video/mp4",
+      "sha256": "ea271327cb3cf3f024a5cc5aaa9ecd3f906b5d3a3163a8bafa819353048b08e5",
+      "encodedFps": 12.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "b9374da7c707ac97deb722d0": {
+      "src": "shared/ee404269fbde8f3c5db6974c.mp4",
+      "mime": "video/mp4",
+      "sha256": "ee404269fbde8f3c5db6974cc3b95a75640298e572119b11c99bd2bd051b31b5",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "612c512eb3ee3b69b846de99": {
+      "src": "shared/616c1a5e6d858a7188864d31.mp4",
+      "mime": "video/mp4",
+      "sha256": "616c1a5e6d858a7188864d31a7bee73d435482187314b0a8141c3e60fe081161",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "05ea42c0f0f6b4290687d198": {
+      "src": "shared/208d1e7d2f3c9c99d825bc8d.mp4",
+      "mime": "video/mp4",
+      "sha256": "208d1e7d2f3c9c99d825bc8d6badf85073d7d9dbd57afb73540f8e7951a7809d",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "0b13900dcdff6bcca2a2e578": {
+      "src": "shared/587e91b0cc5c0ff3ae31c969.mp4",
+      "mime": "video/mp4",
+      "sha256": "587e91b0cc5c0ff3ae31c969699e16ae82b0b637298d0b6d1a54b6bbc23ad608",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "416032e3151da410998ed4f2": {
+      "src": "shared/35facf66a2539fe444f75a11.mp4",
+      "mime": "video/mp4",
+      "sha256": "35facf66a2539fe444f75a1161025b0dd60c9b200f033fcc78ac154e71ae80b3",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "c13a9556ea98a8dab4f2ccb9": {
+      "src": "shared/46a61bf0bd6088a57d51673d.mp4",
+      "mime": "video/mp4",
+      "sha256": "46a61bf0bd6088a57d51673dd106cc8d8971134272f96089ca96bff4218beeb9",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "070e35d4d63997d4f99a1654": {
+      "src": "shared/3ac6140fd65ce1f22945c2f2.mp4",
+      "mime": "video/mp4",
+      "sha256": "3ac6140fd65ce1f22945c2f2a956b4429f6eaa40f08c1ffa566738df70ba437d",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "09270bde9b853f1d9e15e605": {
+      "src": "shared/0617a2919d7c9b6f0f884097.mp4",
+      "mime": "video/mp4",
+      "sha256": "0617a2919d7c9b6f0f8840972e63ca46feb37e7518f86ece1471102656c942a7",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "044c57907ed4f9d21596907c": {
+      "src": "shared/15e39da432fef094cd0fb7ef.mp4",
+      "mime": "video/mp4",
+      "sha256": "15e39da432fef094cd0fb7eff8acb267428bb4dcc20c4a838e00ec6ff5a6ed3b",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    },
+    "65b9507b6ac5ead2054a4a56": {
+      "src": "shared/8e129424fd5e445c36aae9ea.mp4",
+      "mime": "video/mp4",
+      "sha256": "8e129424fd5e445c36aae9eaa7c9c1d5d410556d1cb34e80370ea445c21647d3",
+      "encodedFps": 8.0,
+      "encodedFrames": 49,
+      "width": 832,
+      "height": 480
+    }
+  }
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>Video Evaluation</title>
+  <link rel="stylesheet" href="styles.css?v=20260921-anonymous-ui">
+  <script src="study-core.js?v=20260921-anonymous-ui" defer></script>
+  <script src="app.js?v=20260921-anonymous-ui" defer></script>
+</head>
+<body>
+  <header>
+    <a class="wordmark" href="./">Video Evaluation</a>
+    <div id="preview-banner" class="preview" hidden>
+      <label>Jump to <select id="preview-case" aria-label="Preview example"></select></label>
+    </div>
+  </header>
+  <main>
+    <section id="welcome" class="intro">
+      <h1>Compare generated videos</h1>
+      <p><strong>We strongly recommend using a desktop or laptop for this study.</strong></p>
+      <p class="lead">Each example shows an input video, a camera-motion reference, and generated videos following that camera motion.</p>
+      <p class="facts">25 examples · 10–15 minutes</p>
+      <ol class="instructions">
+        <li>Use the input video to judge the interaction and the camera-motion reference to judge the viewpoint.</li>
+        <li>All videos play and loop together automatically. You can select your answers at any time.</li>
+        <li>Make a separate choice for each question. Letter assignments may change between examples.</li>
+      </ol>
+      <div class="actions"><button id="start" disabled>Start study →</button><button id="resume" class="secondary" hidden>Resume saved progress</button></div>
+      <p id="welcome-status" class="status" role="status">Loading the study…</p>
+    </section>
+    <section id="study" hidden>
+      <div class="study-heading">
+        <h1 id="case-title">Example 1</h1>
+        <div class="progress-box"><span id="progress-text"></span><progress id="progress" max="25" value="0" aria-label="Study progress"></progress></div>
+      </div>
+      <div class="workspace">
+        <div class="screening">
+          <div id="references" class="references"></div>
+          <div id="candidates" class="candidates"></div>
+          <div class="playbar">
+            <button id="play" disabled>Play all</button>
+            <button id="replay" class="secondary" disabled>↻ Replay</button>
+            <input id="seek" aria-label="Playback position" type="range" min="0" max="1000" value="0" disabled>
+            <span id="clock">0.0 / 0.0 s</span>
+          </div>
+          <div class="media-message"><span id="media-status" class="status" role="status">Loading videos…</span><button id="retry" class="text-button" hidden>Retry videos</button></div>
+        </div>
+        <aside class="response-panel" aria-label="Your answers">
+          <p id="answer-instruction" class="answer-instruction">Choose one video for each question.</p>
+          <form id="answers" novalidate>
+            <div id="questions"></div>
+            <p id="answer-error" class="answer-error" role="alert" hidden></p>
+            <button id="next" type="submit" disabled>Save &amp; next →</button>
+          </form>
+          <p id="save-status" class="fine" role="status">Choose your answers, then continue.</p>
+        </aside>
+      </div>
+    </section>
+    <section id="done" class="intro" hidden>
+      <h1>Thank you for taking part.</h1>
+      <p id="done-message" class="lead">All 25 comparisons have been saved.</p>
+      <p id="completion-code" class="fine"></p>
+    </section>
+    <p id="global-error" class="error" role="alert" hidden></p>
+  </main>
+</body>
+</html>
