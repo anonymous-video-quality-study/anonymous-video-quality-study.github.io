@@ -15,7 +15,8 @@ are kept as browser drafts across navigation and reloads. Saved answers can be
 reviewed without being changed. Every example must be completed and saved in
 order before the final submission can succeed.
 
-The study is centered within a maximum width of 1280 pixels. Desktop video
+Four-candidate studies are centered within a maximum width of 1600 pixels;
+two-candidate studies retain their 1280-pixel cap. Desktop video
 size is also limited by viewport height so both rows and playback controls
 fit on short screens. Video aspect ratios, text and button sizes are preserved;
 questions move below the videos at widths of 960 pixels or less.
