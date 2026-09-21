@@ -164,7 +164,9 @@ function renderQuestions() {
   $('questions').replaceChildren();
   const pair = group.kind === 'overall';
   const saved = (savedExample() ? session.responses[index]?.choices : answerDrafts.get(cases[index].id)) || session.responses[index]?.choices || {};
-  $('answer-instruction').textContent = pair ? 'Choose A, B, or about the same.' : 'Choose one video for each question.';
+  $('answer-instruction').innerHTML = pair
+    ? 'Choose A or B if one video is clearly better overall. <strong>If neither video is clearly better, select “About the same.”</strong>'
+    : 'Choose one video for each question.';
   const questionOrder = pair ? C.questions(group.kind) : ['interaction', 'quality', 'camera'];
   for (const id of questionOrder) {
     const field = document.createElement('fieldset'), legend = document.createElement('legend'), copy = document.createElement('p'), row = document.createElement('div');
