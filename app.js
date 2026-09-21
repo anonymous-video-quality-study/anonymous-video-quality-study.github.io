@@ -14,6 +14,7 @@ let controller, generation = 0, ready = false, playing = false, watched = 0;
 let duration = 0, openedAt = 0, previousTime = 0, previousTick = 0, saving = false, lastSync = 0;
 let pendingAnswer = null;
 let resumeOnVisible = false;
+let buffering = false, playRequest = 0;
 let validationShown = false;
 let confirmedCount = 0;
 const answerDrafts = new Map();
@@ -52,26 +53,69 @@ function updateNavigation() {
   $('progress').value = previewId ? index : confirmedCount;
 }
 async function api(path, payload) {
-  const response = await fetch(SERVICE + path, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({studyId:C.STUDY_ID, revision:manifest.revision || 'r1', ...payload}), signal:AbortSignal.timeout(20000)});
-  const data = await response.json();
-  if (!response.ok) throw new Error(data.error || 'Saving is temporarily unavailable. Please retry.');
-  return data;
+  const body = JSON.stringify({studyId:C.STUDY_ID, revision:manifest.revision || 'r1', ...payload});
+  for (let attempt=0;attempt<2;attempt++) {
+    try {
+      const response = await fetch(SERVICE + path, {method:'POST', headers:{'Content-Type':'application/json'}, body, signal:AbortSignal.timeout(20000)});
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        const failure = new Error(data.error || 'Saving is temporarily unavailable. Please retry.');
+        failure.retryable = response.status >= 500 || response.status === 429;
+        throw failure;
+      }
+      if (!data.sessionId || !Array.isArray(data.responses)) throw new TypeError('Incomplete service response.');
+      return data;
+    } catch (err) {
+      const transient = err.retryable || err instanceof TypeError || ['TimeoutError','AbortError'].includes(err.name);
+      if (!transient) throw err;
+      if (attempt === 1) throw new Error('The connection could not complete. Your answers are kept in this browser. Please retry.');
+      $(path.endsWith('/save') ? 'save-status' : 'welcome-status').textContent = 'Connection interrupted. Retrying automatically…';
+      // Both endpoints reuse the same session and immutable answer prefix.
+      await new Promise(resolve => setTimeout(resolve,750));
+    }
+  }
 }
-function pause() { playing = false; videos.forEach(v => v.pause()); $('play').textContent = 'Play all'; }
+function pause() { playing = false; playRequest++; if (buffering) $('media-status').textContent = ''; buffering = false; videos.forEach(v => v.pause()); $('play').textContent = 'Play all'; }
 function logicalTime() { const v = videos[videos.length - 1]; return v ? v.currentTime / v.playbackRate : 0; }
 function clock(time = logicalTime()) { $('clock').textContent = `${Math.min(time,duration).toFixed(1)} / ${duration.toFixed(1)} s`; $('seek').value = duration ? Math.min(time / duration,1) * 1000 : 0; }
 function seek(time) { const t = Math.max(0,Math.min(time,(cases[index].frames-1)/cases[index].fps)); videos.forEach(v => { v.currentTime = t * v.playbackRate; }); previousTime = t; clock(t); }
+function bufferedAt(video, time) {
+  if (video.readyState < 2 || video.seeking) return false;
+  const start = time * video.playbackRate;
+  const end = Math.min(video.duration, (time + .375) * video.playbackRate);
+  for (let i=0;i<video.buffered.length;i++) {
+    if (video.buffered.start(i) <= start + .02 && video.buffered.end(i) >= end - .02) return true;
+  }
+  return false;
+}
+function playbackFailure(message = 'A video could not play. Please retry.') {
+  pause(); ready = false; $('media-status').textContent = message;
+  $('retry').hidden = false; updateAnswers();
+}
 async function play() {
   if (!ready || document.hidden || saving || pendingAnswer) return;
   resumeOnVisible = false;
-  const token = generation;
+  const token = generation, request = ++playRequest;
   if (logicalTime() >= duration - 1 / cases[index].fps) seek(0);
-  previousTime = logicalTime(); previousTick = performance.now(); playing = true; $('play').textContent = 'Pause';
+  playing = true; buffering = true; $('play').textContent = 'Pause';
+  videos.forEach(v => v.pause());
+  const target = Math.min(...videos.map(v => v.currentTime / v.playbackRate));
+  seek(target);
+  $('media-status').textContent = 'Buffering videos together…';
+  const bufferDeadline = performance.now() + 45000;
   try {
+    while (!videos.every(v => bufferedAt(v,target))) {
+      if (token !== generation || request !== playRequest || !playing) return;
+      if (videos.some(v => v.error)) { playbackFailure(); return; }
+      if (performance.now() > bufferDeadline) { playbackFailure('Video buffering timed out. Please retry loading.'); return; }
+      await new Promise(resolve => setTimeout(resolve,50));
+    }
+    if (token !== generation || request !== playRequest || !playing) return;
+    buffering = false; previousTime = target; previousTick = performance.now();
     await Promise.all(videos.map(v => v.play()));
-    if (token === generation && playing) $('media-status').textContent = '';
+    if (token === generation && request === playRequest && playing) $('media-status').textContent = '';
   } catch (err) {
-    if (token === generation) {
+    if (token === generation && request === playRequest) {
       pause();
       $('media-status').textContent = err.name === 'NotAllowedError'
         ? 'Autoplay was blocked. Press Play all to start.'
@@ -90,7 +134,7 @@ function finish() {
   else resumeOnVisible = true;
 }
 function tick(now) {
-  if (playing && videos.length) {
+  if (playing && !buffering && videos.length) {
     const time = logicalTime();
     const delta = Math.max(0,time - previousTime);
     if (!document.hidden && videos.every(v => v.readyState >= 2)) watched += Math.min(delta,Math.max(0,now-previousTick)/1000 + .025);
@@ -195,12 +239,20 @@ function figure(label, letter, note) {
 }
 async function loadVideo(video, id, signal) {
   const asset = manifest.assets[id];
-  const response = await fetch(resourceURL(asset.src), {signal:AbortSignal.any([signal,AbortSignal.timeout(60000)])});
-  if (!response.ok) throw new Error('A video could not load. Please retry.');
-  let bytes = await response.arrayBuffer();
-  if (asset.encrypted) bytes = await crypto.subtle.decrypt({name:'AES-GCM',iv:bytes.slice(0,12),additionalData:new TextEncoder().encode('interaction-study-20260917-v1')},key,bytes.slice(12));
+  let url = resourceURL(asset.src);
+  // Plain MP4/WebM can start from a byte range; encrypted legacy media needs
+  // the complete authenticated payload before it can be decoded safely.
+  if (asset.encrypted) {
+    const response = await fetch(url, {signal:AbortSignal.any([signal,AbortSignal.timeout(60000)])});
+    if (!response.ok) throw new Error('A video could not load. Please retry.');
+    let bytes = await response.arrayBuffer();
+    bytes = await crypto.subtle.decrypt({name:'AES-GCM',iv:bytes.slice(0,12),additionalData:new TextEncoder().encode('interaction-study-20260917-v1')},key,bytes.slice(12));
+    if (signal.aborted) throw new DOMException('Comparison changed', 'AbortError');
+    url = URL.createObjectURL(new Blob([bytes],{type:asset.mime})); urls.push(url);
+  }
   if (signal.aborted) throw new DOMException('Comparison changed', 'AbortError');
-  const url = URL.createObjectURL(new Blob([bytes],{type:asset.mime})); urls.push(url);
+  video.addEventListener('waiting',() => { if (ready && playing && !buffering) void play(); },{signal});
+  video.addEventListener('error',() => { if (ready) playbackFailure(); },{signal});
   await new Promise((resolve,reject) => {
     const timeout = setTimeout(() => complete(new Error('A video took too long to load. Please retry.')),45000);
     const onReady = () => complete(); const onError = () => complete(new Error('A video could not play. Please retry.'));
@@ -238,7 +290,7 @@ async function openCase(nextIndex) {
     updateAnswers();
     videos[videos.length-1].addEventListener('ended',finish);
     if (document.hidden) resumeOnVisible = true;
-    else await play();
+    else void play();
   } catch (err) {
     if (token !== generation) return;
     pause(); $('media-status').textContent = err.name === 'AbortError' ? 'Loading timed out. Please retry.' : err.message; $('retry').hidden = false;

@@ -27,3 +27,7 @@ questions move below the videos at widths of 960 pixels or less.
 All media are hosted in this repository. `study-config.json` contains the public
 media decryption key, not a backend credential. Keep participant responses,
 backend credentials, and method mappings outside this repository.
+
+Plain video assets use progressive playback with synchronized buffering; no media
+re-encoding is applied. Transient service requests retry once with the same
+session and answers; saved drafts remain available after a connection failure.
