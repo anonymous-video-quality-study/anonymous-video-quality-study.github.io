@@ -72,6 +72,201 @@
           ]
         },
         {
+          "id": "57639d5885c32f5f",
+          "frames": 49,
+          "fps": 8,
+          "input": "9fb54e52f51c16846c22d8d9",
+          "camera": "a236f510344c6f4275837d97",
+          "candidates": [
+            "3ca0f15a5484107dca652a9d",
+            "f3dda7784d27256c5a0f8444",
+            "13cf34c32b1c19f9eae36a0b",
+            "93e7da61a9777c1805e29477"
+          ]
+        },
+        {
+          "id": "7fbc157c69253cb1",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "bb52c49c4160e3ba568acf15",
+          "camera": "16765a57fe032bf11cf2ef99",
+          "candidates": [
+            "4cc2c2dcf8ebb849ed5ebe98",
+            "329a631f4afbc97eef1b5ed6",
+            "1c1e3088dac6808cc12bd74c",
+            "cc74ce374210f8c909298534"
+          ]
+        },
+        {
+          "id": "a9de61b9b7bfef54",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "3b9b14b4949a62b793ba0738",
+          "camera": "8a42d04e8489dcd3acf2ae8a",
+          "candidates": [
+            "229965865d009589645d35f8",
+            "20968bed924e5da6689f1471",
+            "ad3ccf520028f8337d5ef475",
+            "ba07dbba0466da03cbce2156"
+          ]
+        },
+        {
+          "id": "d91eb5ef932ec835",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "c5c5f5bcaaab3f866e4dd8c0",
+          "camera": "9f00f6322fdc61bed71167c0",
+          "candidates": [
+            "739499b91d7f97b0d933e6f2",
+            "2e4ba967ee58fd655190547d",
+            "6139c8a31d60f59d8633269b",
+            "e3f60a1d575641b3458952b8"
+          ]
+        },
+        {
+          "id": "6b97cc58ba6ddc87",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "72f5438f618b1d4c04cae1ee",
+          "camera": "78687eeb75ebed9f6bb09c7a",
+          "candidates": [
+            "6db8e64e2e6a4ff255ec5a30",
+            "606d5910a489121d41025b5d",
+            "6caa619a1effe21a313d0c88",
+            "23242d71de5915d0790a8283"
+          ]
+        },
+        {
+          "id": "88f2ca9a04a12460",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "ed63b8b4dea99528b5f6ebfd",
+          "camera": "38eb5ddab14d41736818e1c3",
+          "candidates": [
+            "dd069382f8eda804cb473051",
+            "a19b3a02f66afb45377569bf",
+            "649e2f8231a5b2ac386c68f3",
+            "c2d889652d451a607399d056"
+          ]
+        },
+        {
+          "id": "286919debcb8a492",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "f38072269afdaeca8a39f599",
+          "camera": "dfd82be320800ef73bb7926e",
+          "candidates": [
+            "c1ef18a34eae7ed5e8cd1a4c",
+            "6425dccf472cf8c8bbe52c9d",
+            "c011698ef339de1e334b22c2",
+            "a8e8fa2a5d0797f82be83af3"
+          ]
+        },
+        {
+          "id": "ed08a1f788ca7a09",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "06f34e571e3f8eafcbf83b70",
+          "camera": "badda0ba7fa7e0f0f1894618",
+          "candidates": [
+            "c37a3984dedb382e8e9fa7c7",
+            "b5b16f9df8c9d62a93f809a2",
+            "62038b288fa1965d2773642b",
+            "e03e9aceb3e5e4729a187fd0"
+          ]
+        },
+        {
+          "id": "81f21f29dd296e50",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "ac596eb9f149c1618cd2f38f",
+          "camera": "5fc756bb3895becc993123cb",
+          "candidates": [
+            "c2abe2fc45ede665b819a6ab",
+            "8f1a376da2739f1d01d026d0",
+            "12ebe1c34f68c68dba1cab2a",
+            "1d6219ab583fc877deecfb3c"
+          ]
+        },
+        {
+          "id": "8a2b8617156eeb61",
+          "frames": 48,
+          "fps": 8.0,
+          "input": "3ffdaacaecffca9acc482e53",
+          "camera": "5b3b8a7bf837291ac32b1ea9",
+          "candidates": [
+            "cde0615f108601b3841ecfee",
+            "e688775b6dd26e168d876c72",
+            "5d697b628a0fe7209e7fdfee",
+            "6c7a98e045d5f8ac872d9262"
+          ]
+        },
+        {
+          "id": "eb61aeefb557731b",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "95be14ed07bf7ef51116b842",
+          "camera": "e5506f86c1cc026cc8f8392a",
+          "candidates": [
+            "f92117e1f8ae43a743c4187f",
+            "32c953bd7266d382f3ab929a",
+            "e80119c7d76b1fe5b613b3e2",
+            "f67517928e36160cd28a2e82"
+          ]
+        },
+        {
+          "id": "96157c196d30246d",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "7ff56fae94e968e26a683cf7",
+          "camera": "eb79452e5336f5a02141191c",
+          "candidates": [
+            "40b3eff851b56ad71895a68d",
+            "0e1e661947caefae14707f3f",
+            "f67cd8043920ec5c3f33f076",
+            "d5532bd3e7be61373c274aa0"
+          ]
+        },
+        {
+          "id": "7aac6d33b10cc1f6",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "626af89da929eb3ab8f6b6e1",
+          "camera": "7e9fe28a2802dd7075205a7a",
+          "candidates": [
+            "24b563eaad7cf3f02044565f",
+            "7e22ac88753cd9c93f17bff2",
+            "416ab7d1be37bf15e9c7861b",
+            "546c418623c5fc2a9f18544c"
+          ]
+        },
+        {
+          "id": "af56cf116e775d3e",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "d0d0acde9fedc93368021bc4",
+          "camera": "3466050f792134c598c7afac",
+          "candidates": [
+            "b07a11c6404b4e1c1b8be2c1",
+            "dca82a0312e44397c8b478fb",
+            "35e90fe02eea5b9a240853e8",
+            "adb8c596ea3a0de08e603863"
+          ]
+        },
+        {
+          "id": "38b44683c1d225ba",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "c71f0f3875d10443b7dc2e64",
+          "camera": "1ea117b9461e0187faf76f2d",
+          "candidates": [
+            "1c76d393147c7aa25d922f2b",
+            "ce2423646847a97d38ea4073",
+            "d680e657c928f41184bde7ca",
+            "0c73227c55e849dbc312d182"
+          ]
+        },
+        {
           "id": "9b72742fdaeaeeed",
           "frames": 49,
           "fps": 8.0,
@@ -208,6 +403,201 @@
           ]
         },
         {
+          "id": "29771bbfd7d1d78c",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "9279b422e00588e9a4b29350",
+          "camera": "1c68b2e8eb8d4e0ccbcd2985",
+          "candidates": [
+            "2979cf45760fa42108d9ce85",
+            "41feb9c43d5783907bb2b394",
+            "23363f9694e3b241f40f2801",
+            "26437b8f51770b80e544f616"
+          ]
+        },
+        {
+          "id": "5aa0f22bd6a97311",
+          "frames": 41,
+          "fps": 8.0,
+          "input": "93891e7a29e15fbb6f3c72d0",
+          "camera": "b29461288dc352339e054345",
+          "candidates": [
+            "65262d69e828b5648ef8eb34",
+            "364c74d869f90e8582fd3999",
+            "67115146986c9ee0a80bfc14",
+            "0f548a502e0b46ba78fc50ae"
+          ]
+        },
+        {
+          "id": "27cf6dc7749436ee",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "f173620dbbae5d11a1f151b4",
+          "camera": "9e34fda4ab2dbcbe5b656d0a",
+          "candidates": [
+            "414b8ec7debf7b48d06c68e6",
+            "7dfac2711e6aed5ca277f908",
+            "ebc37f13b369020f2a0b950e",
+            "31e9a9ff74b9cd7b6b3f9b0b"
+          ]
+        },
+        {
+          "id": "3bbcc20294872279",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "0beeccc46183178e85858f05",
+          "camera": "8095433980ee16f91da44b8d",
+          "candidates": [
+            "f895b2a6dad807a112af8d9a",
+            "b4d6d7cfd682490bfb320e40",
+            "b025d76be736bf86a2418223",
+            "5f59f6f46216aaa853bf59be"
+          ]
+        },
+        {
+          "id": "4c342b943a4c9cab",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "ed2e1106bca5422b69c740e5",
+          "camera": "f9721bdc8d052da77ddd918b",
+          "candidates": [
+            "e0c11ca58874838d8e56a333",
+            "1e4a4e350aea6993bfa3b735",
+            "1b033ab8c05d828dc50fe088",
+            "4bd5cef88a1f0de535cfdef5"
+          ]
+        },
+        {
+          "id": "95f349c2f17d0700",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "efa238de392dcd04ae361fac",
+          "camera": "1f5d819e78ade81025ca6a3d",
+          "candidates": [
+            "f2f1086e19744a009caafe78",
+            "decfba1fd5d1435b39cfb435",
+            "94825d5f4af5967193f5fe23",
+            "30717f4b0b647b2a88794b26"
+          ]
+        },
+        {
+          "id": "6326f0445c783799",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "cb3acfcfaf9f3ed4e3aad930",
+          "camera": "314f05865cbb9d51c152800c",
+          "candidates": [
+            "8b6c628196e0d7420102a696",
+            "c1a3a1c9fc14f4740655cddd",
+            "d8e80c663f227f58d8f5eddb",
+            "e51b6645c0b2fd53f19985e0"
+          ]
+        },
+        {
+          "id": "def4b4cc5c9f1d63",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "45f7107a89fce2bbf5963dae",
+          "camera": "8db9f422f93a79a925706ace",
+          "candidates": [
+            "dad6130e9cde3416358e3c0c",
+            "48b3f70636ca1923e7592183",
+            "dda6bd0a62e2e69b904ecf81",
+            "c2a64590de9c97e9c3ad1ff9"
+          ]
+        },
+        {
+          "id": "49b7ea32c2e20fdd",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "332ef05dae6e39a103562f09",
+          "camera": "d103a9f8f42068dae495ef1f",
+          "candidates": [
+            "61ef98c0fa220f0739194bfb",
+            "cab3ca8ca4f6836fecda8c9e",
+            "365549cd3c6da14fc786b9a4",
+            "d0f8ad208a60b61618dbbea4"
+          ]
+        },
+        {
+          "id": "b4ad1aaf5b26f0ec",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "923e78ddfd39813b34ce6bed",
+          "camera": "04ffb3414aa28e459fb8f49d",
+          "candidates": [
+            "14ddbf3b56456fdf95bb5a68",
+            "07b00ca190394db4b83ba6d0",
+            "d4c12c94297710a5d186388c",
+            "492689922e389c99a4265668"
+          ]
+        },
+        {
+          "id": "421f0d67f2af0e6b",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "9290d09c0ea7e913ae279674",
+          "camera": "95b86442bb448162bcbafc22",
+          "candidates": [
+            "f3a7a88d104157593947ce0f",
+            "b20a63db5466a0cde1865635",
+            "b194d090a75378a3e8b7078f",
+            "26f2d72afda2f7f1ba0329fb"
+          ]
+        },
+        {
+          "id": "84fc395d249d31c6",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "f3f3e055007505501877d006",
+          "camera": "639a8d4209d159d79b404b2a",
+          "candidates": [
+            "9c97ef473fcf5465a2b0efba",
+            "ed022640d3593ba6d76c4da7",
+            "c2889c0183b6812c9608edd5",
+            "c7ac896480883aed88dd73a0"
+          ]
+        },
+        {
+          "id": "7622ce03d5e095ca",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "511db5e697da2b0da9a8dc3c",
+          "camera": "f52c453e9dd8ad836e35e58e",
+          "candidates": [
+            "fe13f49166af78eb7d132479",
+            "59b05dce2b9992adf35be6f9",
+            "f265b8c7a28e212714d295a2",
+            "517469efcab9b62b07aef40b"
+          ]
+        },
+        {
+          "id": "18f9da4821cf6290",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "146518123642e14a699e2321",
+          "camera": "29241a9420f0a5c5cb540d02",
+          "candidates": [
+            "929c6213b1045984a78dd50a",
+            "4c2476ef63ec97c27d6310aa",
+            "c636ce6ce91ed13b7c9ae577",
+            "97c7951e1b01be17d50b6942"
+          ]
+        },
+        {
+          "id": "3de6f7aa285d0be6",
+          "frames": 49,
+          "fps": 8,
+          "input": "4c8d9273e9e108a3a0a62888",
+          "camera": "b27d15cd6a94a337ceaab201",
+          "candidates": [
+            "3badf4afe24d61eb84667f24",
+            "3b80308ce0dfecc16ff7cce1",
+            "a43215ae3148bf244c09de69",
+            "b11990a42e9b373587fb7618"
+          ]
+        },
+        {
           "id": "3eb30b9b583e568f",
           "frames": 49,
           "fps": 8.0,
@@ -276,415 +666,8 @@
     },
     {
       "id": "g3",
-      "kind": "criteria",
-      "cases": [
-        {
-          "id": "57639d5885c32f5f",
-          "frames": 49,
-          "fps": 8,
-          "input": "9fb54e52f51c16846c22d8d9",
-          "camera": "a236f510344c6f4275837d97",
-          "candidates": [
-            "3ca0f15a5484107dca652a9d",
-            "f3dda7784d27256c5a0f8444",
-            "13cf34c32b1c19f9eae36a0b",
-            "93e7da61a9777c1805e29477"
-          ]
-        },
-        {
-          "id": "7fbc157c69253cb1",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "bb52c49c4160e3ba568acf15",
-          "camera": "16765a57fe032bf11cf2ef99",
-          "candidates": [
-            "4cc2c2dcf8ebb849ed5ebe98",
-            "329a631f4afbc97eef1b5ed6",
-            "1c1e3088dac6808cc12bd74c",
-            "cc74ce374210f8c909298534"
-          ]
-        },
-        {
-          "id": "a9de61b9b7bfef54",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "3b9b14b4949a62b793ba0738",
-          "camera": "8a42d04e8489dcd3acf2ae8a",
-          "candidates": [
-            "229965865d009589645d35f8",
-            "20968bed924e5da6689f1471",
-            "ad3ccf520028f8337d5ef475",
-            "ba07dbba0466da03cbce2156"
-          ]
-        },
-        {
-          "id": "d91eb5ef932ec835",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "c5c5f5bcaaab3f866e4dd8c0",
-          "camera": "9f00f6322fdc61bed71167c0",
-          "candidates": [
-            "739499b91d7f97b0d933e6f2",
-            "2e4ba967ee58fd655190547d",
-            "6139c8a31d60f59d8633269b",
-            "e3f60a1d575641b3458952b8"
-          ]
-        },
-        {
-          "id": "6b97cc58ba6ddc87",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "72f5438f618b1d4c04cae1ee",
-          "camera": "78687eeb75ebed9f6bb09c7a",
-          "candidates": [
-            "6db8e64e2e6a4ff255ec5a30",
-            "606d5910a489121d41025b5d",
-            "6caa619a1effe21a313d0c88",
-            "23242d71de5915d0790a8283"
-          ]
-        },
-        {
-          "id": "eb61aeefb557731b",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "95be14ed07bf7ef51116b842",
-          "camera": "e5506f86c1cc026cc8f8392a",
-          "candidates": [
-            "f92117e1f8ae43a743c4187f",
-            "32c953bd7266d382f3ab929a",
-            "e80119c7d76b1fe5b613b3e2",
-            "f67517928e36160cd28a2e82"
-          ]
-        },
-        {
-          "id": "96157c196d30246d",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "7ff56fae94e968e26a683cf7",
-          "camera": "eb79452e5336f5a02141191c",
-          "candidates": [
-            "40b3eff851b56ad71895a68d",
-            "0e1e661947caefae14707f3f",
-            "f67cd8043920ec5c3f33f076",
-            "d5532bd3e7be61373c274aa0"
-          ]
-        },
-        {
-          "id": "7aac6d33b10cc1f6",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "626af89da929eb3ab8f6b6e1",
-          "camera": "7e9fe28a2802dd7075205a7a",
-          "candidates": [
-            "24b563eaad7cf3f02044565f",
-            "7e22ac88753cd9c93f17bff2",
-            "416ab7d1be37bf15e9c7861b",
-            "546c418623c5fc2a9f18544c"
-          ]
-        },
-        {
-          "id": "af56cf116e775d3e",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "d0d0acde9fedc93368021bc4",
-          "camera": "3466050f792134c598c7afac",
-          "candidates": [
-            "b07a11c6404b4e1c1b8be2c1",
-            "dca82a0312e44397c8b478fb",
-            "35e90fe02eea5b9a240853e8",
-            "adb8c596ea3a0de08e603863"
-          ]
-        },
-        {
-          "id": "38b44683c1d225ba",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "c71f0f3875d10443b7dc2e64",
-          "camera": "1ea117b9461e0187faf76f2d",
-          "candidates": [
-            "1c76d393147c7aa25d922f2b",
-            "ce2423646847a97d38ea4073",
-            "d680e657c928f41184bde7ca",
-            "0c73227c55e849dbc312d182"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "g4",
-      "kind": "criteria",
-      "cases": [
-        {
-          "id": "29771bbfd7d1d78c",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "9279b422e00588e9a4b29350",
-          "camera": "1c68b2e8eb8d4e0ccbcd2985",
-          "candidates": [
-            "2979cf45760fa42108d9ce85",
-            "41feb9c43d5783907bb2b394",
-            "23363f9694e3b241f40f2801",
-            "26437b8f51770b80e544f616"
-          ]
-        },
-        {
-          "id": "5aa0f22bd6a97311",
-          "frames": 41,
-          "fps": 8.0,
-          "input": "93891e7a29e15fbb6f3c72d0",
-          "camera": "b29461288dc352339e054345",
-          "candidates": [
-            "65262d69e828b5648ef8eb34",
-            "364c74d869f90e8582fd3999",
-            "67115146986c9ee0a80bfc14",
-            "0f548a502e0b46ba78fc50ae"
-          ]
-        },
-        {
-          "id": "27cf6dc7749436ee",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "f173620dbbae5d11a1f151b4",
-          "camera": "9e34fda4ab2dbcbe5b656d0a",
-          "candidates": [
-            "414b8ec7debf7b48d06c68e6",
-            "7dfac2711e6aed5ca277f908",
-            "ebc37f13b369020f2a0b950e",
-            "31e9a9ff74b9cd7b6b3f9b0b"
-          ]
-        },
-        {
-          "id": "3bbcc20294872279",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "0beeccc46183178e85858f05",
-          "camera": "8095433980ee16f91da44b8d",
-          "candidates": [
-            "f895b2a6dad807a112af8d9a",
-            "b4d6d7cfd682490bfb320e40",
-            "b025d76be736bf86a2418223",
-            "5f59f6f46216aaa853bf59be"
-          ]
-        },
-        {
-          "id": "4c342b943a4c9cab",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "ed2e1106bca5422b69c740e5",
-          "camera": "f9721bdc8d052da77ddd918b",
-          "candidates": [
-            "e0c11ca58874838d8e56a333",
-            "1e4a4e350aea6993bfa3b735",
-            "1b033ab8c05d828dc50fe088",
-            "4bd5cef88a1f0de535cfdef5"
-          ]
-        },
-        {
-          "id": "421f0d67f2af0e6b",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "9290d09c0ea7e913ae279674",
-          "camera": "95b86442bb448162bcbafc22",
-          "candidates": [
-            "f3a7a88d104157593947ce0f",
-            "b20a63db5466a0cde1865635",
-            "b194d090a75378a3e8b7078f",
-            "26f2d72afda2f7f1ba0329fb"
-          ]
-        },
-        {
-          "id": "84fc395d249d31c6",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "f3f3e055007505501877d006",
-          "camera": "639a8d4209d159d79b404b2a",
-          "candidates": [
-            "9c97ef473fcf5465a2b0efba",
-            "ed022640d3593ba6d76c4da7",
-            "c2889c0183b6812c9608edd5",
-            "c7ac896480883aed88dd73a0"
-          ]
-        },
-        {
-          "id": "7622ce03d5e095ca",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "511db5e697da2b0da9a8dc3c",
-          "camera": "f52c453e9dd8ad836e35e58e",
-          "candidates": [
-            "fe13f49166af78eb7d132479",
-            "59b05dce2b9992adf35be6f9",
-            "f265b8c7a28e212714d295a2",
-            "517469efcab9b62b07aef40b"
-          ]
-        },
-        {
-          "id": "18f9da4821cf6290",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "146518123642e14a699e2321",
-          "camera": "29241a9420f0a5c5cb540d02",
-          "candidates": [
-            "929c6213b1045984a78dd50a",
-            "4c2476ef63ec97c27d6310aa",
-            "c636ce6ce91ed13b7c9ae577",
-            "97c7951e1b01be17d50b6942"
-          ]
-        },
-        {
-          "id": "3de6f7aa285d0be6",
-          "frames": 49,
-          "fps": 8,
-          "input": "4c8d9273e9e108a3a0a62888",
-          "camera": "b27d15cd6a94a337ceaab201",
-          "candidates": [
-            "3badf4afe24d61eb84667f24",
-            "3b80308ce0dfecc16ff7cce1",
-            "a43215ae3148bf244c09de69",
-            "b11990a42e9b373587fb7618"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "g5",
-      "kind": "criteria",
-      "cases": [
-        {
-          "id": "88f2ca9a04a12460",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "ed63b8b4dea99528b5f6ebfd",
-          "camera": "38eb5ddab14d41736818e1c3",
-          "candidates": [
-            "dd069382f8eda804cb473051",
-            "a19b3a02f66afb45377569bf",
-            "649e2f8231a5b2ac386c68f3",
-            "c2d889652d451a607399d056"
-          ]
-        },
-        {
-          "id": "286919debcb8a492",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "f38072269afdaeca8a39f599",
-          "camera": "dfd82be320800ef73bb7926e",
-          "candidates": [
-            "c1ef18a34eae7ed5e8cd1a4c",
-            "6425dccf472cf8c8bbe52c9d",
-            "c011698ef339de1e334b22c2",
-            "a8e8fa2a5d0797f82be83af3"
-          ]
-        },
-        {
-          "id": "ed08a1f788ca7a09",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "06f34e571e3f8eafcbf83b70",
-          "camera": "badda0ba7fa7e0f0f1894618",
-          "candidates": [
-            "c37a3984dedb382e8e9fa7c7",
-            "b5b16f9df8c9d62a93f809a2",
-            "62038b288fa1965d2773642b",
-            "e03e9aceb3e5e4729a187fd0"
-          ]
-        },
-        {
-          "id": "81f21f29dd296e50",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "ac596eb9f149c1618cd2f38f",
-          "camera": "5fc756bb3895becc993123cb",
-          "candidates": [
-            "c2abe2fc45ede665b819a6ab",
-            "8f1a376da2739f1d01d026d0",
-            "12ebe1c34f68c68dba1cab2a",
-            "1d6219ab583fc877deecfb3c"
-          ]
-        },
-        {
-          "id": "8a2b8617156eeb61",
-          "frames": 48,
-          "fps": 8.0,
-          "input": "3ffdaacaecffca9acc482e53",
-          "camera": "5b3b8a7bf837291ac32b1ea9",
-          "candidates": [
-            "cde0615f108601b3841ecfee",
-            "e688775b6dd26e168d876c72",
-            "5d697b628a0fe7209e7fdfee",
-            "6c7a98e045d5f8ac872d9262"
-          ]
-        },
-        {
-          "id": "95f349c2f17d0700",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "efa238de392dcd04ae361fac",
-          "camera": "1f5d819e78ade81025ca6a3d",
-          "candidates": [
-            "f2f1086e19744a009caafe78",
-            "decfba1fd5d1435b39cfb435",
-            "94825d5f4af5967193f5fe23",
-            "30717f4b0b647b2a88794b26"
-          ]
-        },
-        {
-          "id": "6326f0445c783799",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "cb3acfcfaf9f3ed4e3aad930",
-          "camera": "314f05865cbb9d51c152800c",
-          "candidates": [
-            "8b6c628196e0d7420102a696",
-            "c1a3a1c9fc14f4740655cddd",
-            "d8e80c663f227f58d8f5eddb",
-            "e51b6645c0b2fd53f19985e0"
-          ]
-        },
-        {
-          "id": "def4b4cc5c9f1d63",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "45f7107a89fce2bbf5963dae",
-          "camera": "8db9f422f93a79a925706ace",
-          "candidates": [
-            "dad6130e9cde3416358e3c0c",
-            "48b3f70636ca1923e7592183",
-            "dda6bd0a62e2e69b904ecf81",
-            "c2a64590de9c97e9c3ad1ff9"
-          ]
-        },
-        {
-          "id": "49b7ea32c2e20fdd",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "332ef05dae6e39a103562f09",
-          "camera": "d103a9f8f42068dae495ef1f",
-          "candidates": [
-            "61ef98c0fa220f0739194bfb",
-            "cab3ca8ca4f6836fecda8c9e",
-            "365549cd3c6da14fc786b9a4",
-            "d0f8ad208a60b61618dbbea4"
-          ]
-        },
-        {
-          "id": "b4ad1aaf5b26f0ec",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "923e78ddfd39813b34ce6bed",
-          "camera": "04ffb3414aa28e459fb8f49d",
-          "candidates": [
-            "14ddbf3b56456fdf95bb5a68",
-            "07b00ca190394db4b83ba6d0",
-            "d4c12c94297710a5d186388c",
-            "492689922e389c99a4265668"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "g6",
       "kind": "pairwise",
+      "allowTie": true,
       "cases": [
         {
           "frames": 48,
@@ -742,68 +725,6 @@
           "id": "c514363141527d6e"
         },
         {
-          "id": "c7da86210108fdd0",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "07f14593e49c25549216fbdb",
-          "camera": "d033fef0f93d1e50243a4414",
-          "candidates": [
-            "ea3140623990c6121622cf18",
-            "3b70aa36903e3bf2fa144a9a"
-          ]
-        },
-        {
-          "id": "1fe1393c12b106fe",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "0da06a79698d731a5ff15f04",
-          "camera": "379b361e713bcd53363c5214",
-          "candidates": [
-            "82a4d350a8202e10a7902d69",
-            "b9a2c7f5bd1b1ae33e03b34f"
-          ]
-        },
-        {
-          "id": "8e9616fed975ec32",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "6bd50641a86845a947e7257f",
-          "camera": "58f0b802ecb8c3b5ab940e18",
-          "candidates": [
-            "7858d3b44f5660e07b5fbb21",
-            "e22d897ba96a1b0869221be0"
-          ]
-        },
-        {
-          "id": "cd91e1442a82ff1a",
-          "frames": 41,
-          "fps": 8.0,
-          "input": "a65e4a3f5abccb1833577088",
-          "camera": "7cd3a0da02c02fe26ab56718",
-          "candidates": [
-            "5653f3a6fa4e9127ed422d66",
-            "fc9e39592323ca4016d9a13e"
-          ]
-        },
-        {
-          "id": "e56e613a06b1af38",
-          "frames": 49,
-          "fps": 8.0,
-          "input": "8965bd743b116a28c081d0b2",
-          "camera": "55393242a1420391267ef6c5",
-          "candidates": [
-            "70fa8bfb48b95cbc2717ab42",
-            "9cc90ee1bca4719799a1ba11"
-          ]
-        }
-      ],
-      "allowTie": true
-    },
-    {
-      "id": "g7",
-      "kind": "pairwise",
-      "cases": [
-        {
           "frames": 49,
           "fps": 8,
           "input": "d467b96598909036a2bf6701",
@@ -857,6 +778,61 @@
             "6a4a9356131c92bf8f1eb7e1"
           ],
           "id": "d2f3c0299bc9348b"
+        },
+        {
+          "id": "c7da86210108fdd0",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "07f14593e49c25549216fbdb",
+          "camera": "d033fef0f93d1e50243a4414",
+          "candidates": [
+            "ea3140623990c6121622cf18",
+            "3b70aa36903e3bf2fa144a9a"
+          ]
+        },
+        {
+          "id": "1fe1393c12b106fe",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "0da06a79698d731a5ff15f04",
+          "camera": "379b361e713bcd53363c5214",
+          "candidates": [
+            "82a4d350a8202e10a7902d69",
+            "b9a2c7f5bd1b1ae33e03b34f"
+          ]
+        },
+        {
+          "id": "8e9616fed975ec32",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "6bd50641a86845a947e7257f",
+          "camera": "58f0b802ecb8c3b5ab940e18",
+          "candidates": [
+            "7858d3b44f5660e07b5fbb21",
+            "e22d897ba96a1b0869221be0"
+          ]
+        },
+        {
+          "id": "cd91e1442a82ff1a",
+          "frames": 41,
+          "fps": 8.0,
+          "input": "a65e4a3f5abccb1833577088",
+          "camera": "7cd3a0da02c02fe26ab56718",
+          "candidates": [
+            "5653f3a6fa4e9127ed422d66",
+            "fc9e39592323ca4016d9a13e"
+          ]
+        },
+        {
+          "id": "e56e613a06b1af38",
+          "frames": 49,
+          "fps": 8.0,
+          "input": "8965bd743b116a28c081d0b2",
+          "camera": "55393242a1420391267ef6c5",
+          "candidates": [
+            "70fa8bfb48b95cbc2717ab42",
+            "9cc90ee1bca4719799a1ba11"
+          ]
         },
         {
           "id": "ef2feba2c75bbfa9",
@@ -913,8 +889,7 @@
             "a49252b49bcd93410f700ca1"
           ]
         }
-      ],
-      "allowTie": true
+      ]
     }
   ],
   "assets": {
@@ -4475,5 +4450,5 @@
       "height": 480
     }
   },
-  "revision": "r5"
+  "revision": "r4"
 }

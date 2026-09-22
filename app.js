@@ -347,9 +347,8 @@ async function start() {
       const saved = await api('/study/start',{sessionId:session.sessionId});
       const local = session.responses || [];
       session = saved;
-      if (local.length > saved.responses.length) session.responses = local;
       // Retry an answer that was saved locally before an interrupted upload.
-      if (session.responses.length > saved.responses.length) session = await api('/study/save',{sessionId:session.sessionId,responses:session.responses});
+      if (local.length > saved.responses.length) session = await api('/study/save',{sessionId:session.sessionId,responses:local});
       confirmedCount = session.responses.length;
       persist();
     } else session = {studyId:C.STUDY_ID,sessionId:'preview',groupId:previewId,ordinal:0,responses:[],complete:false};
@@ -395,6 +394,7 @@ async function submit(event) {
   }
 }
 function done() {
+  if (!previewId && (!session.complete || !session.receiptId)) throw new Error('Completion has not been confirmed. Please resume and retry saving.');
   show('done'); $('progress').value = cases.length;
   $('done-message').textContent = previewId ? 'Preview complete. No answers were submitted.' : `All ${cases.length} comparisons have been submitted. Thank you for taking part.`;
   $('completion-code').textContent = session.receiptId ? `Completion receipt: ${session.receiptId}` : '';
@@ -420,7 +420,7 @@ document.addEventListener('visibilitychange',() => {
 requestAnimationFrame(tick);
 (async () => {
   try {
-    const responses = await Promise.all([fetch(resourceURL('study.json?v=20260921-r4')),fetch(resourceURL('study-config.json'))]);
+    const responses = await Promise.all([fetch(resourceURL('study.json?v=20260922-r5')),fetch(resourceURL('study-config.json'))]);
     if (responses.some(r => !r.ok)) throw new Error('The study could not load. Please reload this page.');
     const [inventory,config] = await Promise.all(responses.map(r => r.json()));
     manifest = C.validateManifest(inventory);
@@ -428,7 +428,7 @@ requestAnimationFrame(tick);
     key = await crypto.subtle.importKey('raw',Uint8Array.from(atob(encoded),char => char.charCodeAt(0)),{name:'AES-GCM'},false,['decrypt']);
     if (previewId && !manifest.groups.some(g => g.id === previewId)) throw new Error('This preview link is invalid.');
     const counts = [...new Set(manifest.groups.map(g=>g.cases.length))].sort((a,b)=>a-b);
-    document.querySelector('.facts').textContent = `${previewId ? manifest.groups.find(g=>g.id===previewId).cases.length : counts.join('–')} examples · 10–15 minutes`;
+    document.querySelector('.facts').textContent = `${previewId ? manifest.groups.find(g=>g.id===previewId).cases.length : counts.join('–')} examples · about 5 minutes`;
     if (!previewId) $('resume').hidden = !readSaved();
     $('welcome-status').textContent = '';
     $('start').disabled = false;

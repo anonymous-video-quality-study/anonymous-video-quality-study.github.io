@@ -7,20 +7,26 @@
     interaction: ['Interaction fidelity', 'Which video more faithfully preserves the interaction in the input, including object motion, contact relationships, and changes in object state?'],
     overall: ['Overall preference', 'Which video is better overall?']
   };
+  function validateGroup(g, assets, revision) {
+    if (!['r1','r2','r3','r4','r5'].includes(revision)) throw new Error('Invalid study revision.');
+    const count = revision === 'r5' ? 10 : g.kind === 'pairwise' ? 20 : 25;
+    if (!['criteria', 'overall', 'pairwise'].includes(g.kind) || g.cases.length !== count || new Set(g.cases.map(c => c.id)).size !== count) throw new Error('Invalid study group.');
+    for (const c of g.cases) {
+      if (c.candidates.length !== (g.kind === 'criteria' ? 4 : 2) || new Set(c.candidates).size !== c.candidates.length || !(c.frames > 0 && c.fps > 0)) throw new Error('Invalid comparison.');
+      for (const id of [c.input, c.camera, ...c.candidates]) {
+        const a = assets[id];
+        if (!a || !/^(media\/[a-f0-9]{24}\.bin|shared\/[a-f0-9]{24}\.(mp4|webm))$/.test(a.src) || a.encodedFrames < c.frames || !(a.encodedFps > 0)) throw new Error('Invalid video.');
+      }
+    }
+  }
   function validateManifest(m) {
-    if (m.studyId !== STUDY_ID || m.schemaVersion !== 2 || m.groups.length !== 3) throw new Error('Please reload the updated study.');
+    const revision = m.revision || 'r1';
+    if (m.studyId !== STUDY_ID || m.schemaVersion !== 2 || !['r1','r2','r3','r4','r5'].includes(revision) || m.groups.length !== (revision === 'r5' ? 7 : 3)) throw new Error('Please reload the updated study.');
     const ids = new Set();
     for (const g of m.groups) {
-      const count = g.kind === 'pairwise' ? 20 : 25;
-      if (ids.has(g.id) || !['criteria', 'overall', 'pairwise'].includes(g.kind) || g.cases.length !== count || new Set(g.cases.map(c => c.id)).size !== count) throw new Error('Invalid study group.');
+      if (ids.has(g.id) || !Array.from({length:m.groups.length},(_,i)=>`g${i+1}`).includes(g.id)) throw new Error('Invalid study group.');
       ids.add(g.id);
-      for (const c of g.cases) {
-        if (c.candidates.length !== (g.kind === 'criteria' ? 4 : 2) || new Set(c.candidates).size !== c.candidates.length || !(c.frames > 0 && c.fps > 0)) throw new Error('Invalid comparison.');
-        for (const id of [c.input, c.camera, ...c.candidates]) {
-          const a = m.assets[id];
-          if (!a || !/^(media\/[a-f0-9]{24}\.bin|shared\/[a-f0-9]{24}\.(mp4|webm))$/.test(a.src) || a.encodedFrames < c.frames || !(a.encodedFps > 0)) throw new Error('Invalid video.');
-        }
-      }
+      validateGroup(g, m.assets, revision);
     }
     return m;
   }
@@ -28,7 +34,7 @@
     const group = manifest.groups.find(g => g.id === assignment.groupId);
     if (!group || !Number.isSafeInteger(assignment.ordinal) || assignment.ordinal < 0) throw new Error('Invalid assignment.');
     const assigned = assignment.cases || group.cases;
-    validateManifest({...manifest, groups:manifest.groups.map(g => g.id === group.id ? {...g,kind:assignment.kind || g.kind,cases:assigned} : g)});
+    validateGroup({...group,kind:assignment.kind || group.kind,cases:assigned}, manifest.assets, assignment.revision || manifest.revision || 'r1');
     return assigned.map(c => { const offset = assignment.ordinal % c.candidates.length; return {...c, candidates:c.candidates.slice(offset).concat(c.candidates.slice(0, offset))}; });
   }
   function questions(kind) { return kind === 'overall' ? ['overall'] : ['camera', 'quality', 'interaction']; }
