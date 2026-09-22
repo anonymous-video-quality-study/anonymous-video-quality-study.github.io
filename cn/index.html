@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <base href="../">
+  <title>视频评估问卷</title>
+  <link rel="stylesheet" href="styles.css?v=20260921-r4">
+  <script src="study-core.js?v=20260922-r5" defer></script>
+  <script src="i18n.js?v=20260922-cn" defer></script>
+  <script src="app.js?v=20260922-cn" defer></script>
+</head>
+<body>
+  <header>
+    <a class="wordmark" href="cn/">视频评估问卷</a>
+    <div id="preview-banner" class="preview" hidden>
+      <label>跳转至 <select id="preview-case" aria-label="示例导航"></select></label>
+    </div>
+  </header>
+  <main>
+    <section id="welcome" class="intro">
+      <h1>比较生成的视频</h1>
+      <p><strong>强烈建议使用台式电脑或笔记本电脑参与本问卷。</strong></p>
+      <p class="lead">每个示例包含一个输入视频、一个相机运动参考，以及按照该相机运动生成的多个视频。</p>
+      <p class="facts">10 个示例 · 约 5 分钟</p>
+      <ol class="instructions">
+        <li>请根据输入视频判断交互，根据相机运动参考判断视角。</li>
+        <li>所有视频会自动同步播放并循环。你可以随时选择答案。</li>
+        <li>请分别回答每个问题。不同示例中的字母与视频的对应关系可能不同。</li>
+        <li>可以使用“跳转至”查看其他示例。请完成并保存每个示例的答案后再结束问卷。</li>
+      </ol>
+      <div class="actions"><button id="start" disabled>开始问卷 →</button><button id="resume" class="secondary" hidden>继续已保存的进度</button></div>
+      <p id="welcome-status" class="status" role="status">正在加载问卷…</p>
+    </section>
+    <section id="study" hidden>
+      <div class="study-heading">
+        <h1 id="case-title">示例 1</h1>
+        <div class="progress-box"><span id="progress-text"></span><progress id="progress" max="10" value="0" aria-label="问卷进度"></progress></div>
+      </div>
+      <div class="workspace">
+        <div class="screening">
+          <div id="references" class="references"></div>
+          <div id="candidates" class="candidates"></div>
+          <div class="playbar">
+            <button id="play" disabled>全部播放</button>
+            <button id="replay" class="secondary" disabled>↻ 重播</button>
+            <input id="seek" aria-label="播放位置" type="range" min="0" max="1000" value="0" disabled>
+            <span id="clock">0.0 / 0.0 秒</span>
+          </div>
+          <div class="media-message"><span id="media-status" class="status" role="status">正在加载视频…</span><button id="retry" class="text-button" hidden>重新加载视频</button></div>
+        </div>
+        <aside class="response-panel" aria-label="你的答案">
+          <p id="answer-instruction" class="answer-instruction">请为每个问题选择一个视频。</p>
+          <form id="answers" novalidate>
+            <div id="questions"></div>
+            <p id="answer-error" class="answer-error" role="alert" hidden></p>
+            <button id="next" type="submit" disabled>保存并继续 →</button>
+          </form>
+          <p id="save-status" class="fine" role="status">请选择答案后继续。</p>
+        </aside>
+      </div>
+    </section>
+    <section id="done" class="intro" hidden>
+      <h1>感谢你的参与。</h1>
+      <p id="done-message" class="lead">全部示例的答案已保存。</p>
+      <p id="completion-code" class="fine"></p>
+    </section>
+    <p id="global-error" class="error" role="alert" hidden></p>
+  </main>
+</body>
+</html>

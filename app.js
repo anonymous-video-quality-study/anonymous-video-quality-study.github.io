@@ -1,6 +1,8 @@
 'use strict';
 const $ = id => document.getElementById(id);
 const C = StudyCore;
+// Cached English HTML may predate the translation script.
+const t = window.StudyText || ((text, values = {}) => text.replace(/\{(\w+)\}/g, (match, key) => values[key] ?? match));
 const STORAGE = C.STUDY_ID;
 const DRAFT_STORAGE = STORAGE + ':drafts';
 const SERVICE = 'https://settled-gathered-exercises-maximize.trycloudflare.com';
@@ -64,7 +66,7 @@ function loadAsset(id) {
 }
 
 function show(id) { for (const name of ['welcome','study','done']) $(name).hidden = name !== id; $('preview-banner').hidden = id !== 'study'; }
-function error(message) { $('global-error').textContent = message || ''; $('global-error').hidden = !message; }
+function error(message) { $('global-error').textContent = t(message || ''); $('global-error').hidden = !message; }
 function persist() { if (!previewId) localStorage.setItem(STORAGE, JSON.stringify(session)); }
 function readSaved() { try { const s = JSON.parse(localStorage.getItem(STORAGE)); return s?.studyId === C.STUDY_ID ? s : null; } catch { return null; } }
 function savedExample() { return !previewId && index < confirmedCount; }
@@ -90,10 +92,10 @@ function updateNavigation() {
   $('preview-case').disabled = saving || !!pendingAnswer || !cases;
   if (!cases) return;
   for (const [i,option] of [...$('preview-case').options].entries()) {
-    const state = !previewId && i < confirmedCount ? ' · Saved' : answerDrafts.has(cases[i].id) ? ' · Draft' : '';
-    option.textContent = `Example ${i+1}${state}`;
+    const state = !previewId && i < confirmedCount ? t(' · Saved') : answerDrafts.has(cases[i].id) ? t(' · Draft') : '';
+    option.textContent = t('Example {number}',{number:i+1}) + state;
   }
-  $('progress-text').textContent = previewId ? `${index+1} of ${cases.length}` : `${confirmedCount} of ${cases.length} saved`;
+  $('progress-text').textContent = previewId ? t('{number} of {total}',{number:index+1,total:cases.length}) : t('{count} of {total} saved',{count:confirmedCount,total:cases.length});
   $('progress').value = previewId ? index : confirmedCount;
 }
 async function api(path, payload) {
@@ -113,15 +115,15 @@ async function api(path, payload) {
       const transient = err.retryable || err instanceof TypeError || ['TimeoutError','AbortError'].includes(err.name);
       if (!transient) throw err;
       if (attempt === 1) throw new Error('The connection could not complete. Your answers are kept in this browser. Please retry.');
-      $(path.endsWith('/save') ? 'save-status' : 'welcome-status').textContent = 'Connection interrupted. Retrying automatically…';
+      $(path.endsWith('/save') ? 'save-status' : 'welcome-status').textContent = t('Connection interrupted. Retrying automatically…');
       // Both endpoints reuse the same session and immutable answer prefix.
       await new Promise(resolve => setTimeout(resolve,750));
     }
   }
 }
-function pause() { playing = false; playRequest++; if (buffering) $('media-status').textContent = ''; buffering = false; videos.forEach(v => v.pause()); $('play').textContent = 'Play all'; }
+function pause() { playing = false; playRequest++; if (buffering) $('media-status').textContent = ''; buffering = false; videos.forEach(v => v.pause()); $('play').textContent = t('Play all'); }
 function logicalTime() { const v = videos[videos.length - 1]; return v ? v.currentTime / v.playbackRate : 0; }
-function clock(time = logicalTime()) { $('clock').textContent = `${Math.min(time,duration).toFixed(1)} / ${duration.toFixed(1)} s`; $('seek').value = duration ? Math.min(time / duration,1) * 1000 : 0; }
+function clock(time = logicalTime()) { $('clock').textContent = t('{current} / {total} s',{current:Math.min(time,duration).toFixed(1),total:duration.toFixed(1)}); $('seek').value = duration ? Math.min(time / duration,1) * 1000 : 0; }
 function seek(time) { const t = Math.max(0,Math.min(time,(cases[index].frames-1)/cases[index].fps)); videos.forEach(v => { v.currentTime = t * v.playbackRate; }); previousTime = t; clock(t); }
 function bufferedAt(video, time) {
   if (video.readyState < 2 || video.seeking) return false;
@@ -133,7 +135,7 @@ function bufferedAt(video, time) {
   return false;
 }
 function playbackFailure(message = 'A video could not play. Please retry.') {
-  pause(); ready = false; $('media-status').textContent = message;
+  pause(); ready = false; $('media-status').textContent = t(message);
   $('retry').hidden = false; updateAnswers();
 }
 async function play() {
@@ -141,11 +143,11 @@ async function play() {
   resumeOnVisible = false;
   const token = generation, request = ++playRequest;
   if (logicalTime() >= duration - 1 / cases[index].fps) seek(0);
-  playing = true; buffering = true; $('play').textContent = 'Pause';
+  playing = true; buffering = true; $('play').textContent = t('Pause');
   videos.forEach(v => v.pause());
   const target = Math.min(...videos.map(v => v.currentTime / v.playbackRate));
   seek(target);
-  $('media-status').textContent = 'Buffering videos together…';
+  $('media-status').textContent = t('Buffering videos together…');
   const bufferDeadline = performance.now() + 45000;
   try {
     while (!videos.every(v => bufferedAt(v,target))) {
@@ -161,9 +163,9 @@ async function play() {
   } catch (err) {
     if (token === generation && request === playRequest) {
       pause();
-      $('media-status').textContent = err.name === 'NotAllowedError'
+      $('media-status').textContent = t(err.name === 'NotAllowedError'
         ? 'Autoplay was blocked. Press Play all to start.'
-        : 'Playback paused. Press Play all to retry.';
+        : 'Playback paused. Press Play all to retry.');
     }
   }
 }
@@ -211,7 +213,9 @@ async function returnToIncomplete(missing) {
   validationShown = true;
   updateValidation(true);
   $('answer-error').hidden = false;
-  $('answer-error').textContent = `Your choices are kept as a draft. ${missing.length} earlier ${missing.length === 1 ? 'example still needs' : 'examples still need'} answers. Please complete Example ${index+1} before continuing.`;
+  $('answer-error').textContent = t(missing.length === 1
+    ? 'Your choices are kept as a draft. {count} earlier example still needs answers. Please complete Example {number} before continuing.'
+    : 'Your choices are kept as a draft. {count} earlier examples still need answers. Please complete Example {number} before continuing.',{count:missing.length,number:index+1});
 }
 function updateValidation(focus = false) {
   const missing = [];
@@ -228,7 +232,7 @@ function updateValidation(focus = false) {
   const showError = validationShown && missing.length > 0;
   $('answer-error').hidden = !showError;
   $('answer-error').textContent = showError
-    ? `Please answer the ${missing.length === 1 ? 'remaining question' : `${missing.length} remaining questions`} before continuing.`
+    ? t(missing.length === 1 ? 'Please answer the remaining question before continuing.' : 'Please answer the {count} remaining questions before continuing.',{count:missing.length})
     : '';
   if (focus && missing.length) {
     missing[0].scrollIntoView?.({block:'nearest'});
@@ -241,10 +245,10 @@ function updateAnswers() {
   $('seek').disabled = !ready;
   updateValidation();
   if (!saving && !pendingAnswer) {
-    $('next').textContent = savedExample() ? 'Next example →' : index === cases.length-1 ? 'Submit & finish →' : 'Save & next →';
-    $('save-status').textContent = !ready ? 'Loading videos…' : savedExample()
+    $('next').textContent = t(savedExample() ? 'Next example →' : index === cases.length-1 ? 'Submit & finish →' : 'Save & next →');
+    $('save-status').textContent = t(!ready ? 'Loading videos…' : savedExample()
       ? 'These answers are already saved. You can review this example or jump to another.'
-      : 'Choose your answers, then continue. Unsaved choices stay in this browser as drafts.';
+      : 'Choose your answers, then continue. Unsaved choices stay in this browser as drafts.');
   }
   updateNavigation();
 }
@@ -252,18 +256,18 @@ function renderQuestions() {
   $('questions').replaceChildren();
   const pair = group.kind !== 'criteria', overall = group.kind === 'overall';
   const saved = (savedExample() ? session.responses[index]?.choices : answerDrafts.get(cases[index].id)) || session.responses[index]?.choices || {};
-  $('answer-instruction').innerHTML = overall
+  $('answer-instruction').innerHTML = t(overall
     ? 'Choose A or B if one video is clearly better overall. <strong>If neither video is clearly better, select “About the same.”</strong>'
-    : group.allowTie ? 'Choose A or B for each question. <strong>If neither video is clearly better for that question, select “About the same.”</strong>' : 'Choose one video for each question.';
+    : group.allowTie ? 'Choose A or B for each question. <strong>If neither video is clearly better for that question, select “About the same.”</strong>' : 'Choose one video for each question.');
   const questionOrder = overall ? C.questions(group.kind) : ['interaction', 'quality', 'camera'];
   for (const id of questionOrder) {
     const field = document.createElement('fieldset'), legend = document.createElement('legend'), copy = document.createElement('p'), row = document.createElement('div');
-    legend.textContent = C.QUESTIONS[id][0]; copy.textContent = C.QUESTIONS[id][1]; copy.className = 'question-copy'; row.className = 'choices' + (pair ? ' pair' : '') + (group.allowTie && !overall ? ' has-tie' : '');
+    legend.textContent = t(C.QUESTIONS[id][0]); copy.textContent = t(C.QUESTIONS[id][1]); copy.className = 'question-copy'; row.className = 'choices' + (pair ? ' pair' : '') + (group.allowTie && !overall ? ' has-tie' : '');
     for (const value of (overall || group.allowTie ? ['a','b','tie'] : pair ? ['a','b'] : ['a','b','c','d'])) {
       const label = document.createElement('label'), input = document.createElement('input'), text = document.createElement('span');
       label.className = 'choice' + (value === 'tie' ? ' tie' : ''); input.type = 'radio'; input.name = id; input.value = value; input.disabled = true; input.required = true;
       input.checked = saved[id] === value;
-      text.textContent = value === 'tie' ? 'About the same' : value.toUpperCase();
+      text.textContent = value === 'tie' ? t('About the same') : value.toUpperCase();
       input.addEventListener('change', () => {
         try { rememberChoices(); } catch { error('Your draft could not be saved in this browser. Keep this page open and retry.'); }
         updateAnswers();
@@ -276,9 +280,9 @@ function figure(label, letter, note) {
   const fig = document.createElement('figure'), cap = document.createElement('figcaption'), title = document.createElement('span'), video = document.createElement('video');
   title.className = 'caption-title';
   if (letter) { const badge = document.createElement('span'); badge.className = 'letter'; badge.textContent = letter; title.append(badge); }
-  if (!letter) title.append(document.createTextNode(label));
+  if (!letter) title.append(document.createTextNode(t(label)));
   cap.append(title); video.muted = true; video.defaultMuted = true; video.playsInline = true; video.disablePictureInPicture = true; video.preload = 'auto'; fig.append(cap,video);
-  if (note) { const small = document.createElement('small'); small.textContent = note; fig.append(small); }
+  if (note) { const small = document.createElement('small'); small.textContent = t(note); fig.append(small); }
   return {fig,video};
 }
 async function loadVideo(video, id, signal) {
@@ -309,9 +313,9 @@ async function openCase(nextIndex) {
   retainMedia(cases[index],cases[index+1]);
   if (index >= cases.length) return done();
   show('study'); $('study').dataset.kind = group.kind; $('study').dataset.pair = String(group.kind !== 'criteria'); const item = cases[index]; duration = item.frames / item.fps;
-  $('case-title').textContent = `Example ${index+1}`; $('progress-text').textContent = `${index+1} of ${cases.length}`; $('progress').value = index;
-  $('preview-case').value = index; $('next').textContent = index === cases.length-1 ? 'Submit & finish →' : 'Save & next →';
-  ['play','replay','seek'].forEach(id => { $(id).disabled = true; }); $('retry').hidden = true; $('media-status').textContent = 'Loading videos…';
+  $('case-title').textContent = t('Example {number}',{number:index+1}); $('progress-text').textContent = t('{number} of {total}',{number:index+1,total:cases.length}); $('progress').value = index;
+  $('preview-case').value = index; $('next').textContent = t(index === cases.length-1 ? 'Submit & finish →' : 'Save & next →');
+  ['play','replay','seek'].forEach(id => { $(id).disabled = true; }); $('retry').hidden = true; $('media-status').textContent = t('Loading videos…');
   $('references').replaceChildren(); $('candidates').replaceChildren(); $('references').classList.toggle('single',!item.camera);
   const loads = [];
   const add = (container,id,label,letter,note) => { const view = figure(label,letter,note); $(container).append(view.fig); videos.push(view.video); loads.push(loadVideo(view.video,id,controller.signal)); };
@@ -332,8 +336,8 @@ async function openCase(nextIndex) {
     void Promise.allSettled(mediaIds(cases[index+1]).map(loadAsset));
   } catch (err) {
     if (token !== generation) return;
-    pause(); $('media-status').textContent = err.name === 'AbortError' ? 'Loading timed out. Please retry.' : err.message; $('retry').hidden = false;
-    $('save-status').textContent = 'Retry loading the videos to answer.';
+    pause(); $('media-status').textContent = t(err.name === 'AbortError' ? 'Loading timed out. Please retry.' : err.message); $('retry').hidden = false;
+    $('save-status').textContent = t('Retry loading the videos to answer.');
   }
 }
 async function start() {
@@ -343,7 +347,7 @@ async function start() {
   try {
     if (!previewId) {
       session = readSaved() || {studyId:C.STUDY_ID,sessionId:crypto.randomUUID(),responses:[]}; persist();
-      $('welcome-status').textContent = 'Preparing your comparisons…';
+      $('welcome-status').textContent = t('Preparing your comparisons…');
       const saved = await api('/study/start',{sessionId:session.sessionId});
       const local = session.responses || [];
       session = saved;
@@ -357,11 +361,11 @@ async function start() {
     if (typeof session.allowTie === 'boolean') group.allowTie = session.allowTie;
     $('progress').max = cases.length;
     $('preview-case').replaceChildren();
-    for (let i=0;i<cases.length;i++) { const option = document.createElement('option'); option.value = i; option.textContent = `Example ${i+1}`; $('preview-case').append(option); }
+    for (let i=0;i<cases.length;i++) { const option = document.createElement('option'); option.value = i; option.textContent = t('Example {number}',{number:i+1}); $('preview-case').append(option); }
     restoreDrafts();
     await openCase(session.responses.length);
   } catch (err) {
-    show('welcome'); $('welcome-status').textContent = 'Could not start or resume. Your saved progress is safe; please retry.'; error(err.message);
+    show('welcome'); $('welcome-status').textContent = t('Could not start or resume. Your saved progress is safe; please retry.'); error(err.message);
   } finally { $('start').disabled = !manifest || !key; $('resume').disabled = false; }
 }
 async function submit(event) {
@@ -382,7 +386,7 @@ async function submit(event) {
     session.responses[index] = pendingAnswer;
   }
   try {
-    persist(); updateAnswers(); $('save-status').textContent = previewId ? 'Preview only…' : 'Saving your answers…';
+    persist(); updateAnswers(); $('save-status').textContent = t(previewId ? 'Preview only…' : 'Saving your answers…');
     if (!previewId) {
       session = await api('/study/save',{sessionId:session.sessionId,responses:session.responses});
       confirmedCount = session.responses.length; persist();
@@ -390,14 +394,14 @@ async function submit(event) {
     }
     pendingAnswer = null; saving = false; await openCase(index+1); window.scrollTo({top:0,behavior:'instant'});
   } catch (err) {
-    saving = false; updateAnswers(); $('next').textContent = 'Retry saving →'; $('save-status').textContent = 'Not yet submitted. Your answers are kept in this browser. Retry to continue.'; error(err.message);
+    saving = false; updateAnswers(); $('next').textContent = t('Retry saving →'); $('save-status').textContent = t('Not yet submitted. Your answers are kept in this browser. Retry to continue.'); error(err.message);
   }
 }
 function done() {
   if (!previewId && (!session.complete || !session.receiptId)) throw new Error('Completion has not been confirmed. Please resume and retry saving.');
   show('done'); $('progress').value = cases.length;
-  $('done-message').textContent = previewId ? 'Preview complete. No answers were submitted.' : `All ${cases.length} comparisons have been submitted. Thank you for taking part.`;
-  $('completion-code').textContent = session.receiptId ? `Completion receipt: ${session.receiptId}` : '';
+  $('done-message').textContent = previewId ? t('Preview complete. No answers were submitted.') : t('All {count} comparisons have been submitted. Thank you for taking part.',{count:cases.length});
+  $('completion-code').textContent = session.receiptId ? t('Completion receipt: {receipt}',{receipt:session.receiptId}) : '';
 }
 $('start').addEventListener('click',start); $('resume').addEventListener('click',start);
 $('play').addEventListener('click',() => { resumeOnVisible = false; if (playing) pause(); else void play(); });
@@ -428,9 +432,9 @@ requestAnimationFrame(tick);
     key = await crypto.subtle.importKey('raw',Uint8Array.from(atob(encoded),char => char.charCodeAt(0)),{name:'AES-GCM'},false,['decrypt']);
     if (previewId && !manifest.groups.some(g => g.id === previewId)) throw new Error('This preview link is invalid.');
     const counts = [...new Set(manifest.groups.map(g=>g.cases.length))].sort((a,b)=>a-b);
-    document.querySelector('.facts').textContent = `${previewId ? manifest.groups.find(g=>g.id===previewId).cases.length : counts.join('–')} examples · about 5 minutes`;
+    document.querySelector('.facts').textContent = t('{count} examples · about 5 minutes',{count:previewId ? manifest.groups.find(g=>g.id===previewId).cases.length : counts.join('–')});
     if (!previewId) $('resume').hidden = !readSaved();
     $('welcome-status').textContent = '';
     $('start').disabled = false;
-  } catch (err) { error(err.message); $('welcome-status').textContent = 'Please reload the page to try again.'; }
+  } catch (err) { error(err.message); $('welcome-status').textContent = t('Please reload the page to try again.'); }
 })();

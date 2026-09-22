@@ -4,13 +4,15 @@ Anonymous frontend for a video comparison study. Participant answers are saved
 by a separate response service and are never stored in this public repository.
 
 The participant entry point is https://anonymous-video-quality-study.github.io/.
+The Chinese questionnaire is https://anonymous-video-quality-study.github.io/cn/.
+Both languages share the same videos, assignments, saved progress and response service.
 Publish the `main` branch from `/(root)` using GitHub Pages. `.nojekyll` enables
 static publishing.
 
-Local previews default to group 1. The parameters `?preview=g1`, `?preview=g2`,
-and `?preview=g3` allow review of all three groups without submitting answers.
-Groups 1 and 2 contain 25 examples each; group 3 contains 20 examples.
-All groups ask the same three questions, with A/B/About the same choices for group 3.
+Local previews default to group 1. The parameters `?preview=g1` through `?preview=g7`
+allow review of all seven ten-example groups without submitting answers, including
+at `/cn/?preview=g1`. All groups ask the same three questions. Groups 1–5 offer
+four candidates; groups 6–7 offer A/B/About the same.
 Existing participants retain the examples and questions from their assigned revision.
 
 Participants can use Jump to browse their assigned examples. Unsaved choices
