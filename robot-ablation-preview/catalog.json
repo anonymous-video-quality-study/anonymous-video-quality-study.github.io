@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "studyId": "interaction-study-20260920-v2",
+  "revision": "r5",
+  "caseCount": 10,
+  "sourceCfg": 1.5,
+  "orderIsFinal": true,
+  "previewOnly": true,
+  "models": [
+    {
+      "id": "clean16",
+      "label": "w/o Robot fine-tuning",
+      "checkpoint": "clean16",
+      "experiment": "Base model"
+    },
+    {
+      "id": "A",
+      "label": "w/ Robot fine-tuning",
+      "checkpoint": "Robot A",
+      "experiment": "Robot fine-tuned model"
+    }
+  ],
+  "cases": [
+    {
+      "id": "robotics_robomind_stack_blocks",
+      "number": 1,
+      "title": "Stacking blocks",
+      "dataset": "RoboMIND",
+      "studyCaseId": "c7da86210108fdd0",
+      "frames": 49,
+      "fps": 8.0,
+      "videos": {
+        "input": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "4377d90f5a1613b6faa3a60652d7b43d6cc91f710a8ef755c9ce7693caa7f987",
+          "src": "../shared/4377d90f5a1613b6faa3a606.mp4"
+        },
+        "warp": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "ec8b423835756466c2a63431b1a311bbaca39571e0135d47fb1f199c52481c5c",
+          "src": "../shared/ec8b423835756466c2a63431.mp4"
+        },
+        "clean16": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "239edbcc96ac5650a49178a83245a79c0c2a102dcd703a71af684670e0f3e7a7",
+          "src": "../shared/239edbcc96ac5650a49178a8.mp4"
+        },
+        "A": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "dc95c6c759bf15cbf0e576ba5552af74b1bb7626be9fe3790ca7715199c25c00",
+          "src": "../shared/dc95c6c759bf15cbf0e576ba.mp4"
+        }
+      }
+    },
+    {
+      "id": "robotics_synthverse_place_chess_pieces_in_box",
+      "number": 2,
+      "title": "Placing an object in a box",
+      "dataset": "SynthVerse",
+      "studyCaseId": "1fe1393c12b106fe",
+      "frames": 49,
+      "fps": 8.0,
+      "videos": {
+        "input": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "e5f04406f3ea23652d572d1232b35c8d36c049a0b279fefb3cc127365ecda463",
+          "src": "../shared/e5f04406f3ea23652d572d12.mp4"
+        },
+        "warp": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "8b8b0fd6de0972594103bb7fb13e56914b1f71e31250bef1b5110e0266805030",
+          "src": "../shared/8b8b0fd6de0972594103bb7f.mp4"
+        },
+        "clean16": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "8feb0c7379f20c7f29275c57f43c0589c2aec33b8149f3ad91a5f663dd453c52",
+          "src": "../shared/8feb0c7379f20c7f29275c57.mp4"
+        },
+        "A": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "e48f3f7ff10cae96893f04a10357432c8b9a32cd85a318199581025a37f18a1f",
+          "src": "../shared/e48f3f7ff10cae96893f04a1.mp4"
+        }
+      }
+    },
+    {
+      "id": "robotics_vitra_place_brush_in_bowl_finetune",
+      "number": 3,
+      "title": "Placing a brush in a bowl",
+      "dataset": "VITRA",
+      "studyCaseId": "8e9616fed975ec32",
+      "frames": 49,
+      "fps": 8.0,
+      "videos": {
+        "input": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "c6d2601cc9a26780c38ef1cecdfbdeddbf3edacdf247da2368a38dd1672bca3a",
+          "src": "../shared/c6d2601cc9a26780c38ef1ce.mp4"
+        },
+        "warp": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "b5cb7f47dc269033d4a67ecb398ad0bdc5dd133c96a49a70ce2c9cc1d0e6274e",
+          "src": "../shared/b5cb7f47dc269033d4a67ecb.mp4"
+        },
+        "clean16": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "5ffc4997befd27a467c8879206b023d6ab69cd6a708168ef7dcdec02fcff6850",
+          "src": "../shared/5ffc4997befd27a467c88792.mp4"
+        },
+        "A": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "00a77a61650cf3773778d838b65842edd23fcc78dd27ba6f7a4c9b81f279f3f6",
+          "src": "../shared/00a77a61650cf3773778d838.mp4"
+        }
+      }
+    },
+    {
+      "id": "robotics_vitra_place_pot_on_cooker_finetune",
+      "number": 4,
+      "title": "Placing a pot on a cooker",
+      "dataset": "VITRA",
+      "studyCaseId": "cd91e1442a82ff1a",
+      "frames": 41,
+      "fps": 8.0,
+      "videos": {
+        "input": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "6f7814ae726f2461b4d8cb0cbe080b5fd9eae5935c5530aa8fdb0ffaf44d5259",
+          "src": "../shared/6f7814ae726f2461b4d8cb0c.mp4"
+        },
+        "warp": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "1c4e4281ab8ebaa6ae14387c17dcc461be80877e21b92f85d9e4dbb41a4c034f",
+          "src": "../shared/1c4e4281ab8ebaa6ae14387c.mp4"
+        },
+        "clean16": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "8aff4acf9ad6651b08e71fa1b084f9a32d9e39a230cbe71821fa191a06d1fb98",
+          "src": "../shared/8aff4acf9ad6651b08e71fa1.mp4"
+        },
+        "A": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "54942a292969036afb4513ab82748f67fd1ba3cafcc0c8a7658ca30b11334672",
+          "src": "../shared/54942a292969036afb4513ab.mp4"
+        }
+      }
+    },
+    {
+      "id": "robotics_robomind_pick_pear_from_bowl",
+      "number": 5,
+      "title": "Removing a pear from a bowl",
+      "dataset": "RoboMIND",
+      "studyCaseId": "e56e613a06b1af38",
+      "frames": 49,
+      "fps": 8.0,
+      "videos": {
+        "input": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "fa29c3f2fb8226aa73d50f8de11a7141e91f767fad80ea2068d23bc2482c9adb",
+          "src": "../shared/fa29c3f2fb8226aa73d50f8d.mp4"
+        },
+        "warp": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "5e37c892641ac035cd639bff8ce20324a07948bbf8d1556b46b756ed6db2f297",
+          "src": "../shared/5e37c892641ac035cd639bff.mp4"
+        },
+        "clean16": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "677a67cad72ddae280596c3b422e82a03b03e2be29b04102fd5db6b0651d30dd",
+          "src": "../shared/677a67cad72ddae280596c3b.mp4"
+        },
+        "A": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "570587f9b9d89e043cb0dc13543f17ce240cbd32d55f4de53bef84c47000644e",
+          "src": "../shared/570587f9b9d89e043cb0dc13.mp4"
+        }
+      }
+    },
+    {
+      "id": "robotics_robomind_close_bin",
+      "number": 6,
+      "title": "Closing a bin lid",
+      "dataset": "RoboMIND",
+      "studyCaseId": "ef2feba2c75bbfa9",
+      "frames": 49,
+      "fps": 8.0,
+      "videos": {
+        "input": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "153bf0d7c2e064018d6b23db8a261aec4c15510122fe0caa3cf633f8bfc794b2",
+          "src": "../shared/153bf0d7c2e064018d6b23db.mp4"
+        },
+        "warp": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "7a82aa8309274580d80adfe6181795ac25bab921e9c704aaa3d0b9007399b973",
+          "src": "../shared/7a82aa8309274580d80adfe6.mp4"
+        },
+        "clean16": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "590942146e2d2a1b41f0b41e2fb53a6585f11d52572f7b68500853ec70af399f",
+          "src": "../shared/590942146e2d2a1b41f0b41e.mp4"
+        },
+        "A": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "5a2de653156e3726c78597d7392734812857df11d0d6e80400ebc2ca0f3b34dc",
+          "src": "../shared/5a2de653156e3726c78597d7.mp4"
+        }
+      }
+    },
+    {
+      "id": "robotics_robomind_slide_close_drawer",
+      "number": 7,
+      "title": "Closing a drawer",
+      "dataset": "RoboMIND",
+      "studyCaseId": "f9f8165f53a863e3",
+      "frames": 49,
+      "fps": 8.0,
+      "videos": {
+        "input": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "f882a34949a1981b59840d762d2c62b1f95c2b5158cd535ba624a542189b909b",
+          "src": "../shared/f882a34949a1981b59840d76.mp4"
+        },
+        "warp": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "80840764a6408adb544b98281daf7e06178434dd73e8fa3f271912b0075542f0",
+          "src": "../shared/80840764a6408adb544b9828.mp4"
+        },
+        "clean16": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "091d62dcbaadc52c4f0484f4a89c75a087d1b670371d8285cc77d09505494f2c",
+          "src": "../shared/091d62dcbaadc52c4f0484f4.mp4"
+        },
+        "A": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "33a06c2dcf11c416b2ad4564b71b334b2a4aecc463940ebbc5978b1b59ba5bbf",
+          "src": "../shared/33a06c2dcf11c416b2ad4564.mp4"
+        }
+      }
+    },
+    {
+      "id": "robotics_robomind_turn_bread_machine_knob",
+      "number": 8,
+      "title": "Turning a toaster knob",
+      "dataset": "RoboMIND",
+      "studyCaseId": "9a5f93d6f1cb8c43",
+      "frames": 49,
+      "fps": 8.0,
+      "videos": {
+        "input": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "e04eabeb443fb94dd93c851bc735591a75f52a72767cff2c9324bed86a6f6dc0",
+          "src": "../shared/e04eabeb443fb94dd93c851b.mp4"
+        },
+        "warp": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "ecc44bd9e2d3f93df53f498163bfb0feae1eaac32315e59ae431e74b3e2eb3c9",
+          "src": "../shared/ecc44bd9e2d3f93df53f4981.mp4"
+        },
+        "clean16": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "0360cdda29d6cd37ad50d6beac1118f5b907c15b971b73446ec1675cbb76561b",
+          "src": "../shared/0360cdda29d6cd37ad50d6be.mp4"
+        },
+        "A": {
+          "encodedFps": 12.0,
+          "encodedFrames": 49,
+          "sha256": "b8291622c463e6768d525e5414a54240f227141d407a9a35dfa1c75811a67207",
+          "src": "../shared/b8291622c463e6768d525e54.mp4"
+        }
+      }
+    },
+    {
+      "id": "robotics_synthverse_place_steak_in_frying_pan",
+      "number": 9,
+      "title": "Placing a steak in a frying pan",
+      "dataset": "SynthVerse",
+      "studyCaseId": "2e9517f1cdf65491",
+      "frames": 49,
+      "fps": 8.0,
+      "videos": {
+        "input": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "e24b4e4254922a8d7d905e5594eb5a1e3fa021b80f592cb9e1d665429de19770",
+          "src": "../shared/e24b4e4254922a8d7d905e55.mp4"
+        },
+        "warp": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "6a23d09bbef44f59980070a5d4bd20c852e2fdb0fddcaa33df4660c29411e01f",
+          "src": "../shared/6a23d09bbef44f59980070a5.mp4"
+        },
+        "clean16": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "615b2b15e06ee01d378354a88606e1c1a078f2a34738302ff3ff6ae04d45c6ea",
+          "src": "../shared/615b2b15e06ee01d378354a8.mp4"
+        },
+        "A": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "a8d81f5f2220f3182072aca06afb3d8787673c105796f652a923ebc04f4be658",
+          "src": "../shared/a8d81f5f2220f3182072aca0.mp4"
+        }
+      }
+    },
+    {
+      "id": "robotics_droid_pull_light_cord_left",
+      "number": 10,
+      "title": "Turning on a light with a pull cord",
+      "dataset": "DROID",
+      "studyCaseId": "5c2edc092c670c4f",
+      "frames": 49,
+      "fps": 8.0,
+      "videos": {
+        "input": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "ccda815ec3037741de08619ff3965158a9cb05d6e40c9a6061364a4ea99f1bea",
+          "src": "../shared/ccda815ec3037741de08619f.mp4"
+        },
+        "warp": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "deafda1600c15fe230d8b9b4a6544334f57cc3cc86f2e94df07c57d7f7ecd7ca",
+          "src": "../shared/deafda1600c15fe230d8b9b4.mp4"
+        },
+        "clean16": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "f446c8c8e5a9766b8b795c37e3e82863325bcee7779856c399f6c40982c8f2b9",
+          "src": "../shared/f446c8c8e5a9766b8b795c37.mp4"
+        },
+        "A": {
+          "encodedFps": 8.0,
+          "encodedFrames": 49,
+          "sha256": "9f96890bff36a208f29b9940607f5e376ac7d83c7c659d88abbd3fccdd800a3b",
+          "src": "../shared/9f96890bff36a208f29b9940.mp4"
+        }
+      }
+    }
+  ]
+}

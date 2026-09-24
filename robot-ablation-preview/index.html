@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Robot ablation · w/o / w/</title>
+  <link rel="stylesheet" href="styles.css?v=20260924-labeled">
+  <script src="app.js?v=20260924-labeled" defer></script>
+</head>
+<body>
+  <header><p class="eyebrow">ROBOT ABLATION · LABELED PREVIEW</p><h1>w/o Robot fine-tuning <span>vs</span> w/ Robot fine-tuning</h1><p id="intro">正在读取问卷中的 10 个 Robot ablation 案例…</p><p>仅供预览 · 固定显示方法标签 · 不提交问卷答案</p></header>
+  <main>
+    <aside><label for="search">查找案例</label><input id="search" type="search" placeholder="动作名称、数据集"><p id="list-count">正在读取案例…</p><nav id="case-list" aria-label="已保存案例顺序"></nav></aside>
+    <section id="review" hidden>
+      <div class="heading"><div><p class="eyebrow" id="case-meta"></p><h2 id="case-title"></h2><p id="case-id"></p></div><a href="catalog.json?v=20260924-labeled" download="robot-ablation-preview.json">下载名单 JSON</a></div>
+      <div class="reference-grid">
+        <figure><figcaption>Input <span>原始视角</span><button class="expand" data-video="input" aria-label="放大 Input">放大</button></figcaption><video id="video-input" muted playsinline preload="auto"></video></figure>
+        <figure><figcaption>Warp <span>目标相机视角</span><button class="expand" data-video="warp" aria-label="放大 Warp">放大</button></figcaption><video id="video-warp" muted playsinline preload="auto"></video></figure>
+      </div>
+      <div class="method-grid">
+        <figure><figcaption>w/o Robot fine-tuning <span>clean16 · Source CFG 1.5</span><button class="expand" data-video="clean16" aria-label="放大 Clean16">放大</button></figcaption><video id="video-clean16" muted playsinline preload="auto"></video></figure>
+        <figure class="robot"><figcaption>w/ Robot fine-tuning <span>Robot A · Source CFG 1.5</span><button class="expand" data-video="A" aria-label="放大 Robot A">放大</button></figcaption><video id="video-A" muted playsinline preload="auto"></video></figure>
+      </div>
+      <div class="controls"><button id="play" disabled>同步播放</button><button id="replay" class="secondary" disabled>从头重播</button><label><input id="loop" type="checkbox" checked> 循环</label><span id="frame-info"></span></div>
+      <div class="timeline"><input id="seek" type="range" min="0" max="1000" value="0" aria-label="同步播放进度" disabled><output id="clock">0.0 / 0.0 s</output></div>
+      <p id="media-status" role="status" aria-live="polite">正在加载视频…</p><button id="retry" class="secondary" hidden>重新加载</button>
+      <div class="navigation"><button id="previous" class="secondary">← 上一个</button><span id="position"></span><button id="next" class="secondary">下一个 →</button></div>
+      <details><summary>模型与生成设置</summary><div id="model-details"></div><p>两个模型均使用 source CFG 1.5、text CFG 1、warp CFG 1、seed 1、50 steps。</p></details>
+    </section>
+    <p id="error" role="alert" hidden></p>
+  </main>
+</body>
+</html>
